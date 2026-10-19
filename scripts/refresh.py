@@ -79,8 +79,13 @@ def ipea_regional(code):
 
 def bcb_sgs(code):
     """Banco Central SGS series -> {YYYY-MM: value}. Blocked from some networks; run via GitHub Actions."""
-    rows = get_json(f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{code}/dados?formato=json&dataInicial=01/01/{START}")
-    return {f"{r['data'][6:10]}-{r['data'][3:5]}": float(r["valor"]) for r in rows}
+    out = {}
+    for y0 in range(int(START), int(time.strftime("%Y")) + 1, 10):  # the API refuses windows over 10 years
+        url = (f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{code}/dados?formato=json"
+               f"&dataInicial=01/01/{y0}&dataFinal=31/12/{y0 + 9}")
+        for r in get_json(url):
+            out[f"{r['data'][6:10]}-{r['data'][3:5]}"] = float(r["valor"])
+    return out
 
 
 def tabnet(defpath, arquivo, incremento, tries=3):
