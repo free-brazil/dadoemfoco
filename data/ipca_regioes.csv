@@ -1,0 +1,3822 @@
+date,geo,value
+2002-01,Belo Horizonte - MG,7.18
+2002-01,Belém - PA,7.75
+2002-01,Brasília - DF,7.54
+2002-01,Curitiba - PR,7.52
+2002-01,Fortaleza - CE,7.04
+2002-01,Goiânia - GO,8.02
+2002-01,Porto Alegre - RS,7.58
+2002-01,Recife - PE,7.79
+2002-01,Rio de Janeiro - RJ,9.02
+2002-01,Salvador - BA,10.18
+2002-01,São Paulo - SP,6.82
+2002-02,Belo Horizonte - MG,7.02
+2002-02,Belém - PA,6.79
+2002-02,Brasília - DF,7.71
+2002-02,Curitiba - PR,7.27
+2002-02,Fortaleza - CE,6.93
+2002-02,Goiânia - GO,7.43
+2002-02,Porto Alegre - RS,7.6
+2002-02,Recife - PE,8.5
+2002-02,Rio de Janeiro - RJ,8.85
+2002-02,Salvador - BA,9.7
+2002-02,São Paulo - SP,6.86
+2002-03,Belo Horizonte - MG,6.81
+2002-03,Belém - PA,7.76
+2002-03,Brasília - DF,7.82
+2002-03,Curitiba - PR,8.13
+2002-03,Fortaleza - CE,7.14
+2002-03,Goiânia - GO,7.92
+2002-03,Porto Alegre - RS,8.28
+2002-03,Recife - PE,8.83
+2002-03,Rio de Janeiro - RJ,8.73
+2002-03,Salvador - BA,10.01
+2002-03,São Paulo - SP,6.98
+2002-04,Belo Horizonte - MG,6.68
+2002-04,Belém - PA,7.36
+2002-04,Brasília - DF,7.68
+2002-04,Curitiba - PR,8.76
+2002-04,Fortaleza - CE,7.61
+2002-04,Goiânia - GO,8.06
+2002-04,Porto Alegre - RS,8.37
+2002-04,Recife - PE,8.83
+2002-04,Rio de Janeiro - RJ,8.8
+2002-04,Salvador - BA,10.14
+2002-04,São Paulo - SP,7.48
+2002-05,Belo Horizonte - MG,6.64
+2002-05,Belém - PA,7.0
+2002-05,Brasília - DF,7.76
+2002-05,Curitiba - PR,8.21
+2002-05,Fortaleza - CE,7.08
+2002-05,Goiânia - GO,8.17
+2002-05,Porto Alegre - RS,7.97
+2002-05,Recife - PE,8.41
+2002-05,Rio de Janeiro - RJ,8.35
+2002-05,Salvador - BA,9.24
+2002-05,São Paulo - SP,7.55
+2002-06,Belo Horizonte - MG,6.84
+2002-06,Belém - PA,7.57
+2002-06,Brasília - DF,7.91
+2002-06,Curitiba - PR,8.29
+2002-06,Fortaleza - CE,7.47
+2002-06,Goiânia - GO,8.5
+2002-06,Porto Alegre - RS,7.9
+2002-06,Recife - PE,8.42
+2002-06,Rio de Janeiro - RJ,8.79
+2002-06,Salvador - BA,9.8
+2002-06,São Paulo - SP,6.8
+2002-07,Belo Horizonte - MG,6.93
+2002-07,Belém - PA,7.41
+2002-07,Brasília - DF,7.71
+2002-07,Curitiba - PR,7.66
+2002-07,Fortaleza - CE,7.85
+2002-07,Goiânia - GO,8.56
+2002-07,Porto Alegre - RS,8.29
+2002-07,Recife - PE,8.46
+2002-07,Rio de Janeiro - RJ,8.82
+2002-07,Salvador - BA,10.22
+2002-07,São Paulo - SP,6.31
+2002-08,Belo Horizonte - MG,6.84
+2002-08,Belém - PA,7.73
+2002-08,Brasília - DF,7.76
+2002-08,Curitiba - PR,6.97
+2002-08,Fortaleza - CE,8.98
+2002-08,Goiânia - GO,8.28
+2002-08,Porto Alegre - RS,8.36
+2002-08,Recife - PE,8.64
+2002-08,Rio de Janeiro - RJ,8.7
+2002-08,Salvador - BA,9.66
+2002-08,São Paulo - SP,6.3
+2002-09,Belo Horizonte - MG,7.31
+2002-09,Belém - PA,8.58
+2002-09,Brasília - DF,8.13
+2002-09,Curitiba - PR,7.54
+2002-09,Fortaleza - CE,9.32
+2002-09,Goiânia - GO,8.84
+2002-09,Porto Alegre - RS,8.89
+2002-09,Recife - PE,8.46
+2002-09,Rio de Janeiro - RJ,9.22
+2002-09,Salvador - BA,9.67
+2002-09,São Paulo - SP,6.83
+2002-10,Belo Horizonte - MG,7.72
+2002-10,Belém - PA,8.83
+2002-10,Brasília - DF,8.84
+2002-10,Curitiba - PR,8.11
+2002-10,Fortaleza - CE,9.84
+2002-10,Goiânia - GO,9.19
+2002-10,Porto Alegre - RS,9.51
+2002-10,Recife - PE,9.43
+2002-10,Rio de Janeiro - RJ,9.63
+2002-10,Salvador - BA,9.94
+2002-10,São Paulo - SP,7.36
+2002-11,Belo Horizonte - MG,10.09
+2002-11,Belém - PA,11.89
+2002-11,Brasília - DF,12.61
+2002-11,Curitiba - PR,10.88
+2002-11,Fortaleza - CE,12.34
+2002-11,Goiânia - GO,12.44
+2002-11,Porto Alegre - RS,11.73
+2002-11,Recife - PE,12.01
+2002-11,Rio de Janeiro - RJ,11.53
+2002-11,Salvador - BA,12.45
+2002-11,São Paulo - SP,9.84
+2002-12,Belo Horizonte - MG,11.56
+2002-12,Belém - PA,14.15
+2002-12,Brasília - DF,14.81
+2002-12,Curitiba - PR,12.65
+2002-12,Fortaleza - CE,14.2
+2002-12,Goiânia - GO,13.57
+2002-12,Porto Alegre - RS,13.17
+2002-12,Recife - PE,14.25
+2002-12,Rio de Janeiro - RJ,12.9
+2002-12,Salvador - BA,14.13
+2002-12,São Paulo - SP,11.37
+2003-01,Belo Horizonte - MG,13.11
+2003-01,Belém - PA,15.61
+2003-01,Brasília - DF,17.05
+2003-01,Curitiba - PR,14.49
+2003-01,Fortaleza - CE,15.96
+2003-01,Goiânia - GO,15.62
+2003-01,Porto Alegre - RS,14.92
+2003-01,Recife - PE,15.63
+2003-01,Rio de Janeiro - RJ,14.43
+2003-01,Salvador - BA,16.23
+2003-01,São Paulo - SP,13.69
+2003-02,Belo Horizonte - MG,14.39
+2003-02,Belém - PA,16.32
+2003-02,Brasília - DF,19.49
+2003-02,Curitiba - PR,15.53
+2003-02,Fortaleza - CE,18.1
+2003-02,Goiânia - GO,17.01
+2003-02,Porto Alegre - RS,16.26
+2003-02,Recife - PE,15.15
+2003-02,Rio de Janeiro - RJ,15.99
+2003-02,Salvador - BA,17.94
+2003-02,São Paulo - SP,15.15
+2003-03,Belo Horizonte - MG,15.85
+2003-03,Belém - PA,16.64
+2003-03,Brasília - DF,20.44
+2003-03,Curitiba - PR,16.23
+2003-03,Fortaleza - CE,18.06
+2003-03,Goiânia - GO,17.76
+2003-03,Porto Alegre - RS,16.64
+2003-03,Recife - PE,16.2
+2003-03,Rio de Janeiro - RJ,16.65
+2003-03,Salvador - BA,18.65
+2003-03,São Paulo - SP,15.85
+2003-04,Belo Horizonte - MG,16.12
+2003-04,Belém - PA,17.36
+2003-04,Brasília - DF,20.97
+2003-04,Curitiba - PR,16.04
+2003-04,Fortaleza - CE,18.77
+2003-04,Goiânia - GO,17.9
+2003-04,Porto Alegre - RS,17.08
+2003-04,Recife - PE,17.6
+2003-04,Rio de Janeiro - RJ,17.52
+2003-04,Salvador - BA,18.51
+2003-04,São Paulo - SP,15.6
+2003-05,Belo Horizonte - MG,17.36
+2003-05,Belém - PA,17.67
+2003-05,Brasília - DF,20.07
+2003-05,Curitiba - PR,15.96
+2003-05,Fortaleza - CE,20.09
+2003-05,Goiânia - GO,18.34
+2003-05,Porto Alegre - RS,17.38
+2003-05,Recife - PE,19.77
+2003-05,Rio de Janeiro - RJ,18.34
+2003-05,Salvador - BA,19.45
+2003-05,São Paulo - SP,15.66
+2003-06,Belo Horizonte - MG,16.91
+2003-06,Belém - PA,17.03
+2003-06,Brasília - DF,18.71
+2003-06,Curitiba - PR,15.26
+2003-06,Fortaleza - CE,18.85
+2003-06,Goiânia - GO,17.35
+2003-06,Porto Alegre - RS,16.7
+2003-06,Recife - PE,18.96
+2003-06,Rio de Janeiro - RJ,17.49
+2003-06,Salvador - BA,18.84
+2003-06,São Paulo - SP,15.17
+2003-07,Belo Horizonte - MG,16.34
+2003-07,Belém - PA,16.03
+2003-07,Brasília - DF,17.74
+2003-07,Curitiba - PR,14.2
+2003-07,Fortaleza - CE,17.53
+2003-07,Goiânia - GO,16.5
+2003-07,Porto Alegre - RS,15.16
+2003-07,Recife - PE,17.75
+2003-07,Rio de Janeiro - RJ,16.36
+2003-07,Salvador - BA,17.46
+2003-07,São Paulo - SP,13.99
+2003-08,Belo Horizonte - MG,16.02
+2003-08,Belém - PA,15.58
+2003-08,Brasília - DF,17.38
+2003-08,Curitiba - PR,14.48
+2003-08,Fortaleza - CE,15.9
+2003-08,Goiânia - GO,16.39
+2003-08,Porto Alegre - RS,15.17
+2003-08,Recife - PE,16.79
+2003-08,Rio de Janeiro - RJ,16.29
+2003-08,Salvador - BA,16.82
+2003-08,São Paulo - SP,13.51
+2003-09,Belo Horizonte - MG,16.25
+2003-09,Belém - PA,15.74
+2003-09,Brasília - DF,17.59
+2003-09,Curitiba - PR,13.95
+2003-09,Fortaleza - CE,15.87
+2003-09,Goiânia - GO,16.3
+2003-09,Porto Alegre - RS,14.99
+2003-09,Recife - PE,17.08
+2003-09,Rio de Janeiro - RJ,15.87
+2003-09,Salvador - BA,17.32
+2003-09,São Paulo - SP,13.8
+2003-10,Belo Horizonte - MG,15.22
+2003-10,Belém - PA,15.37
+2003-10,Brasília - DF,15.73
+2003-10,Curitiba - PR,12.45
+2003-10,Fortaleza - CE,14.62
+2003-10,Goiânia - GO,15.31
+2003-10,Porto Alegre - RS,13.72
+2003-10,Recife - PE,15.42
+2003-10,Rio de Janeiro - RJ,14.8
+2003-10,Salvador - BA,16.16
+2003-10,São Paulo - SP,12.73
+2003-11,Belo Horizonte - MG,12.66
+2003-11,Belém - PA,12.44
+2003-11,Brasília - DF,12.12
+2003-11,Curitiba - PR,9.0
+2003-11,Fortaleza - CE,11.34
+2003-11,Goiânia - GO,11.73
+2003-11,Porto Alegre - RS,10.93
+2003-11,Recife - PE,12.46
+2003-11,Rio de Janeiro - RJ,12.16
+2003-11,Salvador - BA,13.04
+2003-11,São Paulo - SP,9.75
+2003-12,Belo Horizonte - MG,11.16
+2003-12,Belém - PA,10.44
+2003-12,Brasília - DF,10.2
+2003-12,Curitiba - PR,7.34
+2003-12,Fortaleza - CE,9.66
+2003-12,Goiânia - GO,10.47
+2003-12,Porto Alegre - RS,9.5
+2003-12,Recife - PE,10.0
+2003-12,Rio de Janeiro - RJ,10.27
+2003-12,Salvador - BA,10.58
+2003-12,São Paulo - SP,8.15
+2004-01,Belo Horizonte - MG,9.09
+2004-01,Belém - PA,9.56
+2004-01,Brasília - DF,8.78
+2004-01,Curitiba - PR,6.81
+2004-01,Fortaleza - CE,9.0
+2004-01,Goiânia - GO,9.04
+2004-01,Porto Alegre - RS,8.05
+2004-01,Recife - PE,9.23
+2004-01,Rio de Janeiro - RJ,8.53
+2004-01,Salvador - BA,8.51
+2004-01,São Paulo - SP,6.26
+2004-02,Belo Horizonte - MG,8.5
+2004-02,Belém - PA,9.04
+2004-02,Brasília - DF,7.08
+2004-02,Curitiba - PR,6.25
+2004-02,Fortaleza - CE,7.76
+2004-02,Goiânia - GO,8.06
+2004-02,Porto Alegre - RS,7.01
+2004-02,Recife - PE,9.61
+2004-02,Rio de Janeiro - RJ,7.35
+2004-02,Salvador - BA,7.18
+2004-02,São Paulo - SP,5.05
+2004-03,Belo Horizonte - MG,7.55
+2004-03,Belém - PA,8.35
+2004-03,Brasília - DF,5.69
+2004-03,Curitiba - PR,4.83
+2004-03,Fortaleza - CE,7.43
+2004-03,Goiânia - GO,6.92
+2004-03,Porto Alegre - RS,6.27
+2004-03,Recife - PE,8.53
+2004-03,Rio de Janeiro - RJ,6.36
+2004-03,Salvador - BA,6.63
+2004-03,São Paulo - SP,4.49
+2004-04,Belo Horizonte - MG,6.97
+2004-04,Belém - PA,7.75
+2004-04,Brasília - DF,5.16
+2004-04,Curitiba - PR,4.7
+2004-04,Fortaleza - CE,6.22
+2004-04,Goiânia - GO,6.36
+2004-04,Porto Alegre - RS,5.64
+2004-04,Recife - PE,6.66
+2004-04,Rio de Janeiro - RJ,4.99
+2004-04,Salvador - BA,5.95
+2004-04,São Paulo - SP,4.19
+2004-05,Belo Horizonte - MG,6.29
+2004-05,Belém - PA,7.43
+2004-05,Brasília - DF,5.91
+2004-05,Curitiba - PR,5.88
+2004-05,Fortaleza - CE,5.54
+2004-05,Goiânia - GO,6.15
+2004-05,Porto Alegre - RS,5.78
+2004-05,Recife - PE,4.66
+2004-05,Rio de Janeiro - RJ,4.72
+2004-05,Salvador - BA,5.16
+2004-05,São Paulo - SP,4.31
+2004-06,Belo Horizonte - MG,7.05
+2004-06,Belém - PA,7.93
+2004-06,Brasília - DF,7.08
+2004-06,Curitiba - PR,7.17
+2004-06,Fortaleza - CE,6.08
+2004-06,Goiânia - GO,6.89
+2004-06,Porto Alegre - RS,7.21
+2004-06,Recife - PE,5.33
+2004-06,Rio de Janeiro - RJ,5.43
+2004-06,Salvador - BA,5.18
+2004-06,São Paulo - SP,5.39
+2004-07,Belo Horizonte - MG,7.3
+2004-07,Belém - PA,8.11
+2004-07,Brasília - DF,7.4
+2004-07,Curitiba - PR,7.96
+2004-07,Fortaleza - CE,6.52
+2004-07,Goiânia - GO,7.07
+2004-07,Porto Alegre - RS,7.88
+2004-07,Recife - PE,5.91
+2004-07,Rio de Janeiro - RJ,6.4
+2004-07,Salvador - BA,5.99
+2004-07,São Paulo - SP,6.36
+2004-08,Belo Horizonte - MG,7.53
+2004-08,Belém - PA,7.85
+2004-08,Brasília - DF,7.85
+2004-08,Curitiba - PR,8.97
+2004-08,Fortaleza - CE,7.12
+2004-08,Goiânia - GO,7.69
+2004-08,Porto Alegre - RS,7.86
+2004-08,Recife - PE,6.17
+2004-08,Rio de Janeiro - RJ,7.01
+2004-08,Salvador - BA,6.19
+2004-08,São Paulo - SP,6.71
+2004-09,Belo Horizonte - MG,7.37
+2004-09,Belém - PA,6.76
+2004-09,Brasília - DF,6.81
+2004-09,Curitiba - PR,8.34
+2004-09,Fortaleza - CE,6.85
+2004-09,Goiânia - GO,7.61
+2004-09,Porto Alegre - RS,7.69
+2004-09,Recife - PE,5.6
+2004-09,Rio de Janeiro - RJ,7.0
+2004-09,Salvador - BA,5.02
+2004-09,São Paulo - SP,6.12
+2004-10,Belo Horizonte - MG,7.36
+2004-10,Belém - PA,6.28
+2004-10,Brasília - DF,6.84
+2004-10,Curitiba - PR,8.48
+2004-10,Fortaleza - CE,6.8
+2004-10,Goiânia - GO,7.88
+2004-10,Porto Alegre - RS,7.75
+2004-10,Recife - PE,5.55
+2004-10,Rio de Janeiro - RJ,7.05
+2004-10,Salvador - BA,5.02
+2004-10,São Paulo - SP,6.51
+2004-11,Belo Horizonte - MG,8.0
+2004-11,Belém - PA,6.32
+2004-11,Brasília - DF,7.14
+2004-11,Curitiba - PR,9.22
+2004-11,Fortaleza - CE,7.12
+2004-11,Goiânia - GO,8.22
+2004-11,Porto Alegre - RS,8.08
+2004-11,Recife - PE,5.87
+2004-11,Rio de Janeiro - RJ,6.65
+2004-11,Salvador - BA,5.2
+2004-11,São Paulo - SP,7.14
+2004-12,Belo Horizonte - MG,8.93
+2004-12,Belém - PA,6.19
+2004-12,Brasília - DF,6.96
+2004-12,Curitiba - PR,9.43
+2004-12,Fortaleza - CE,7.21
+2004-12,Goiânia - GO,8.93
+2004-12,Porto Alegre - RS,8.53
+2004-12,Recife - PE,6.55
+2004-12,Rio de Janeiro - RJ,6.95
+2004-12,Salvador - BA,5.68
+2004-12,São Paulo - SP,7.42
+2005-01,Belo Horizonte - MG,8.77
+2005-01,Belém - PA,5.67
+2005-01,Brasília - DF,6.21
+2005-01,Curitiba - PR,8.27
+2005-01,Fortaleza - CE,6.77
+2005-01,Goiânia - GO,8.94
+2005-01,Porto Alegre - RS,8.74
+2005-01,Recife - PE,5.95
+2005-01,Rio de Janeiro - RJ,6.84
+2005-01,Salvador - BA,5.21
+2005-01,São Paulo - SP,7.46
+2005-02,Belo Horizonte - MG,8.61
+2005-02,Belém - PA,5.38
+2005-02,Brasília - DF,6.94
+2005-02,Curitiba - PR,7.4
+2005-02,Fortaleza - CE,6.17
+2005-02,Goiânia - GO,8.44
+2005-02,Porto Alegre - RS,8.72
+2005-02,Recife - PE,5.59
+2005-02,Rio de Janeiro - RJ,6.7
+2005-02,Salvador - BA,5.66
+2005-02,São Paulo - SP,7.71
+2005-03,Belo Horizonte - MG,8.81
+2005-03,Belém - PA,4.93
+2005-03,Brasília - DF,7.01
+2005-03,Curitiba - PR,8.22
+2005-03,Fortaleza - CE,6.4
+2005-03,Goiânia - GO,8.61
+2005-03,Porto Alegre - RS,8.27
+2005-03,Recife - PE,5.49
+2005-03,Rio de Janeiro - RJ,6.89
+2005-03,Salvador - BA,4.8
+2005-03,São Paulo - SP,8.11
+2005-04,Belo Horizonte - MG,9.44
+2005-04,Belém - PA,4.82
+2005-04,Brasília - DF,6.9
+2005-04,Curitiba - PR,8.07
+2005-04,Fortaleza - CE,6.59
+2005-04,Goiânia - GO,9.64
+2005-04,Porto Alegre - RS,9.58
+2005-04,Recife - PE,5.75
+2005-04,Rio de Janeiro - RJ,7.97
+2005-04,Salvador - BA,4.91
+2005-04,São Paulo - SP,8.59
+2005-05,Belo Horizonte - MG,9.3
+2005-05,Belém - PA,5.27
+2005-05,Brasília - DF,7.25
+2005-05,Curitiba - PR,7.48
+2005-05,Fortaleza - CE,6.33
+2005-05,Goiânia - GO,8.37
+2005-05,Porto Alegre - RS,8.99
+2005-05,Recife - PE,7.07
+2005-05,Rio de Janeiro - RJ,8.38
+2005-05,Salvador - BA,5.89
+2005-05,São Paulo - SP,8.44
+2005-06,Belo Horizonte - MG,8.51
+2005-06,Belém - PA,5.02
+2005-06,Brasília - DF,6.74
+2005-06,Curitiba - PR,5.88
+2005-06,Fortaleza - CE,6.12
+2005-06,Goiânia - GO,8.17
+2005-06,Porto Alegre - RS,8.08
+2005-06,Recife - PE,6.92
+2005-06,Rio de Janeiro - RJ,7.58
+2005-06,Salvador - BA,5.82
+2005-06,São Paulo - SP,7.47
+2005-07,Belo Horizonte - MG,8.3
+2005-07,Belém - PA,5.08
+2005-07,Brasília - DF,6.57
+2005-07,Curitiba - PR,5.62
+2005-07,Fortaleza - CE,5.97
+2005-07,Goiânia - GO,8.57
+2005-07,Porto Alegre - RS,7.75
+2005-07,Recife - PE,6.8
+2005-07,Rio de Janeiro - RJ,6.51
+2005-07,Salvador - BA,4.87
+2005-07,São Paulo - SP,6.28
+2005-08,Belo Horizonte - MG,7.99
+2005-08,Belém - PA,6.28
+2005-08,Brasília - DF,5.9
+2005-08,Curitiba - PR,4.53
+2005-08,Fortaleza - CE,5.54
+2005-08,Goiânia - GO,7.57
+2005-08,Porto Alegre - RS,7.27
+2005-08,Recife - PE,6.44
+2005-08,Rio de Janeiro - RJ,5.48
+2005-08,Salvador - BA,4.8
+2005-08,São Paulo - SP,5.69
+2005-09,Belo Horizonte - MG,7.62
+2005-09,Belém - PA,6.46
+2005-09,Brasília - DF,5.65
+2005-09,Curitiba - PR,5.01
+2005-09,Fortaleza - CE,5.83
+2005-09,Goiânia - GO,6.68
+2005-09,Porto Alegre - RS,7.08
+2005-09,Recife - PE,6.6
+2005-09,Rio de Janeiro - RJ,5.35
+2005-09,Salvador - BA,4.85
+2005-09,São Paulo - SP,5.89
+2005-10,Belo Horizonte - MG,7.84
+2005-10,Belém - PA,6.54
+2005-10,Brasília - DF,6.36
+2005-10,Curitiba - PR,5.1
+2005-10,Fortaleza - CE,6.19
+2005-10,Goiânia - GO,6.68
+2005-10,Porto Alegre - RS,7.19
+2005-10,Recife - PE,7.59
+2005-10,Rio de Janeiro - RJ,5.44
+2005-10,Salvador - BA,5.97
+2005-10,São Paulo - SP,6.25
+2005-11,Belo Horizonte - MG,7.33
+2005-11,Belém - PA,6.56
+2005-11,Brasília - DF,6.25
+2005-11,Curitiba - PR,5.01
+2005-11,Fortaleza - CE,6.01
+2005-11,Goiânia - GO,7.05
+2005-11,Porto Alegre - RS,6.92
+2005-11,Recife - PE,7.93
+2005-11,Rio de Janeiro - RJ,5.84
+2005-11,Salvador - BA,6.02
+2005-11,São Paulo - SP,5.85
+2005-12,Belo Horizonte - MG,6.25
+2005-12,Belém - PA,6.07
+2005-12,Brasília - DF,6.23
+2005-12,Curitiba - PR,4.81
+2005-12,Fortaleza - CE,5.66
+2005-12,Goiânia - GO,6.37
+2005-12,Porto Alegre - RS,6.18
+2005-12,Recife - PE,7.12
+2005-12,Rio de Janeiro - RJ,5.35
+2005-12,Salvador - BA,5.78
+2005-12,São Paulo - SP,5.38
+2006-01,Belo Horizonte - MG,7.27
+2006-01,Belém - PA,5.97
+2006-01,Brasília - DF,7.43
+2006-01,Curitiba - PR,5.23
+2006-01,Fortaleza - CE,5.19
+2006-01,Goiânia - GO,6.43
+2006-01,Porto Alegre - RS,5.69
+2006-01,Recife - PE,6.69
+2006-01,Rio de Janeiro - RJ,5.39
+2006-01,Salvador - BA,5.99
+2006-01,São Paulo - SP,5.14
+2006-02,Belo Horizonte - MG,7.34
+2006-02,Belém - PA,5.75
+2006-02,Brasília - DF,6.44
+2006-02,Curitiba - PR,5.31
+2006-02,Fortaleza - CE,5.23
+2006-02,Goiânia - GO,6.02
+2006-02,Porto Alegre - RS,5.31
+2006-02,Recife - PE,6.73
+2006-02,Rio de Janeiro - RJ,5.64
+2006-02,Salvador - BA,5.62
+2006-02,São Paulo - SP,4.79
+2006-03,Belo Horizonte - MG,7.09
+2006-03,Belém - PA,5.83
+2006-03,Brasília - DF,7.03
+2006-03,Curitiba - PR,4.94
+2006-03,Fortaleza - CE,5.03
+2006-03,Goiânia - GO,6.12
+2006-03,Porto Alegre - RS,5.35
+2006-03,Recife - PE,6.62
+2006-03,Rio de Janeiro - RJ,5.53
+2006-03,Salvador - BA,6.36
+2006-03,São Paulo - SP,4.27
+2006-04,Belo Horizonte - MG,6.31
+2006-04,Belém - PA,5.84
+2006-04,Brasília - DF,7.06
+2006-04,Curitiba - PR,4.18
+2006-04,Fortaleza - CE,4.9
+2006-04,Goiânia - GO,4.35
+2006-04,Porto Alegre - RS,3.92
+2006-04,Recife - PE,6.36
+2006-04,Rio de Janeiro - RJ,4.81
+2006-04,Salvador - BA,6.33
+2006-04,São Paulo - SP,3.58
+2006-05,Belo Horizonte - MG,5.7
+2006-05,Belém - PA,5.71
+2006-05,Brasília - DF,6.02
+2006-05,Curitiba - PR,4.08
+2006-05,Fortaleza - CE,4.29
+2006-05,Goiânia - GO,4.79
+2006-05,Porto Alegre - RS,3.81
+2006-05,Recife - PE,5.52
+2006-05,Rio de Janeiro - RJ,4.22
+2006-05,Salvador - BA,5.69
+2006-05,São Paulo - SP,3.19
+2006-06,Belo Horizonte - MG,5.96
+2006-06,Belém - PA,5.81
+2006-06,Brasília - DF,5.38
+2006-06,Curitiba - PR,4.24
+2006-06,Fortaleza - CE,3.99
+2006-06,Goiânia - GO,4.11
+2006-06,Porto Alegre - RS,3.52
+2006-06,Recife - PE,5.5
+2006-06,Rio de Janeiro - RJ,3.98
+2006-06,Salvador - BA,5.32
+2006-06,São Paulo - SP,2.9
+2006-07,Belo Horizonte - MG,5.68
+2006-07,Belém - PA,5.61
+2006-07,Brasília - DF,5.83
+2006-07,Curitiba - PR,3.49
+2006-07,Fortaleza - CE,4.08
+2006-07,Goiânia - GO,3.57
+2006-07,Porto Alegre - RS,3.35
+2006-07,Recife - PE,5.18
+2006-07,Rio de Janeiro - RJ,4.44
+2006-07,Salvador - BA,4.89
+2006-07,São Paulo - SP,2.99
+2006-08,Belo Horizonte - MG,5.57
+2006-08,Belém - PA,3.38
+2006-08,Brasília - DF,5.57
+2006-08,Curitiba - PR,2.89
+2006-08,Fortaleza - CE,3.85
+2006-08,Goiânia - GO,3.88
+2006-08,Porto Alegre - RS,3.42
+2006-08,Recife - PE,5.09
+2006-08,Rio de Janeiro - RJ,4.62
+2006-08,Salvador - BA,4.67
+2006-08,São Paulo - SP,3.02
+2006-09,Belo Horizonte - MG,5.45
+2006-09,Belém - PA,3.1
+2006-09,Brasília - DF,5.54
+2006-09,Curitiba - PR,2.76
+2006-09,Fortaleza - CE,3.65
+2006-09,Goiânia - GO,4.22
+2006-09,Porto Alegre - RS,3.23
+2006-09,Recife - PE,4.79
+2006-09,Rio de Janeiro - RJ,4.79
+2006-09,Salvador - BA,4.56
+2006-09,São Paulo - SP,2.72
+2006-10,Belo Horizonte - MG,5.14
+2006-10,Belém - PA,3.51
+2006-10,Brasília - DF,4.76
+2006-10,Curitiba - PR,2.7
+2006-10,Fortaleza - CE,3.21
+2006-10,Goiânia - GO,3.37
+2006-10,Porto Alegre - RS,3.01
+2006-10,Recife - PE,3.85
+2006-10,Rio de Janeiro - RJ,4.79
+2006-10,Salvador - BA,3.78
+2006-10,São Paulo - SP,2.08
+2006-11,Belo Horizonte - MG,5.07
+2006-11,Belém - PA,3.35
+2006-11,Brasília - DF,4.45
+2006-11,Curitiba - PR,2.7
+2006-11,Fortaleza - CE,3.06
+2006-11,Goiânia - GO,2.65
+2006-11,Porto Alegre - RS,2.88
+2006-11,Recife - PE,3.23
+2006-11,Rio de Janeiro - RJ,4.08
+2006-11,Salvador - BA,3.4
+2006-11,São Paulo - SP,1.97
+2006-12,Belo Horizonte - MG,4.96
+2006-12,Belém - PA,3.17
+2006-12,Brasília - DF,4.22
+2006-12,Curitiba - PR,2.51
+2006-12,Fortaleza - CE,2.62
+2006-12,Goiânia - GO,2.57
+2006-12,Porto Alegre - RS,2.67
+2006-12,Recife - PE,2.92
+2006-12,Rio de Janeiro - RJ,4.02
+2006-12,Salvador - BA,3.18
+2006-12,São Paulo - SP,2.64
+2007-01,Belo Horizonte - MG,4.21
+2007-01,Belém - PA,3.12
+2007-01,Brasília - DF,2.83
+2007-01,Curitiba - PR,2.16
+2007-01,Fortaleza - CE,2.37
+2007-01,Goiânia - GO,1.91
+2007-01,Porto Alegre - RS,2.19
+2007-01,Recife - PE,3.08
+2007-01,Rio de Janeiro - RJ,3.77
+2007-01,Salvador - BA,3.33
+2007-01,São Paulo - SP,2.84
+2007-02,Belo Horizonte - MG,4.21
+2007-02,Belém - PA,3.26
+2007-02,Brasília - DF,2.83
+2007-02,Curitiba - PR,1.88
+2007-02,Fortaleza - CE,2.13
+2007-02,Goiânia - GO,2.5
+2007-02,Porto Alegre - RS,1.97
+2007-02,Recife - PE,3.2
+2007-02,Rio de Janeiro - RJ,3.34
+2007-02,Salvador - BA,4.09
+2007-02,São Paulo - SP,3.01
+2007-03,Belo Horizonte - MG,4.11
+2007-03,Belém - PA,3.61
+2007-03,Brasília - DF,2.47
+2007-03,Curitiba - PR,1.76
+2007-03,Fortaleza - CE,2.16
+2007-03,Goiânia - GO,2.52
+2007-03,Porto Alegre - RS,2.0
+2007-03,Recife - PE,3.2
+2007-03,Rio de Janeiro - RJ,3.24
+2007-03,Salvador - BA,3.88
+2007-03,São Paulo - SP,2.93
+2007-04,Belo Horizonte - MG,3.87
+2007-04,Belém - PA,3.97
+2007-04,Brasília - DF,2.41
+2007-04,Curitiba - PR,2.15
+2007-04,Fortaleza - CE,2.05
+2007-04,Goiânia - GO,3.16
+2007-04,Porto Alegre - RS,1.93
+2007-04,Recife - PE,3.21
+2007-04,Rio de Janeiro - RJ,2.69
+2007-04,Salvador - BA,3.95
+2007-04,São Paulo - SP,3.15
+2007-05,Belo Horizonte - MG,4.27
+2007-05,Belém - PA,4.04
+2007-05,Brasília - DF,3.23
+2007-05,Curitiba - PR,2.15
+2007-05,Fortaleza - CE,2.25
+2007-05,Goiânia - GO,3.45
+2007-05,Porto Alegre - RS,2.18
+2007-05,Recife - PE,3.06
+2007-05,Rio de Janeiro - RJ,2.59
+2007-05,Salvador - BA,3.81
+2007-05,São Paulo - SP,3.46
+2007-06,Belo Horizonte - MG,4.45
+2007-06,Belém - PA,4.14
+2007-06,Brasília - DF,4.25
+2007-06,Curitiba - PR,2.86
+2007-06,Fortaleza - CE,2.36
+2007-06,Goiânia - GO,3.99
+2007-06,Porto Alegre - RS,2.55
+2007-06,Recife - PE,3.16
+2007-06,Rio de Janeiro - RJ,3.31
+2007-06,Salvador - BA,3.92
+2007-06,São Paulo - SP,4.13
+2007-07,Belo Horizonte - MG,4.74
+2007-07,Belém - PA,4.37
+2007-07,Brasília - DF,3.46
+2007-07,Curitiba - PR,3.39
+2007-07,Fortaleza - CE,2.56
+2007-07,Goiânia - GO,3.78
+2007-07,Porto Alegre - RS,2.96
+2007-07,Recife - PE,3.31
+2007-07,Rio de Janeiro - RJ,3.33
+2007-07,Salvador - BA,4.74
+2007-07,São Paulo - SP,3.8
+2007-08,Belo Horizonte - MG,5.22
+2007-08,Belém - PA,5.62
+2007-08,Brasília - DF,3.61
+2007-08,Curitiba - PR,3.98
+2007-08,Fortaleza - CE,3.54
+2007-08,Goiânia - GO,3.28
+2007-08,Porto Alegre - RS,3.28
+2007-08,Recife - PE,4.04
+2007-08,Rio de Janeiro - RJ,3.45
+2007-08,Salvador - BA,5.39
+2007-08,São Paulo - SP,4.25
+2007-09,Belo Horizonte - MG,5.03
+2007-09,Belém - PA,5.95
+2007-09,Brasília - DF,3.88
+2007-09,Curitiba - PR,3.99
+2007-09,Fortaleza - CE,3.81
+2007-09,Goiânia - GO,3.05
+2007-09,Porto Alegre - RS,3.04
+2007-09,Recife - PE,4.42
+2007-09,Rio de Janeiro - RJ,3.31
+2007-09,Salvador - BA,5.22
+2007-09,São Paulo - SP,4.26
+2007-10,Belo Horizonte - MG,5.05
+2007-10,Belém - PA,5.9
+2007-10,Brasília - DF,4.1
+2007-10,Curitiba - PR,3.64
+2007-10,Fortaleza - CE,3.84
+2007-10,Goiânia - GO,3.76
+2007-10,Porto Alegre - RS,2.97
+2007-10,Recife - PE,4.53
+2007-10,Rio de Janeiro - RJ,3.27
+2007-10,Salvador - BA,5.17
+2007-10,São Paulo - SP,4.15
+2007-11,Belo Horizonte - MG,5.22
+2007-11,Belém - PA,5.89
+2007-11,Brasília - DF,4.09
+2007-11,Curitiba - PR,3.12
+2007-11,Fortaleza - CE,3.62
+2007-11,Goiânia - GO,3.99
+2007-11,Porto Alegre - RS,3.43
+2007-11,Recife - PE,4.52
+2007-11,Rio de Janeiro - RJ,3.4
+2007-11,Salvador - BA,5.15
+2007-11,São Paulo - SP,4.26
+2007-12,Belo Horizonte - MG,5.86
+2007-12,Belém - PA,7.12
+2007-12,Brasília - DF,4.54
+2007-12,Curitiba - PR,3.47
+2007-12,Fortaleza - CE,4.17
+2007-12,Goiânia - GO,4.71
+2007-12,Porto Alegre - RS,3.72
+2007-12,Recife - PE,5.47
+2007-12,Rio de Janeiro - RJ,3.8
+2007-12,Salvador - BA,6.09
+2007-12,São Paulo - SP,3.89
+2008-01,Belo Horizonte - MG,5.98
+2008-01,Belém - PA,7.51
+2008-01,Brasília - DF,4.89
+2008-01,Curitiba - PR,3.24
+2008-01,Fortaleza - CE,4.66
+2008-01,Goiânia - GO,4.97
+2008-01,Porto Alegre - RS,3.92
+2008-01,Recife - PE,6.04
+2008-01,Rio de Janeiro - RJ,3.83
+2008-01,Salvador - BA,6.03
+2008-01,São Paulo - SP,3.94
+2008-02,Belo Horizonte - MG,6.01
+2008-02,Belém - PA,7.7
+2008-02,Brasília - DF,5.0
+2008-02,Curitiba - PR,3.58
+2008-02,Fortaleza - CE,5.21
+2008-02,Goiânia - GO,4.84
+2008-02,Porto Alegre - RS,4.33
+2008-02,Recife - PE,6.59
+2008-02,Rio de Janeiro - RJ,4.02
+2008-02,Salvador - BA,5.29
+2008-02,São Paulo - SP,3.8
+2008-03,Belo Horizonte - MG,6.0
+2008-03,Belém - PA,7.49
+2008-03,Brasília - DF,4.35
+2008-03,Curitiba - PR,4.21
+2008-03,Fortaleza - CE,5.26
+2008-03,Goiânia - GO,4.47
+2008-03,Porto Alegre - RS,4.52
+2008-03,Recife - PE,6.31
+2008-03,Rio de Janeiro - RJ,4.32
+2008-03,Salvador - BA,5.53
+2008-03,São Paulo - SP,3.93
+2008-04,Belo Horizonte - MG,5.65
+2008-04,Belém - PA,8.17
+2008-04,Brasília - DF,4.65
+2008-04,Curitiba - PR,4.64
+2008-04,Fortaleza - CE,5.22
+2008-04,Goiânia - GO,4.26
+2008-04,Porto Alegre - RS,5.03
+2008-04,Recife - PE,6.97
+2008-04,Rio de Janeiro - RJ,5.22
+2008-04,Salvador - BA,6.05
+2008-04,São Paulo - SP,4.08
+2008-05,Belo Horizonte - MG,6.03
+2008-05,Belém - PA,8.15
+2008-05,Brasília - DF,4.87
+2008-05,Curitiba - PR,5.52
+2008-05,Fortaleza - CE,6.03
+2008-05,Goiânia - GO,5.39
+2008-05,Porto Alegre - RS,5.45
+2008-05,Recife - PE,7.94
+2008-05,Rio de Janeiro - RJ,5.71
+2008-05,Salvador - BA,6.06
+2008-05,São Paulo - SP,4.69
+2008-06,Belo Horizonte - MG,6.48
+2008-06,Belém - PA,8.53
+2008-06,Brasília - DF,5.24
+2008-06,Curitiba - PR,5.89
+2008-06,Fortaleza - CE,6.84
+2008-06,Goiânia - GO,5.76
+2008-06,Porto Alegre - RS,6.15
+2008-06,Recife - PE,8.47
+2008-06,Rio de Janeiro - RJ,5.9
+2008-06,Salvador - BA,6.88
+2008-06,São Paulo - SP,5.18
+2008-07,Belo Horizonte - MG,6.36
+2008-07,Belém - PA,9.26
+2008-07,Brasília - DF,5.57
+2008-07,Curitiba - PR,6.06
+2008-07,Fortaleza - CE,7.06
+2008-07,Goiânia - GO,6.11
+2008-07,Porto Alegre - RS,6.24
+2008-07,Recife - PE,8.31
+2008-07,Rio de Janeiro - RJ,5.98
+2008-07,Salvador - BA,6.69
+2008-07,São Paulo - SP,5.93
+2008-08,Belo Horizonte - MG,5.98
+2008-08,Belém - PA,9.18
+2008-08,Brasília - DF,5.5
+2008-08,Curitiba - PR,5.48
+2008-08,Fortaleza - CE,6.34
+2008-08,Goiânia - GO,6.6
+2008-08,Porto Alegre - RS,6.1
+2008-08,Recife - PE,7.72
+2008-08,Rio de Janeiro - RJ,6.03
+2008-08,Salvador - BA,6.07
+2008-08,São Paulo - SP,5.83
+2008-09,Belo Horizonte - MG,6.13
+2008-09,Belém - PA,9.09
+2008-09,Brasília - DF,4.68
+2008-09,Curitiba - PR,5.68
+2008-09,Fortaleza - CE,6.25
+2008-09,Goiânia - GO,7.11
+2008-09,Porto Alegre - RS,6.74
+2008-09,Recife - PE,7.11
+2008-09,Rio de Janeiro - RJ,5.9
+2008-09,Salvador - BA,6.0
+2008-09,São Paulo - SP,6.01
+2008-10,Belo Horizonte - MG,6.05
+2008-10,Belém - PA,8.65
+2008-10,Brasília - DF,4.9
+2008-10,Curitiba - PR,5.82
+2008-10,Fortaleza - CE,6.47
+2008-10,Goiânia - GO,6.72
+2008-10,Porto Alegre - RS,6.8
+2008-10,Recife - PE,7.49
+2008-10,Rio de Janeiro - RJ,6.16
+2008-10,Salvador - BA,5.89
+2008-10,São Paulo - SP,6.39
+2008-11,Belo Horizonte - MG,5.91
+2008-11,Belém - PA,8.77
+2008-11,Brasília - DF,5.33
+2008-11,Curitiba - PR,5.96
+2008-11,Fortaleza - CE,6.79
+2008-11,Goiânia - GO,6.44
+2008-11,Porto Alegre - RS,6.96
+2008-11,Recife - PE,7.59
+2008-11,Rio de Janeiro - RJ,6.28
+2008-11,Salvador - BA,5.82
+2008-11,São Paulo - SP,6.19
+2008-12,Belo Horizonte - MG,5.34
+2008-12,Belém - PA,7.93
+2008-12,Brasília - DF,5.22
+2008-12,Curitiba - PR,5.4
+2008-12,Fortaleza - CE,6.27
+2008-12,Goiânia - GO,5.53
+2008-12,Porto Alegre - RS,6.56
+2008-12,Recife - PE,6.97
+2008-12,Rio de Janeiro - RJ,6.36
+2008-12,Salvador - BA,5.15
+2008-12,São Paulo - SP,5.61
+2009-01,Belo Horizonte - MG,5.6
+2009-01,Belém - PA,7.9
+2009-01,Brasília - DF,5.2
+2009-01,Curitiba - PR,5.65
+2009-01,Fortaleza - CE,5.6
+2009-01,Goiânia - GO,5.51
+2009-01,Porto Alegre - RS,6.69
+2009-01,Recife - PE,6.03
+2009-01,Rio de Janeiro - RJ,6.55
+2009-01,Salvador - BA,5.42
+2009-01,São Paulo - SP,5.28
+2009-02,Belo Horizonte - MG,5.77
+2009-02,Belém - PA,7.82
+2009-02,Brasília - DF,4.9
+2009-02,Curitiba - PR,5.75
+2009-02,Fortaleza - CE,4.94
+2009-02,Goiânia - GO,5.08
+2009-02,Porto Alegre - RS,6.72
+2009-02,Recife - PE,5.65
+2009-02,Rio de Janeiro - RJ,6.67
+2009-02,Salvador - BA,5.42
+2009-02,São Paulo - SP,5.57
+2009-03,Belo Horizonte - MG,5.3
+2009-03,Belém - PA,7.5
+2009-03,Brasília - DF,5.44
+2009-03,Curitiba - PR,5.12
+2009-03,Fortaleza - CE,4.59
+2009-03,Goiânia - GO,5.08
+2009-03,Porto Alegre - RS,6.11
+2009-03,Recife - PE,5.82
+2009-03,Rio de Janeiro - RJ,6.3
+2009-03,Salvador - BA,4.83
+2009-03,São Paulo - SP,5.45
+2009-04,Belo Horizonte - MG,5.8
+2009-04,Belém - PA,6.98
+2009-04,Brasília - DF,5.16
+2009-04,Curitiba - PR,5.3
+2009-04,Fortaleza - CE,4.66
+2009-04,Goiânia - GO,5.34
+2009-04,Porto Alegre - RS,6.11
+2009-04,Recife - PE,5.09
+2009-04,Rio de Janeiro - RJ,6.03
+2009-04,Salvador - BA,4.09
+2009-04,São Paulo - SP,5.46
+2009-05,Belo Horizonte - MG,5.53
+2009-05,Belém - PA,6.89
+2009-05,Brasília - DF,4.99
+2009-05,Curitiba - PR,4.46
+2009-05,Fortaleza - CE,4.64
+2009-05,Goiânia - GO,5.04
+2009-05,Porto Alegre - RS,5.86
+2009-05,Recife - PE,4.7
+2009-05,Rio de Janeiro - RJ,5.96
+2009-05,Salvador - BA,4.44
+2009-05,São Paulo - SP,4.86
+2009-06,Belo Horizonte - MG,4.81
+2009-06,Belém - PA,6.6
+2009-06,Brasília - DF,4.48
+2009-06,Curitiba - PR,4.61
+2009-06,Fortaleza - CE,4.78
+2009-06,Goiânia - GO,4.88
+2009-06,Porto Alegre - RS,5.05
+2009-06,Recife - PE,4.31
+2009-06,Rio de Janeiro - RJ,5.79
+2009-06,Salvador - BA,4.12
+2009-06,São Paulo - SP,4.38
+2009-07,Belo Horizonte - MG,4.44
+2009-07,Belém - PA,5.53
+2009-07,Brasília - DF,4.2
+2009-07,Curitiba - PR,4.22
+2009-07,Fortaleza - CE,4.41
+2009-07,Goiânia - GO,4.33
+2009-07,Porto Alegre - RS,4.53
+2009-07,Recife - PE,4.1
+2009-07,Rio de Janeiro - RJ,5.25
+2009-07,Salvador - BA,3.69
+2009-07,São Paulo - SP,4.42
+2009-08,Belo Horizonte - MG,4.29
+2009-08,Belém - PA,5.04
+2009-08,Brasília - DF,4.51
+2009-08,Curitiba - PR,4.25
+2009-08,Fortaleza - CE,4.57
+2009-08,Goiânia - GO,4.25
+2009-08,Porto Alegre - RS,4.35
+2009-08,Recife - PE,4.33
+2009-08,Rio de Janeiro - RJ,4.68
+2009-08,Salvador - BA,3.82
+2009-08,São Paulo - SP,4.28
+2009-09,Belo Horizonte - MG,4.39
+2009-09,Belém - PA,4.78
+2009-09,Brasília - DF,5.36
+2009-09,Curitiba - PR,4.15
+2009-09,Fortaleza - CE,4.52
+2009-09,Goiânia - GO,3.72
+2009-09,Porto Alegre - RS,4.12
+2009-09,Recife - PE,4.64
+2009-09,Rio de Janeiro - RJ,4.72
+2009-09,Salvador - BA,4.33
+2009-09,São Paulo - SP,4.12
+2009-10,Belo Horizonte - MG,4.45
+2009-10,Belém - PA,4.94
+2009-10,Brasília - DF,4.98
+2009-10,Curitiba - PR,4.36
+2009-10,Fortaleza - CE,4.11
+2009-10,Goiânia - GO,3.09
+2009-10,Porto Alegre - RS,3.96
+2009-10,Recife - PE,4.35
+2009-10,Rio de Janeiro - RJ,4.57
+2009-10,Salvador - BA,4.07
+2009-10,São Paulo - SP,3.88
+2009-11,Belo Horizonte - MG,4.53
+2009-11,Belém - PA,4.74
+2009-11,Brasília - DF,4.72
+2009-11,Curitiba - PR,4.51
+2009-11,Fortaleza - CE,4.4
+2009-11,Goiânia - GO,3.17
+2009-11,Porto Alegre - RS,3.82
+2009-11,Recife - PE,4.45
+2009-11,Rio de Janeiro - RJ,4.44
+2009-11,Salvador - BA,4.04
+2009-11,São Paulo - SP,4.07
+2009-12,Belo Horizonte - MG,4.68
+2009-12,Belém - PA,4.46
+2009-12,Brasília - DF,4.94
+2009-12,Curitiba - PR,4.68
+2009-12,Fortaleza - CE,4.43
+2009-12,Goiânia - GO,3.45
+2009-12,Porto Alegre - RS,3.71
+2009-12,Recife - PE,4.64
+2009-12,Rio de Janeiro - RJ,3.85
+2009-12,Salvador - BA,3.98
+2009-12,São Paulo - SP,4.53
+2010-01,Belo Horizonte - MG,4.07
+2010-01,Belém - PA,4.42
+2010-01,Brasília - DF,4.79
+2010-01,Curitiba - PR,4.63
+2010-01,Fortaleza - CE,4.82
+2010-01,Goiânia - GO,3.86
+2010-01,Porto Alegre - RS,4.03
+2010-01,Recife - PE,5.03
+2010-01,Rio de Janeiro - RJ,4.09
+2010-01,Salvador - BA,3.83
+2010-01,São Paulo - SP,5.32
+2010-02,Belo Horizonte - MG,4.11
+2010-02,Belém - PA,5.26
+2010-02,Brasília - DF,4.9
+2010-02,Curitiba - PR,5.02
+2010-02,Fortaleza - CE,4.9
+2010-02,Goiânia - GO,4.44
+2010-02,Porto Alegre - RS,4.39
+2010-02,Recife - PE,4.81
+2010-02,Rio de Janeiro - RJ,4.28
+2010-02,Salvador - BA,4.46
+2010-02,São Paulo - SP,5.46
+2010-03,Belo Horizonte - MG,4.86
+2010-03,Belém - PA,5.71
+2010-03,Brasília - DF,4.6
+2010-03,Curitiba - PR,5.22
+2010-03,Fortaleza - CE,5.29
+2010-03,Goiânia - GO,4.11
+2010-03,Porto Alegre - RS,5.07
+2010-03,Recife - PE,5.19
+2010-03,Rio de Janeiro - RJ,5.08
+2010-03,Salvador - BA,5.09
+2010-03,São Paulo - SP,5.46
+2010-04,Belo Horizonte - MG,5.1
+2010-04,Belém - PA,5.45
+2010-04,Brasília - DF,5.35
+2010-04,Curitiba - PR,4.92
+2010-04,Fortaleza - CE,5.74
+2010-04,Goiânia - GO,3.82
+2010-04,Porto Alegre - RS,4.7
+2010-04,Recife - PE,5.8
+2010-04,Rio de Janeiro - RJ,5.28
+2010-04,Salvador - BA,5.75
+2010-04,São Paulo - SP,5.47
+2010-05,Belo Horizonte - MG,4.98
+2010-05,Belém - PA,5.5
+2010-05,Brasília - DF,4.89
+2010-05,Curitiba - PR,5.48
+2010-05,Fortaleza - CE,6.11
+2010-05,Goiânia - GO,3.21
+2010-05,Porto Alegre - RS,4.09
+2010-05,Recife - PE,5.09
+2010-05,Rio de Janeiro - RJ,5.4
+2010-05,Salvador - BA,5.84
+2010-05,São Paulo - SP,5.49
+2010-06,Belo Horizonte - MG,4.97
+2010-06,Belém - PA,5.5
+2010-06,Brasília - DF,5.13
+2010-06,Curitiba - PR,4.45
+2010-06,Fortaleza - CE,5.22
+2010-06,Goiânia - GO,2.79
+2010-06,Porto Alegre - RS,3.8
+2010-06,Recife - PE,4.6
+2010-06,Rio de Janeiro - RJ,5.05
+2010-06,Salvador - BA,5.22
+2010-06,São Paulo - SP,5.11
+2010-07,Belo Horizonte - MG,4.85
+2010-07,Belém - PA,5.55
+2010-07,Brasília - DF,5.22
+2010-07,Curitiba - PR,4.41
+2010-07,Fortaleza - CE,4.94
+2010-07,Goiânia - GO,2.81
+2010-07,Porto Alegre - RS,3.86
+2010-07,Recife - PE,4.72
+2010-07,Rio de Janeiro - RJ,4.93
+2010-07,Salvador - BA,5.09
+2010-07,São Paulo - SP,4.51
+2010-08,Belo Horizonte - MG,4.76
+2010-08,Belém - PA,4.91
+2010-08,Brasília - DF,4.59
+2010-08,Curitiba - PR,5.29
+2010-08,Fortaleza - CE,4.51
+2010-08,Goiânia - GO,2.95
+2010-08,Porto Alegre - RS,4.08
+2010-08,Recife - PE,3.85
+2010-08,Rio de Janeiro - RJ,5.04
+2010-08,Salvador - BA,4.73
+2010-08,São Paulo - SP,4.26
+2010-09,Belo Horizonte - MG,4.91
+2010-09,Belém - PA,5.26
+2010-09,Brasília - DF,5.13
+2010-09,Curitiba - PR,5.29
+2010-09,Fortaleza - CE,4.58
+2010-09,Goiânia - GO,3.46
+2010-09,Porto Alegre - RS,4.01
+2010-09,Recife - PE,3.86
+2010-09,Rio de Janeiro - RJ,5.13
+2010-09,Salvador - BA,4.45
+2010-09,São Paulo - SP,4.74
+2010-10,Belo Horizonte - MG,5.74
+2010-10,Belém - PA,5.77
+2010-10,Brasília - DF,5.66
+2010-10,Curitiba - PR,5.48
+2010-10,Fortaleza - CE,5.07
+2010-10,Goiânia - GO,4.66
+2010-10,Porto Alegre - RS,4.52
+2010-10,Recife - PE,4.17
+2010-10,Rio de Janeiro - RJ,5.16
+2010-10,Salvador - BA,5.25
+2010-10,São Paulo - SP,5.25
+2010-11,Belo Horizonte - MG,6.02
+2010-11,Belém - PA,6.82
+2010-11,Brasília - DF,5.7
+2010-11,Curitiba - PR,6.17
+2010-11,Fortaleza - CE,6.02
+2010-11,Goiânia - GO,5.02
+2010-11,Porto Alegre - RS,4.58
+2010-11,Recife - PE,4.28
+2010-11,Rio de Janeiro - RJ,5.88
+2010-11,Salvador - BA,6.16
+2010-11,São Paulo - SP,5.52
+2010-12,Belo Horizonte - MG,5.84
+2010-12,Belém - PA,6.85
+2010-12,Brasília - DF,5.72
+2010-12,Curitiba - PR,6.69
+2010-12,Fortaleza - CE,6.53
+2010-12,Goiânia - GO,5.13
+2010-12,Porto Alegre - RS,5.13
+2010-12,Recife - PE,4.61
+2010-12,Rio de Janeiro - RJ,6.4
+2010-12,Salvador - BA,6.22
+2010-12,São Paulo - SP,5.78
+2011-01,Belo Horizonte - MG,6.5
+2011-01,Belém - PA,6.92
+2011-01,Brasília - DF,6.03
+2011-01,Curitiba - PR,7.15
+2011-01,Fortaleza - CE,6.67
+2011-01,Goiânia - GO,5.12
+2011-01,Porto Alegre - RS,5.05
+2011-01,Recife - PE,4.98
+2011-01,Rio de Janeiro - RJ,6.34
+2011-01,Salvador - BA,6.41
+2011-01,São Paulo - SP,5.66
+2011-02,Belo Horizonte - MG,6.43
+2011-02,Belém - PA,5.96
+2011-02,Brasília - DF,6.34
+2011-02,Curitiba - PR,7.14
+2011-02,Fortaleza - CE,6.8
+2011-02,Goiânia - GO,5.2
+2011-02,Porto Alegre - RS,5.14
+2011-02,Recife - PE,5.25
+2011-02,Rio de Janeiro - RJ,6.22
+2011-02,Salvador - BA,6.0
+2011-02,São Paulo - SP,5.89
+2011-03,Belo Horizonte - MG,6.51
+2011-03,Belém - PA,5.58
+2011-03,Brasília - DF,7.53
+2011-03,Curitiba - PR,7.73
+2011-03,Fortaleza - CE,7.88
+2011-03,Goiânia - GO,6.27
+2011-03,Porto Alegre - RS,5.09
+2011-03,Recife - PE,5.25
+2011-03,Rio de Janeiro - RJ,6.09
+2011-03,Salvador - BA,5.69
+2011-03,São Paulo - SP,6.39
+2011-04,Belo Horizonte - MG,6.34
+2011-04,Belém - PA,5.39
+2011-04,Brasília - DF,6.91
+2011-04,Curitiba - PR,8.47
+2011-04,Fortaleza - CE,7.64
+2011-04,Goiânia - GO,7.12
+2011-04,Porto Alegre - RS,5.59
+2011-04,Recife - PE,5.06
+2011-04,Rio de Janeiro - RJ,6.29
+2011-04,Salvador - BA,5.65
+2011-04,São Paulo - SP,6.75
+2011-05,Belo Horizonte - MG,6.68
+2011-05,Belém - PA,5.75
+2011-05,Brasília - DF,6.76
+2011-05,Curitiba - PR,8.28
+2011-05,Fortaleza - CE,6.89
+2011-05,Goiânia - GO,7.31
+2011-05,Porto Alegre - RS,6.06
+2011-05,Recife - PE,5.67
+2011-05,Rio de Janeiro - RJ,6.18
+2011-05,Salvador - BA,5.44
+2011-05,São Paulo - SP,6.75
+2011-06,Belo Horizonte - MG,6.88
+2011-06,Belém - PA,5.86
+2011-06,Brasília - DF,6.58
+2011-06,Curitiba - PR,8.28
+2011-06,Fortaleza - CE,7.17
+2011-06,Goiânia - GO,7.21
+2011-06,Porto Alegre - RS,6.36
+2011-06,Recife - PE,6.08
+2011-06,Rio de Janeiro - RJ,6.27
+2011-06,Salvador - BA,5.48
+2011-06,São Paulo - SP,6.98
+2011-07,Belo Horizonte - MG,7.06
+2011-07,Belém - PA,5.74
+2011-07,Brasília - DF,7.02
+2011-07,Curitiba - PR,8.26
+2011-07,Fortaleza - CE,7.42
+2011-07,Goiânia - GO,7.34
+2011-07,Porto Alegre - RS,6.39
+2011-07,Recife - PE,5.87
+2011-07,Rio de Janeiro - RJ,6.55
+2011-07,Salvador - BA,6.01
+2011-07,São Paulo - SP,7.12
+2011-08,Belo Horizonte - MG,7.5
+2011-08,Belém - PA,6.49
+2011-08,Brasília - DF,7.61
+2011-08,Curitiba - PR,7.76
+2011-08,Fortaleza - CE,7.83
+2011-08,Goiânia - GO,7.29
+2011-08,Porto Alegre - RS,6.28
+2011-08,Recife - PE,6.85
+2011-08,Rio de Janeiro - RJ,7.04
+2011-08,Salvador - BA,6.61
+2011-08,São Paulo - SP,7.53
+2011-09,Belo Horizonte - MG,7.69
+2011-09,Belém - PA,6.26
+2011-09,Brasília - DF,7.63
+2011-09,Curitiba - PR,8.3
+2011-09,Fortaleza - CE,7.78
+2011-09,Goiânia - GO,7.22
+2011-09,Porto Alegre - RS,6.62
+2011-09,Recife - PE,6.99
+2011-09,Rio de Janeiro - RJ,7.19
+2011-09,Salvador - BA,7.17
+2011-09,São Paulo - SP,7.35
+2011-10,Belo Horizonte - MG,7.14
+2011-10,Belém - PA,5.43
+2011-10,Brasília - DF,7.55
+2011-10,Curitiba - PR,8.14
+2011-10,Fortaleza - CE,7.61
+2011-10,Goiânia - GO,6.35
+2011-10,Porto Alegre - RS,6.99
+2011-10,Recife - PE,6.39
+2011-10,Rio de Janeiro - RJ,7.2
+2011-10,Salvador - BA,6.25
+2011-10,São Paulo - SP,6.92
+2011-11,Belo Horizonte - MG,6.7
+2011-11,Belém - PA,4.67
+2011-11,Brasília - DF,7.27
+2011-11,Curitiba - PR,7.33
+2011-11,Fortaleza - CE,6.75
+2011-11,Goiânia - GO,6.27
+2011-11,Porto Alegre - RS,6.9
+2011-11,Recife - PE,6.38
+2011-11,Rio de Janeiro - RJ,6.61
+2011-11,Salvador - BA,5.89
+2011-11,São Paulo - SP,6.81
+2011-12,Belo Horizonte - MG,6.79
+2011-12,Belém - PA,4.74
+2011-12,Brasília - DF,7.0
+2011-12,Curitiba - PR,7.12
+2011-12,Fortaleza - CE,6.46
+2011-12,Goiânia - GO,6.18
+2011-12,Porto Alegre - RS,6.51
+2011-12,Recife - PE,6.07
+2011-12,Rio de Janeiro - RJ,6.58
+2011-12,Salvador - BA,6.5
+2011-12,São Paulo - SP,6.49
+2012-01,Belo Horizonte - MG,6.27
+2012-01,Belém - PA,4.48
+2012-01,Brasília - DF,7.26
+2012-01,Curitiba - PR,6.63
+2012-01,Fortaleza - CE,5.83
+2012-01,Goiânia - GO,6.08
+2012-01,Porto Alegre - RS,6.34
+2012-01,Recife - PE,5.97
+2012-01,Rio de Janeiro - RJ,6.76
+2012-01,Salvador - BA,5.86
+2012-01,São Paulo - SP,6.12
+2012-02,Belo Horizonte - MG,6.14
+2012-02,Belém - PA,4.63
+2012-02,Brasília - DF,6.45
+2012-02,Curitiba - PR,6.1
+2012-02,Fortaleza - CE,5.76
+2012-02,Goiânia - GO,5.29
+2012-02,Porto Alegre - RS,5.93
+2012-02,Recife - PE,5.86
+2012-02,Rio de Janeiro - RJ,7.03
+2012-02,Salvador - BA,5.54
+2012-02,São Paulo - SP,5.42
+2012-03,Belo Horizonte - MG,5.63
+2012-03,Belém - PA,4.69
+2012-03,Brasília - DF,5.68
+2012-03,Curitiba - PR,5.09
+2012-03,Fortaleza - CE,5.05
+2012-03,Goiânia - GO,4.57
+2012-03,Porto Alegre - RS,5.38
+2012-03,Recife - PE,5.59
+2012-03,Rio de Janeiro - RJ,6.27
+2012-03,Salvador - BA,5.51
+2012-03,São Paulo - SP,4.68
+2012-04,Belo Horizonte - MG,5.68
+2012-04,Belém - PA,5.07
+2012-04,Brasília - DF,5.64
+2012-04,Curitiba - PR,4.57
+2012-04,Fortaleza - CE,5.08
+2012-04,Goiânia - GO,3.95
+2012-04,Porto Alegre - RS,5.11
+2012-04,Recife - PE,5.55
+2012-04,Rio de Janeiro - RJ,6.26
+2012-04,Salvador - BA,5.25
+2012-04,São Paulo - SP,4.54
+2012-05,Belo Horizonte - MG,5.63
+2012-05,Belém - PA,4.95
+2012-05,Brasília - DF,5.68
+2012-05,Curitiba - PR,4.52
+2012-05,Fortaleza - CE,5.14
+2012-05,Goiânia - GO,3.83
+2012-05,Porto Alegre - RS,5.04
+2012-05,Recife - PE,5.51
+2012-05,Rio de Janeiro - RJ,5.7
+2012-05,Salvador - BA,5.37
+2012-05,São Paulo - SP,4.43
+2012-06,Belo Horizonte - MG,5.45
+2012-06,Belém - PA,4.93
+2012-06,Brasília - DF,5.5
+2012-06,Curitiba - PR,4.74
+2012-06,Fortaleza - CE,4.64
+2012-06,Goiânia - GO,4.09
+2012-06,Porto Alegre - RS,4.95
+2012-06,Recife - PE,5.3
+2012-06,Rio de Janeiro - RJ,5.81
+2012-06,Salvador - BA,5.56
+2012-06,São Paulo - SP,4.21
+2012-07,Belo Horizonte - MG,5.74
+2012-07,Belém - PA,5.23
+2012-07,Brasília - DF,5.39
+2012-07,Curitiba - PR,4.81
+2012-07,Fortaleza - CE,4.87
+2012-07,Goiânia - GO,4.58
+2012-07,Porto Alegre - RS,5.37
+2012-07,Recife - PE,5.77
+2012-07,Rio de Janeiro - RJ,6.27
+2012-07,Salvador - BA,5.78
+2012-07,São Paulo - SP,4.46
+2012-08,Belo Horizonte - MG,5.66
+2012-08,Belém - PA,5.55
+2012-08,Brasília - DF,5.35
+2012-08,Curitiba - PR,5.23
+2012-08,Fortaleza - CE,5.17
+2012-08,Goiânia - GO,4.53
+2012-08,Porto Alegre - RS,5.73
+2012-08,Recife - PE,5.77
+2012-08,Rio de Janeiro - RJ,6.25
+2012-08,Salvador - BA,5.74
+2012-08,São Paulo - SP,4.37
+2012-09,Belo Horizonte - MG,5.71
+2012-09,Belém - PA,6.14
+2012-09,Brasília - DF,4.95
+2012-09,Curitiba - PR,4.63
+2012-09,Fortaleza - CE,5.49
+2012-09,Goiânia - GO,4.82
+2012-09,Porto Alegre - RS,5.81
+2012-09,Recife - PE,6.16
+2012-09,Rio de Janeiro - RJ,6.58
+2012-09,Salvador - BA,5.57
+2012-09,São Paulo - SP,4.33
+2012-10,Belo Horizonte - MG,5.67
+2012-10,Belém - PA,7.04
+2012-10,Brasília - DF,5.02
+2012-10,Curitiba - PR,4.49
+2012-10,Fortaleza - CE,5.91
+2012-10,Goiânia - GO,5.42
+2012-10,Porto Alegre - RS,5.3
+2012-10,Recife - PE,6.86
+2012-10,Rio de Janeiro - RJ,6.63
+2012-10,Salvador - BA,6.49
+2012-10,São Paulo - SP,4.49
+2012-11,Belo Horizonte - MG,5.93
+2012-11,Belém - PA,7.68
+2012-11,Brasília - DF,4.9
+2012-11,Curitiba - PR,5.37
+2012-11,Fortaleza - CE,5.89
+2012-11,Goiânia - GO,5.1
+2012-11,Porto Alegre - RS,5.12
+2012-11,Recife - PE,6.75
+2012-11,Rio de Janeiro - RJ,6.67
+2012-11,Salvador - BA,6.44
+2012-11,São Paulo - SP,4.49
+2012-12,Belo Horizonte - MG,6.03
+2012-12,Belém - PA,8.3
+2012-12,Brasília - DF,5.41
+2012-12,Curitiba - PR,5.74
+2012-12,Fortaleza - CE,6.7
+2012-12,Goiânia - GO,5.41
+2012-12,Porto Alegre - RS,5.58
+2012-12,Recife - PE,6.78
+2012-12,Rio de Janeiro - RJ,7.34
+2012-12,Salvador - BA,6.21
+2012-12,São Paulo - SP,4.72
+2013-01,Belo Horizonte - MG,6.1
+2013-01,Belém - PA,8.79
+2013-01,Brasília - DF,5.09
+2013-01,Curitiba - PR,6.08
+2013-01,Fortaleza - CE,7.7
+2013-01,Goiânia - GO,5.86
+2013-01,Porto Alegre - RS,6.16
+2013-01,Recife - PE,7.25
+2013-01,Rio de Janeiro - RJ,6.93
+2013-01,Salvador - BA,6.75
+2013-01,São Paulo - SP,5.2
+2013-02,Belo Horizonte - MG,6.37
+2013-02,Belém - PA,8.76
+2013-02,Brasília - DF,5.84
+2013-02,Curitiba - PR,6.29
+2013-02,Fortaleza - CE,8.31
+2013-02,Goiânia - GO,6.3
+2013-02,Porto Alegre - RS,6.07
+2013-02,Recife - PE,7.43
+2013-02,Rio de Janeiro - RJ,6.19
+2013-02,Salvador - BA,7.04
+2013-02,São Paulo - SP,5.54
+2013-03,Belo Horizonte - MG,6.62
+2013-03,Belém - PA,9.19
+2013-03,Brasília - DF,5.84
+2013-03,Curitiba - PR,6.46
+2013-03,Fortaleza - CE,8.1
+2013-03,Goiânia - GO,6.69
+2013-03,Porto Alegre - RS,6.31
+2013-03,Recife - PE,7.31
+2013-03,Rio de Janeiro - RJ,6.53
+2013-03,Salvador - BA,7.27
+2013-03,São Paulo - SP,5.97
+2013-04,Belo Horizonte - MG,6.72
+2013-04,Belém - PA,9.05
+2013-04,Brasília - DF,5.82
+2013-04,Curitiba - PR,6.35
+2013-04,Fortaleza - CE,8.22
+2013-04,Goiânia - GO,6.7
+2013-04,Porto Alegre - RS,5.83
+2013-04,Recife - PE,7.65
+2013-04,Rio de Janeiro - RJ,6.3
+2013-04,Salvador - BA,7.3
+2013-04,São Paulo - SP,5.85
+2013-05,Belo Horizonte - MG,6.53
+2013-05,Belém - PA,8.41
+2013-05,Brasília - DF,6.28
+2013-05,Curitiba - PR,6.19
+2013-05,Fortaleza - CE,8.18
+2013-05,Goiânia - GO,6.83
+2013-05,Porto Alegre - RS,5.9
+2013-05,Recife - PE,7.79
+2013-05,Rio de Janeiro - RJ,6.89
+2013-05,Salvador - BA,6.79
+2013-05,São Paulo - SP,5.84
+2013-06,Belo Horizonte - MG,6.66
+2013-06,Belém - PA,8.08
+2013-06,Brasília - DF,6.46
+2013-06,Curitiba - PR,6.12
+2013-06,Fortaleza - CE,8.56
+2013-06,Goiânia - GO,6.7
+2013-06,Porto Alegre - RS,6.02
+2013-06,Recife - PE,7.79
+2013-06,Rio de Janeiro - RJ,7.34
+2013-06,Salvador - BA,7.01
+2013-06,São Paulo - SP,6.14
+2013-07,Belo Horizonte - MG,6.3
+2013-07,Belém - PA,7.91
+2013-07,Brasília - DF,5.8
+2013-07,Curitiba - PR,6.25
+2013-07,Fortaleza - CE,8.19
+2013-07,Goiânia - GO,5.81
+2013-07,Porto Alegre - RS,5.49
+2013-07,Recife - PE,7.47
+2013-07,Rio de Janeiro - RJ,6.59
+2013-07,Salvador - BA,6.22
+2013-07,São Paulo - SP,5.83
+2013-08,Belo Horizonte - MG,5.91
+2013-08,Belém - PA,7.58
+2013-08,Brasília - DF,5.92
+2013-08,Curitiba - PR,6.08
+2013-08,Fortaleza - CE,7.36
+2013-08,Goiânia - GO,5.92
+2013-08,Porto Alegre - RS,5.41
+2013-08,Recife - PE,7.23
+2013-08,Rio de Janeiro - RJ,6.32
+2013-08,Salvador - BA,6.02
+2013-08,São Paulo - SP,5.77
+2013-09,Belo Horizonte - MG,5.54
+2013-09,Belém - PA,7.0
+2013-09,Brasília - DF,6.2
+2013-09,Curitiba - PR,6.01
+2013-09,Fortaleza - CE,7.08
+2013-09,Goiânia - GO,5.51
+2013-09,Porto Alegre - RS,5.46
+2013-09,Recife - PE,6.86
+2013-09,Rio de Janeiro - RJ,5.96
+2013-09,Salvador - BA,5.47
+2013-09,São Paulo - SP,5.66
+2013-10,Belo Horizonte - MG,5.49
+2013-10,Belém - PA,6.54
+2013-10,Brasília - DF,5.91
+2013-10,Curitiba - PR,6.27
+2013-10,Fortaleza - CE,6.64
+2013-10,Goiânia - GO,5.55
+2013-10,Porto Alegre - RS,5.51
+2013-10,Recife - PE,6.81
+2013-10,Rio de Janeiro - RJ,6.03
+2013-10,Salvador - BA,4.7
+2013-10,São Paulo - SP,5.83
+2013-11,Belo Horizonte - MG,5.46
+2013-11,Belém - PA,5.75
+2013-11,Brasília - DF,6.12
+2013-11,Curitiba - PR,5.59
+2013-11,Fortaleza - CE,6.92
+2013-11,Goiânia - GO,5.67
+2013-11,Porto Alegre - RS,5.72
+2013-11,Recife - PE,6.74
+2013-11,Rio de Janeiro - RJ,6.3
+2013-11,Salvador - BA,4.42
+2013-11,São Paulo - SP,5.75
+2013-12,Belo Horizonte - MG,5.75
+2013-12,Belém - PA,5.33
+2013-12,Brasília - DF,5.98
+2013-12,Curitiba - PR,5.67
+2013-12,Fortaleza - CE,6.37
+2013-12,Goiânia - GO,5.6
+2013-12,Porto Alegre - RS,5.77
+2013-12,Recife - PE,6.85
+2013-12,Rio de Janeiro - RJ,6.16
+2013-12,Salvador - BA,5.02
+2013-12,São Paulo - SP,6.09
+2014-01,Belo Horizonte - MG,5.67
+2014-01,Belém - PA,4.74
+2014-01,Brasília - DF,5.42
+2014-01,Curitiba - PR,5.76
+2014-01,Fortaleza - CE,5.78
+2014-01,Goiânia - GO,5.31
+2014-01,Porto Alegre - RS,5.42
+2014-01,Recife - PE,6.49
+2014-01,Rio de Janeiro - RJ,5.92
+2014-01,Salvador - BA,4.88
+2014-01,São Paulo - SP,5.61
+2014-02,Belo Horizonte - MG,5.55
+2014-02,Belém - PA,4.54
+2014-02,Brasília - DF,4.49
+2014-02,Curitiba - PR,5.66
+2014-02,Fortaleza - CE,5.23
+2014-02,Goiânia - GO,5.29
+2014-02,Porto Alegre - RS,5.53
+2014-02,Recife - PE,6.05
+2014-02,Rio de Janeiro - RJ,6.79
+2014-02,Salvador - BA,4.68
+2014-02,São Paulo - SP,5.93
+2014-03,Belo Horizonte - MG,5.71
+2014-03,Belém - PA,4.27
+2014-03,Brasília - DF,6.08
+2014-03,Curitiba - PR,6.35
+2014-03,Fortaleza - CE,5.32
+2014-03,Goiânia - GO,5.68
+2014-03,Porto Alegre - RS,6.03
+2014-03,Recife - PE,6.21
+2014-03,Rio de Janeiro - RJ,7.86
+2014-03,Salvador - BA,4.89
+2014-03,São Paulo - SP,6.41
+2014-04,Belo Horizonte - MG,5.83
+2014-04,Belém - PA,4.14
+2014-04,Brasília - DF,6.27
+2014-04,Curitiba - PR,6.62
+2014-04,Fortaleza - CE,5.63
+2014-04,Goiânia - GO,6.23
+2014-04,Porto Alegre - RS,6.83
+2014-04,Recife - PE,6.11
+2014-04,Rio de Janeiro - RJ,7.68
+2014-04,Salvador - BA,5.31
+2014-04,São Paulo - SP,6.33
+2014-05,Belo Horizonte - MG,6.04
+2014-05,Belém - PA,5.13
+2014-05,Brasília - DF,5.66
+2014-05,Curitiba - PR,6.79
+2014-05,Fortaleza - CE,6.3
+2014-05,Goiânia - GO,6.07
+2014-05,Porto Alegre - RS,7.1
+2014-05,Recife - PE,6.55
+2014-05,Rio de Janeiro - RJ,7.59
+2014-05,Salvador - BA,5.45
+2014-05,São Paulo - SP,6.24
+2014-06,Belo Horizonte - MG,6.27
+2014-06,Belém - PA,5.43
+2014-06,Brasília - DF,6.02
+2014-06,Curitiba - PR,7.19
+2014-06,Fortaleza - CE,6.57
+2014-06,Goiânia - GO,6.3
+2014-06,Porto Alegre - RS,7.22
+2014-06,Recife - PE,7.15
+2014-06,Rio de Janeiro - RJ,7.33
+2014-06,Salvador - BA,5.74
+2014-06,São Paulo - SP,6.32
+2014-07,Belo Horizonte - MG,6.25
+2014-07,Belém - PA,5.34
+2014-07,Brasília - DF,5.9
+2014-07,Curitiba - PR,7.21
+2014-07,Fortaleza - CE,6.19
+2014-07,Goiânia - GO,6.57
+2014-07,Porto Alegre - RS,7.17
+2014-07,Recife - PE,6.87
+2014-07,Rio de Janeiro - RJ,7.41
+2014-07,Salvador - BA,5.29
+2014-07,São Paulo - SP,6.45
+2014-08,Belo Horizonte - MG,6.23
+2014-08,Belém - PA,5.94
+2014-08,Brasília - DF,6.1
+2014-08,Curitiba - PR,6.85
+2014-08,Fortaleza - CE,6.38
+2014-08,Goiânia - GO,6.46
+2014-08,Porto Alegre - RS,6.9
+2014-08,Recife - PE,7.01
+2014-08,Rio de Janeiro - RJ,7.66
+2014-08,Salvador - BA,5.51
+2014-08,São Paulo - SP,6.36
+2014-09,Belo Horizonte - MG,6.4
+2014-09,Belém - PA,6.26
+2014-09,Brasília - DF,6.4
+2014-09,Curitiba - PR,7.13
+2014-09,Fortaleza - CE,6.42
+2014-09,Goiânia - GO,6.28
+2014-09,Porto Alegre - RS,6.67
+2014-09,Recife - PE,7.15
+2014-09,Rio de Janeiro - RJ,7.62
+2014-09,Salvador - BA,6.52
+2014-09,São Paulo - SP,6.67
+2014-10,Belo Horizonte - MG,6.34
+2014-10,Belém - PA,5.95
+2014-10,Brasília - DF,6.41
+2014-10,Curitiba - PR,6.76
+2014-10,Fortaleza - CE,6.36
+2014-10,Goiânia - GO,6.13
+2014-10,Porto Alegre - RS,6.87
+2014-10,Recife - PE,6.71
+2014-10,Rio de Janeiro - RJ,7.6
+2014-10,Salvador - BA,6.43
+2014-10,São Paulo - SP,6.38
+2014-11,Belo Horizonte - MG,6.22
+2014-11,Belém - PA,6.21
+2014-11,Brasília - DF,5.99
+2014-11,Curitiba - PR,6.68
+2014-11,Fortaleza - CE,6.17
+2014-11,Goiânia - GO,6.84
+2014-11,Porto Alegre - RS,6.64
+2014-11,Recife - PE,6.82
+2014-11,Rio de Janeiro - RJ,7.36
+2014-11,Salvador - BA,6.48
+2014-11,São Paulo - SP,6.44
+2014-12,Belo Horizonte - MG,5.84
+2014-12,Belém - PA,6.6
+2014-12,Brasília - DF,6.29
+2014-12,Campo Grande - MS,6.77
+2014-12,Curitiba - PR,6.66
+2014-12,Fortaleza - CE,6.04
+2014-12,Goiânia - GO,7.22
+2014-12,Grande Vitória - ES,6.16
+2014-12,Porto Alegre - RS,6.78
+2014-12,Recife - PE,6.31
+2014-12,Rio de Janeiro - RJ,7.6
+2014-12,Salvador - BA,5.76
+2014-12,São Paulo - SP,6.11
+2015-01,Belo Horizonte - MG,6.28
+2015-01,Belém - PA,7.15
+2015-01,Brasília - DF,7.2
+2015-01,Campo Grande - MS,7.77
+2015-01,Curitiba - PR,6.85
+2015-01,Fortaleza - CE,6.71
+2015-01,Goiânia - GO,7.88
+2015-01,Grande Vitória - ES,6.84
+2015-01,Porto Alegre - RS,7.48
+2015-01,Recife - PE,6.32
+2015-01,Rio de Janeiro - RJ,8.9
+2015-01,Salvador - BA,5.94
+2015-01,São Paulo - SP,7.15
+2015-02,Belo Horizonte - MG,6.65
+2015-02,Belém - PA,7.88
+2015-02,Brasília - DF,7.94
+2015-02,Campo Grande - MS,7.85
+2015-02,Curitiba - PR,7.93
+2015-02,Fortaleza - CE,7.38
+2015-02,Goiânia - GO,8.98
+2015-02,Grande Vitória - ES,6.99
+2015-02,Porto Alegre - RS,8.19
+2015-02,Recife - PE,7.46
+2015-02,Rio de Janeiro - RJ,9.03
+2015-02,Salvador - BA,7.18
+2015-02,São Paulo - SP,7.44
+2015-03,Belo Horizonte - MG,7.39
+2015-03,Belém - PA,7.94
+2015-03,Brasília - DF,7.15
+2015-03,Campo Grande - MS,8.77
+2015-03,Curitiba - PR,8.66
+2015-03,Fortaleza - CE,8.31
+2015-03,Goiânia - GO,9.56
+2015-03,Grande Vitória - ES,7.89
+2015-03,Porto Alegre - RS,9.14
+2015-03,Recife - PE,7.5
+2015-03,Rio de Janeiro - RJ,9.1
+2015-03,Salvador - BA,7.35
+2015-03,São Paulo - SP,7.85
+2015-04,Belo Horizonte - MG,7.28
+2015-04,Belém - PA,8.34
+2015-04,Brasília - DF,7.4
+2015-04,Campo Grande - MS,8.59
+2015-04,Curitiba - PR,9.29
+2015-04,Fortaleza - CE,7.86
+2015-04,Goiânia - GO,9.25
+2015-04,Grande Vitória - ES,7.82
+2015-04,Porto Alegre - RS,8.62
+2015-04,Recife - PE,7.47
+2015-04,Rio de Janeiro - RJ,9.53
+2015-04,Salvador - BA,7.02
+2015-04,São Paulo - SP,7.96
+2015-05,Belo Horizonte - MG,7.32
+2015-05,Belém - PA,8.41
+2015-05,Brasília - DF,7.75
+2015-05,Campo Grande - MS,9.2
+2015-05,Curitiba - PR,9.62
+2015-05,Fortaleza - CE,8.16
+2015-05,Goiânia - GO,9.43
+2015-05,Grande Vitória - ES,8.22
+2015-05,Porto Alegre - RS,8.86
+2015-05,Recife - PE,7.84
+2015-05,Rio de Janeiro - RJ,9.31
+2015-05,Salvador - BA,7.46
+2015-05,São Paulo - SP,8.58
+2015-06,Belo Horizonte - MG,7.65
+2015-06,Belém - PA,9.29
+2015-06,Brasília - DF,8.29
+2015-06,Campo Grande - MS,8.98
+2015-06,Curitiba - PR,10.2
+2015-06,Fortaleza - CE,8.76
+2015-06,Goiânia - GO,9.37
+2015-06,Grande Vitória - ES,8.27
+2015-06,Porto Alegre - RS,9.36
+2015-06,Recife - PE,8.13
+2015-06,Rio de Janeiro - RJ,9.58
+2015-06,Salvador - BA,7.85
+2015-06,São Paulo - SP,9.03
+2015-07,Belo Horizonte - MG,8.3
+2015-07,Belém - PA,9.23
+2015-07,Brasília - DF,8.95
+2015-07,Campo Grande - MS,9.82
+2015-07,Curitiba - PR,10.63
+2015-07,Fortaleza - CE,9.24
+2015-07,Goiânia - GO,10.27
+2015-07,Grande Vitória - ES,8.62
+2015-07,Porto Alegre - RS,10.19
+2015-07,Recife - PE,9.15
+2015-07,Rio de Janeiro - RJ,10.17
+2015-07,Salvador - BA,8.84
+2015-07,São Paulo - SP,9.7
+2015-08,Belo Horizonte - MG,8.38
+2015-08,Belém - PA,8.52
+2015-08,Brasília - DF,8.07
+2015-08,Campo Grande - MS,10.18
+2015-08,Curitiba - PR,11.06
+2015-08,Fortaleza - CE,9.51
+2015-08,Goiânia - GO,10.18
+2015-08,Grande Vitória - ES,7.91
+2015-08,Porto Alegre - RS,10.33
+2015-08,Recife - PE,9.03
+2015-08,Rio de Janeiro - RJ,9.69
+2015-08,Salvador - BA,8.9
+2015-08,São Paulo - SP,9.76
+2015-09,Belo Horizonte - MG,8.32
+2015-09,Belém - PA,8.15
+2015-09,Brasília - DF,8.36
+2015-09,Campo Grande - MS,8.92
+2015-09,Curitiba - PR,11.12
+2015-09,Fortaleza - CE,9.64
+2015-09,Goiânia - GO,10.75
+2015-09,Grande Vitória - ES,8.11
+2015-09,Porto Alegre - RS,10.49
+2015-09,Recife - PE,8.6
+2015-09,Rio de Janeiro - RJ,9.83
+2015-09,Salvador - BA,8.13
+2015-09,São Paulo - SP,9.83
+2015-10,Belo Horizonte - MG,8.59
+2015-10,Belém - PA,8.99
+2015-10,Brasília - DF,9.19
+2015-10,Campo Grande - MS,9.34
+2015-10,Curitiba - PR,11.52
+2015-10,Fortaleza - CE,10.03
+2015-10,Goiânia - GO,11.19
+2015-10,Grande Vitória - ES,8.44
+2015-10,Porto Alegre - RS,10.48
+2015-10,Recife - PE,9.24
+2015-10,Rio de Janeiro - RJ,9.9
+2015-10,Salvador - BA,8.72
+2015-10,São Paulo - SP,10.45
+2015-11,Belo Horizonte - MG,9.06
+2015-11,Belém - PA,9.52
+2015-11,Brasília - DF,9.75
+2015-11,Campo Grande - MS,10.15
+2015-11,Curitiba - PR,12.24
+2015-11,Fortaleza - CE,10.53
+2015-11,Goiânia - GO,11.44
+2015-11,Grande Vitória - ES,9.29
+2015-11,Porto Alegre - RS,11.19
+2015-11,Recife - PE,9.51
+2015-11,Rio de Janeiro - RJ,10.69
+2015-11,Salvador - BA,9.53
+2015-11,São Paulo - SP,10.87
+2015-12,Belo Horizonte - MG,9.21
+2015-12,Belém - PA,9.95
+2015-12,Brasília - DF,9.65
+2015-12,Campo Grande - MS,9.96
+2015-12,Curitiba - PR,12.57
+2015-12,Fortaleza - CE,11.43
+2015-12,Goiânia - GO,11.1
+2015-12,Grande Vitória - ES,9.46
+2015-12,Porto Alegre - RS,11.21
+2015-12,Recife - PE,10.14
+2015-12,Rio de Janeiro - RJ,10.52
+2015-12,Salvador - BA,9.85
+2015-12,São Paulo - SP,11.1
+2016-01,Belo Horizonte - MG,9.34
+2016-01,Belém - PA,9.99
+2016-01,Brasília - DF,9.81
+2016-01,Campo Grande - MS,9.99
+2016-01,Curitiba - PR,12.33
+2016-01,Fortaleza - CE,11.84
+2016-01,Goiânia - GO,11.06
+2016-01,Grande Vitória - ES,9.4
+2016-01,Porto Alegre - RS,11.62
+2016-01,Recife - PE,10.96
+2016-01,Rio de Janeiro - RJ,10.64
+2016-01,Salvador - BA,10.73
+2016-01,São Paulo - SP,10.65
+2016-02,Belo Horizonte - MG,9.24
+2016-02,Belém - PA,10.03
+2016-02,Brasília - DF,9.95
+2016-02,Campo Grande - MS,9.79
+2016-02,Curitiba - PR,11.72
+2016-02,Fortaleza - CE,11.81
+2016-02,Goiânia - GO,10.41
+2016-02,Grande Vitória - ES,8.95
+2016-02,Porto Alegre - RS,11.44
+2016-02,Recife - PE,10.58
+2016-02,Rio de Janeiro - RJ,10.08
+2016-02,Salvador - BA,10.46
+2016-02,São Paulo - SP,10.18
+2016-03,Belo Horizonte - MG,8.18
+2016-03,Belém - PA,9.98
+2016-03,Brasília - DF,8.79
+2016-03,Campo Grande - MS,8.32
+2016-03,Curitiba - PR,10.49
+2016-03,Fortaleza - CE,10.88
+2016-03,Goiânia - GO,9.46
+2016-03,Grande Vitória - ES,7.56
+2016-03,Porto Alegre - RS,10.19
+2016-03,Recife - PE,9.92
+2016-03,Rio de Janeiro - RJ,8.93
+2016-03,Salvador - BA,9.35
+2016-03,São Paulo - SP,9.38
+2016-04,Belo Horizonte - MG,8.24
+2016-04,Belém - PA,9.99
+2016-04,Brasília - DF,8.34
+2016-04,Campo Grande - MS,8.34
+2016-04,Curitiba - PR,9.72
+2016-04,Fortaleza - CE,11.28
+2016-04,Goiânia - GO,9.44
+2016-04,Grande Vitória - ES,7.65
+2016-04,Porto Alegre - RS,10.56
+2016-04,Recife - PE,9.82
+2016-04,Rio de Janeiro - RJ,8.73
+2016-04,Salvador - BA,9.48
+2016-04,São Paulo - SP,9.14
+2016-05,Belo Horizonte - MG,8.32
+2016-05,Belém - PA,9.7
+2016-05,Brasília - DF,8.56
+2016-05,Campo Grande - MS,8.18
+2016-05,Curitiba - PR,9.58
+2016-05,Fortaleza - CE,11.01
+2016-05,Goiânia - GO,9.11
+2016-05,Grande Vitória - ES,7.58
+2016-05,Porto Alegre - RS,10.51
+2016-05,Recife - PE,9.16
+2016-05,Rio de Janeiro - RJ,9.0
+2016-05,Salvador - BA,9.53
+2016-05,São Paulo - SP,9.4
+2016-06,Belo Horizonte - MG,8.25
+2016-06,Belém - PA,9.16
+2016-06,Brasília - DF,7.55
+2016-06,Campo Grande - MS,8.39
+2016-06,Curitiba - PR,8.69
+2016-06,Fortaleza - CE,10.36
+2016-06,Goiânia - GO,9.31
+2016-06,Grande Vitória - ES,7.43
+2016-06,Porto Alegre - RS,9.66
+2016-06,Recife - PE,8.45
+2016-06,Rio de Janeiro - RJ,8.71
+2016-06,Salvador - BA,8.77
+2016-06,São Paulo - SP,8.99
+2016-07,Belo Horizonte - MG,8.24
+2016-07,Belém - PA,10.04
+2016-07,Brasília - DF,7.71
+2016-07,Campo Grande - MS,8.63
+2016-07,Curitiba - PR,7.84
+2016-07,Fortaleza - CE,10.78
+2016-07,Goiânia - GO,9.26
+2016-07,Grande Vitória - ES,7.93
+2016-07,Porto Alegre - RS,9.4
+2016-07,Recife - PE,8.57
+2016-07,Rio de Janeiro - RJ,8.75
+2016-07,Salvador - BA,9.44
+2016-07,São Paulo - SP,8.49
+2016-08,Belo Horizonte - MG,8.51
+2016-08,Belém - PA,9.95
+2016-08,Brasília - DF,8.15
+2016-08,Campo Grande - MS,8.56
+2016-08,Curitiba - PR,7.6
+2016-08,Fortaleza - CE,11.02
+2016-08,Goiânia - GO,9.33
+2016-08,Grande Vitória - ES,8.39
+2016-08,Porto Alegre - RS,9.5
+2016-08,Recife - PE,8.28
+2016-08,Rio de Janeiro - RJ,9.86
+2016-08,Salvador - BA,9.08
+2016-08,São Paulo - SP,8.82
+2016-09,Belo Horizonte - MG,8.0
+2016-09,Belém - PA,10.15
+2016-09,Brasília - DF,7.05
+2016-09,Campo Grande - MS,9.38
+2016-09,Curitiba - PR,7.17
+2016-09,Fortaleza - CE,10.87
+2016-09,Goiânia - GO,8.8
+2016-09,Grande Vitória - ES,7.01
+2016-09,Porto Alegre - RS,9.1
+2016-09,Recife - PE,8.5
+2016-09,Rio de Janeiro - RJ,9.14
+2016-09,Salvador - BA,8.81
+2016-09,São Paulo - SP,8.12
+2016-10,Belo Horizonte - MG,7.69
+2016-10,Belém - PA,9.54
+2016-10,Brasília - DF,6.12
+2016-10,Campo Grande - MS,8.68
+2016-10,Curitiba - PR,6.47
+2016-10,Fortaleza - CE,10.49
+2016-10,Goiânia - GO,7.93
+2016-10,Grande Vitória - ES,6.04
+2016-10,Porto Alegre - RS,8.58
+2016-10,Recife - PE,7.92
+2016-10,Rio de Janeiro - RJ,8.66
+2016-10,Salvador - BA,8.7
+2016-10,São Paulo - SP,7.31
+2016-11,Belo Horizonte - MG,6.97
+2016-11,Belém - PA,8.03
+2016-11,Brasília - DF,5.72
+2016-11,Campo Grande - MS,7.76
+2016-11,Curitiba - PR,5.5
+2016-11,Fortaleza - CE,9.25
+2016-11,Goiânia - GO,6.06
+2016-11,Grande Vitória - ES,5.51
+2016-11,Porto Alegre - RS,7.87
+2016-11,Recife - PE,7.71
+2016-11,Rio de Janeiro - RJ,7.37
+2016-11,Salvador - BA,7.37
+2016-11,São Paulo - SP,6.65
+2016-12,Belo Horizonte - MG,6.6
+2016-12,Belém - PA,6.76
+2016-12,Brasília - DF,5.62
+2016-12,Campo Grande - MS,7.53
+2016-12,Curitiba - PR,4.45
+2016-12,Fortaleza - CE,8.34
+2016-12,Goiânia - GO,5.27
+2016-12,Grande Vitória - ES,5.12
+2016-12,Porto Alegre - RS,6.95
+2016-12,Recife - PE,7.1
+2016-12,Rio de Janeiro - RJ,6.32
+2016-12,Salvador - BA,6.71
+2016-12,São Paulo - SP,6.13
+2017-01,Belo Horizonte - MG,6.03
+2017-01,Belém - PA,6.03
+2017-01,Brasília - DF,5.4
+2017-01,Campo Grande - MS,6.66
+2017-01,Curitiba - PR,4.02
+2017-01,Fortaleza - CE,7.45
+2017-01,Goiânia - GO,4.23
+2017-01,Grande Vitória - ES,4.64
+2017-01,Porto Alegre - RS,5.5
+2017-01,Recife - PE,6.04
+2017-01,Rio de Janeiro - RJ,4.84
+2017-01,Salvador - BA,5.64
+2017-01,São Paulo - SP,5.22
+2017-02,Belo Horizonte - MG,5.34
+2017-02,Belém - PA,5.24
+2017-02,Brasília - DF,4.65
+2017-02,Campo Grande - MS,6.35
+2017-02,Curitiba - PR,3.62
+2017-02,Fortaleza - CE,6.92
+2017-02,Goiânia - GO,2.99
+2017-02,Grande Vitória - ES,4.55
+2017-02,Porto Alegre - RS,4.73
+2017-02,Recife - PE,4.95
+2017-02,Rio de Janeiro - RJ,4.84
+2017-02,Salvador - BA,4.76
+2017-02,São Paulo - SP,4.64
+2017-03,Belo Horizonte - MG,4.79
+2017-03,Belém - PA,4.82
+2017-03,Brasília - DF,4.5
+2017-03,Campo Grande - MS,6.04
+2017-03,Curitiba - PR,3.31
+2017-03,Fortaleza - CE,6.85
+2017-03,Goiânia - GO,2.7
+2017-03,Grande Vitória - ES,4.52
+2017-03,Porto Alegre - RS,4.29
+2017-03,Recife - PE,5.56
+2017-03,Rio de Janeiro - RJ,4.93
+2017-03,Salvador - BA,4.95
+2017-03,São Paulo - SP,4.37
+2017-04,Belo Horizonte - MG,3.97
+2017-04,Belém - PA,3.98
+2017-04,Brasília - DF,4.62
+2017-04,Campo Grande - MS,5.16
+2017-04,Curitiba - PR,2.49
+2017-04,Fortaleza - CE,5.86
+2017-04,Goiânia - GO,2.31
+2017-04,Grande Vitória - ES,4.08
+2017-04,Porto Alegre - RS,3.54
+2017-04,Recife - PE,5.35
+2017-04,Rio de Janeiro - RJ,4.68
+2017-04,Salvador - BA,4.08
+2017-04,São Paulo - SP,4.16
+2017-05,Belo Horizonte - MG,3.38
+2017-05,Belém - PA,3.22
+2017-05,Brasília - DF,4.4
+2017-05,Campo Grande - MS,4.84
+2017-05,Curitiba - PR,2.27
+2017-05,Fortaleza - CE,4.93
+2017-05,Goiânia - GO,2.19
+2017-05,Grande Vitória - ES,3.76
+2017-05,Porto Alegre - RS,3.09
+2017-05,Recife - PE,5.17
+2017-05,Rio de Janeiro - RJ,4.29
+2017-05,Salvador - BA,3.55
+2017-05,São Paulo - SP,3.58
+2017-06,Belo Horizonte - MG,2.21
+2017-06,Belém - PA,2.61
+2017-06,Brasília - DF,4.06
+2017-06,Campo Grande - MS,3.95
+2017-06,Curitiba - PR,2.04
+2017-06,Fortaleza - CE,4.33
+2017-06,Goiânia - GO,1.75
+2017-06,Grande Vitória - ES,3.2
+2017-06,Porto Alegre - RS,2.82
+2017-06,Recife - PE,4.74
+2017-06,Rio de Janeiro - RJ,3.8
+2017-06,Salvador - BA,3.13
+2017-06,São Paulo - SP,2.83
+2017-07,Belo Horizonte - MG,1.88
+2017-07,Belém - PA,1.97
+2017-07,Brasília - DF,3.8
+2017-07,Campo Grande - MS,2.94
+2017-07,Curitiba - PR,2.43
+2017-07,Fortaleza - CE,3.67
+2017-07,Goiânia - GO,1.31
+2017-07,Grande Vitória - ES,2.65
+2017-07,Porto Alegre - RS,2.12
+2017-07,Recife - PE,4.22
+2017-07,Rio de Janeiro - RJ,3.25
+2017-07,Salvador - BA,2.54
+2017-07,São Paulo - SP,2.89
+2017-08,Belo Horizonte - MG,1.88
+2017-08,Belém - PA,1.5
+2017-08,Brasília - DF,4.0
+2017-08,Campo Grande - MS,2.97
+2017-08,Curitiba - PR,2.55
+2017-08,Fortaleza - CE,2.91
+2017-08,Goiânia - GO,0.99
+2017-08,Grande Vitória - ES,2.34
+2017-08,Porto Alegre - RS,2.08
+2017-08,Recife - PE,4.5
+2017-08,Rio de Janeiro - RJ,2.25
+2017-08,Salvador - BA,2.4
+2017-08,São Paulo - SP,2.62
+2017-09,Belo Horizonte - MG,2.19
+2017-09,Belém - PA,1.52
+2017-09,Brasília - DF,4.0
+2017-09,Campo Grande - MS,2.82
+2017-09,Curitiba - PR,2.55
+2017-09,Fortaleza - CE,2.64
+2017-09,Goiânia - GO,0.85
+2017-09,Grande Vitória - ES,3.06
+2017-09,Porto Alegre - RS,1.95
+2017-09,Recife - PE,3.83
+2017-09,Rio de Janeiro - RJ,2.56
+2017-09,Salvador - BA,2.63
+2017-09,São Paulo - SP,2.75
+2017-10,Belo Horizonte - MG,2.2
+2017-10,Belém - PA,1.32
+2017-10,Brasília - DF,4.13
+2017-10,Campo Grande - MS,2.6
+2017-10,Curitiba - PR,3.3
+2017-10,Fortaleza - CE,2.66
+2017-10,Goiânia - GO,2.01
+2017-10,Grande Vitória - ES,3.12
+2017-10,Porto Alegre - RS,2.03
+2017-10,Recife - PE,3.66
+2017-10,Rio de Janeiro - RJ,2.51
+2017-10,Salvador - BA,2.59
+2017-10,São Paulo - SP,3.03
+2017-11,Belo Horizonte - MG,1.95
+2017-11,Belém - PA,1.51
+2017-11,Brasília - DF,4.32
+2017-11,Campo Grande - MS,2.68
+2017-11,Curitiba - PR,2.98
+2017-11,Fortaleza - CE,2.36
+2017-11,Goiânia - GO,3.31
+2017-11,Grande Vitória - ES,2.78
+2017-11,Porto Alegre - RS,2.21
+2017-11,Recife - PE,3.31
+2017-11,Rio de Janeiro - RJ,2.73
+2017-11,Salvador - BA,2.37
+2017-11,São Paulo - SP,3.36
+2017-12,Belo Horizonte - MG,2.04
+2017-12,Belém - PA,1.12
+2017-12,Brasília - DF,3.77
+2017-12,Campo Grande - MS,2.12
+2017-12,Curitiba - PR,3.42
+2017-12,Fortaleza - CE,2.3
+2017-12,Goiânia - GO,3.75
+2017-12,Grande Vitória - ES,2.54
+2017-12,Porto Alegre - RS,2.54
+2017-12,Recife - PE,3.31
+2017-12,Rio de Janeiro - RJ,3.03
+2017-12,Salvador - BA,2.15
+2017-12,São Paulo - SP,3.64
+2018-01,Belo Horizonte - MG,1.76
+2018-01,Belém - PA,0.83
+2018-01,Brasília - DF,2.87
+2018-01,Campo Grande - MS,1.65
+2018-01,Curitiba - PR,3.37
+2018-01,Fortaleza - CE,2.01
+2018-01,Goiânia - GO,3.59
+2018-01,Grande Vitória - ES,2.55
+2018-01,Porto Alegre - RS,3.05
+2018-01,Recife - PE,3.01
+2018-01,Rio de Janeiro - RJ,3.05
+2018-01,Salvador - BA,1.82
+2018-01,São Paulo - SP,3.62
+2018-02,Belo Horizonte - MG,1.75
+2018-02,Belém - PA,1.05
+2018-02,Brasília - DF,3.1
+2018-02,Campo Grande - MS,1.61
+2018-02,Curitiba - PR,3.02
+2018-02,Fortaleza - CE,1.71
+2018-02,Goiânia - GO,4.07
+2018-02,Grande Vitória - ES,2.5
+2018-02,Porto Alegre - RS,2.88
+2018-02,Recife - PE,3.03
+2018-02,Rio de Janeiro - RJ,3.09
+2018-02,Salvador - BA,1.8
+2018-02,São Paulo - SP,3.64
+2018-03,Belo Horizonte - MG,2.03
+2018-03,Belém - PA,0.95
+2018-03,Brasília - DF,3.13
+2018-03,Campo Grande - MS,1.11
+2018-03,Curitiba - PR,2.84
+2018-03,Fortaleza - CE,1.27
+2018-03,Goiânia - GO,3.81
+2018-03,Grande Vitória - ES,2.08
+2018-03,Porto Alegre - RS,2.75
+2018-03,Recife - PE,2.16
+2018-03,Rio de Janeiro - RJ,2.82
+2018-03,Salvador - BA,1.49
+2018-03,São Paulo - SP,3.54
+2018-04,Belo Horizonte - MG,2.33
+2018-04,Belém - PA,1.21
+2018-04,Brasília - DF,2.99
+2018-04,Campo Grande - MS,1.98
+2018-04,Curitiba - PR,2.98
+2018-04,Fortaleza - CE,1.48
+2018-04,Goiânia - GO,3.47
+2018-04,Grande Vitória - ES,2.07
+2018-04,Porto Alegre - RS,2.93
+2018-04,Recife - PE,1.99
+2018-04,Rio de Janeiro - RJ,2.74
+2018-04,Salvador - BA,2.05
+2018-04,São Paulo - SP,3.48
+2018-05,Belo Horizonte - MG,2.3
+2018-05,Belém - PA,1.63
+2018-05,Brasília - DF,2.89
+2018-05,Campo Grande - MS,2.59
+2018-05,Curitiba - PR,2.99
+2018-05,Fortaleza - CE,1.72
+2018-05,Goiânia - GO,3.85
+2018-05,Grande Vitória - ES,2.41
+2018-05,Porto Alegre - RS,3.21
+2018-05,Recife - PE,2.02
+2018-05,Rio de Janeiro - RJ,2.8
+2018-05,Salvador - BA,2.86
+2018-05,São Paulo - SP,3.31
+2018-06,Belo Horizonte - MG,4.71
+2018-06,Belém - PA,2.41
+2018-06,Brasília - DF,4.36
+2018-06,Campo Grande - MS,3.9
+2018-06,Curitiba - PR,4.74
+2018-06,Fortaleza - CE,3.15
+2018-06,Goiânia - GO,5.19
+2018-06,Grande Vitória - ES,3.96
+2018-06,Porto Alegre - RS,4.98
+2018-06,Recife - PE,3.62
+2018-06,Rio de Janeiro - RJ,4.13
+2018-06,Salvador - BA,3.83
+2018-06,São Paulo - SP,4.78
+2018-07,Belo Horizonte - MG,4.57
+2018-07,Belém - PA,2.31
+2018-07,Brasília - DF,4.67
+2018-07,Campo Grande - MS,3.76
+2018-07,Curitiba - PR,4.52
+2018-07,Fortaleza - CE,3.04
+2018-07,Goiânia - GO,4.74
+2018-07,Grande Vitória - ES,4.13
+2018-07,Porto Alegre - RS,5.16
+2018-07,Recife - PE,3.24
+2018-07,Rio de Janeiro - RJ,4.78
+2018-07,Salvador - BA,3.71
+2018-07,São Paulo - SP,5.04
+2018-08,Belo Horizonte - MG,4.25
+2018-08,Belém - PA,2.41
+2018-08,Brasília - DF,3.45
+2018-08,Campo Grande - MS,3.36
+2018-08,Curitiba - PR,3.95
+2018-08,Fortaleza - CE,2.95
+2018-08,Goiânia - GO,5.09
+2018-08,Grande Vitória - ES,3.69
+2018-08,Porto Alegre - RS,4.71
+2018-08,Recife - PE,2.97
+2018-08,Rio de Janeiro - RJ,4.36
+2018-08,Salvador - BA,3.49
+2018-08,São Paulo - SP,4.86
+2018-09,Belo Horizonte - MG,4.28
+2018-09,Belém - PA,2.14
+2018-09,Brasília - DF,4.32
+2018-09,Campo Grande - MS,3.49
+2018-09,Curitiba - PR,4.39
+2018-09,Fortaleza - CE,3.07
+2018-09,Goiânia - GO,5.56
+2018-09,Grande Vitória - ES,4.04
+2018-09,Porto Alegre - RS,5.23
+2018-09,Recife - PE,3.39
+2018-09,Rio de Janeiro - RJ,4.62
+2018-09,Salvador - BA,3.61
+2018-09,São Paulo - SP,5.3
+2018-10,Belo Horizonte - MG,4.35
+2018-10,Belém - PA,2.37
+2018-10,Brasília - DF,4.25
+2018-10,Campo Grande - MS,3.9
+2018-10,Curitiba - PR,4.26
+2018-10,Fortaleza - CE,3.3
+2018-10,Goiânia - GO,4.55
+2018-10,Grande Vitória - ES,4.87
+2018-10,Porto Alegre - RS,5.65
+2018-10,Recife - PE,3.47
+2018-10,Rio de Janeiro - RJ,4.73
+2018-10,Salvador - BA,3.61
+2018-10,São Paulo - SP,5.21
+2018-11,Belo Horizonte - MG,4.34
+2018-11,Belém - PA,2.32
+2018-11,Brasília - DF,3.32
+2018-11,Campo Grande - MS,3.06
+2018-11,Curitiba - PR,4.14
+2018-11,Fortaleza - CE,3.39
+2018-11,Goiânia - GO,3.68
+2018-11,Grande Vitória - ES,4.59
+2018-11,Porto Alegre - RS,4.63
+2018-11,Recife - PE,3.09
+2018-11,Rio de Janeiro - RJ,4.44
+2018-11,Salvador - BA,3.56
+2018-11,São Paulo - SP,4.28
+2018-12,Belo Horizonte - MG,4.01
+2018-12,Belém - PA,3.0
+2018-12,Brasília - DF,3.04
+2018-12,Campo Grande - MS,2.97
+2018-12,Curitiba - PR,3.38
+2018-12,Fortaleza - CE,2.91
+2018-12,Goiânia - GO,3.16
+2018-12,Grande Vitória - ES,4.17
+2018-12,Porto Alegre - RS,4.61
+2018-12,Recife - PE,2.83
+2018-12,Rio de Janeiro - RJ,4.29
+2018-12,Salvador - BA,4.03
+2018-12,São Paulo - SP,3.67
+2019-01,Belo Horizonte - MG,4.36
+2019-01,Belém - PA,3.22
+2019-01,Brasília - DF,3.25
+2019-01,Campo Grande - MS,3.07
+2019-01,Curitiba - PR,3.13
+2019-01,Fortaleza - CE,2.73
+2019-01,Goiânia - GO,2.93
+2019-01,Grande Vitória - ES,3.74
+2019-01,Porto Alegre - RS,3.99
+2019-01,Recife - PE,3.08
+2019-01,Rio de Janeiro - RJ,4.37
+2019-01,Salvador - BA,4.05
+2019-01,São Paulo - SP,3.84
+2019-02,Belo Horizonte - MG,4.55
+2019-02,Belém - PA,3.59
+2019-02,Brasília - DF,2.87
+2019-02,Campo Grande - MS,3.4
+2019-02,Curitiba - PR,3.21
+2019-02,Fortaleza - CE,3.43
+2019-02,Goiânia - GO,3.75
+2019-02,Grande Vitória - ES,4.19
+2019-02,Porto Alegre - RS,4.06
+2019-02,Recife - PE,3.41
+2019-02,Rio de Janeiro - RJ,4.12
+2019-02,Salvador - BA,3.67
+2019-02,São Paulo - SP,3.99
+2019-03,Belo Horizonte - MG,4.61
+2019-03,Belém - PA,4.07
+2019-03,Brasília - DF,3.82
+2019-03,Campo Grande - MS,4.49
+2019-03,Curitiba - PR,3.97
+2019-03,Fortaleza - CE,4.27
+2019-03,Goiânia - GO,3.86
+2019-03,Grande Vitória - ES,4.89
+2019-03,Porto Alegre - RS,5.17
+2019-03,Recife - PE,4.58
+2019-03,Rio de Janeiro - RJ,4.86
+2019-03,Salvador - BA,4.74
+2019-03,São Paulo - SP,4.58
+2019-04,Aracaju - SE,5.57
+2019-04,Belo Horizonte - MG,4.82
+2019-04,Belém - PA,4.35
+2019-04,Brasília - DF,4.2
+2019-04,Campo Grande - MS,4.27
+2019-04,Curitiba - PR,4.47
+2019-04,Fortaleza - CE,4.93
+2019-04,Goiânia - GO,4.69
+2019-04,Grande Vitória - ES,5.02
+2019-04,Porto Alegre - RS,5.62
+2019-04,Recife - PE,4.85
+2019-04,Rio Branco - AC,5.37
+2019-04,Rio de Janeiro - RJ,5.02
+2019-04,Salvador - BA,5.25
+2019-04,São Luís - MA,5.49
+2019-04,São Paulo - SP,4.98
+2019-05,Aracaju - SE,5.54
+2019-05,Belo Horizonte - MG,4.85
+2019-05,Belém - PA,4.11
+2019-05,Brasília - DF,3.99
+2019-05,Campo Grande - MS,3.65
+2019-05,Curitiba - PR,3.99
+2019-05,Fortaleza - CE,4.79
+2019-05,Goiânia - GO,4.64
+2019-05,Grande Vitória - ES,4.45
+2019-05,Porto Alegre - RS,4.96
+2019-05,Recife - PE,4.42
+2019-05,Rio Branco - AC,5.65
+2019-05,Rio de Janeiro - RJ,4.68
+2019-05,Salvador - BA,4.21
+2019-05,São Luís - MA,4.82
+2019-05,São Paulo - SP,4.92
+2019-06,Aracaju - SE,4.05
+2019-06,Belo Horizonte - MG,3.08
+2019-06,Belém - PA,3.56
+2019-06,Brasília - DF,2.89
+2019-06,Campo Grande - MS,2.94
+2019-06,Curitiba - PR,2.6
+2019-06,Fortaleza - CE,3.87
+2019-06,Goiânia - GO,3.24
+2019-06,Grande Vitória - ES,3.67
+2019-06,Porto Alegre - RS,3.06
+2019-06,Recife - PE,2.82
+2019-06,Rio Branco - AC,4.7
+2019-06,Rio de Janeiro - RJ,3.49
+2019-06,Salvador - BA,3.33
+2019-06,São Luís - MA,3.23
+2019-06,São Paulo - SP,3.73
+2019-07,Aracaju - SE,4.25
+2019-07,Belo Horizonte - MG,3.13
+2019-07,Belém - PA,3.59
+2019-07,Brasília - DF,2.52
+2019-07,Campo Grande - MS,3.31
+2019-07,Curitiba - PR,2.36
+2019-07,Fortaleza - CE,3.81
+2019-07,Goiânia - GO,3.07
+2019-07,Grande Vitória - ES,3.52
+2019-07,Porto Alegre - RS,3.56
+2019-07,Recife - PE,3.09
+2019-07,Rio Branco - AC,3.95
+2019-07,Rio de Janeiro - RJ,3.19
+2019-07,Salvador - BA,2.94
+2019-07,São Luís - MA,3.36
+2019-07,São Paulo - SP,3.37
+2019-08,Aracaju - SE,3.73
+2019-08,Belo Horizonte - MG,3.28
+2019-08,Belém - PA,3.51
+2019-08,Brasília - DF,3.35
+2019-08,Campo Grande - MS,3.28
+2019-08,Curitiba - PR,2.75
+2019-08,Fortaleza - CE,4.44
+2019-08,Goiânia - GO,2.87
+2019-08,Grande Vitória - ES,3.04
+2019-08,Porto Alegre - RS,3.63
+2019-08,Recife - PE,3.19
+2019-08,Rio Branco - AC,3.78
+2019-08,Rio de Janeiro - RJ,3.52
+2019-08,Salvador - BA,3.26
+2019-08,São Luís - MA,3.56
+2019-08,São Paulo - SP,3.58
+2019-09,Aracaju - SE,3.7
+2019-09,Belo Horizonte - MG,2.81
+2019-09,Belém - PA,3.53
+2019-09,Brasília - DF,2.09
+2019-09,Campo Grande - MS,2.77
+2019-09,Curitiba - PR,2.23
+2019-09,Fortaleza - CE,4.07
+2019-09,Goiânia - GO,2.79
+2019-09,Grande Vitória - ES,2.12
+2019-09,Porto Alegre - RS,3.0
+2019-09,Recife - PE,2.94
+2019-09,Rio Branco - AC,3.66
+2019-09,Rio de Janeiro - RJ,3.0
+2019-09,Salvador - BA,3.04
+2019-09,São Luís - MA,2.6
+2019-09,São Paulo - SP,2.89
+2019-10,Aracaju - SE,3.2
+2019-10,Belo Horizonte - MG,2.57
+2019-10,Belém - PA,3.2
+2019-10,Brasília - DF,1.59
+2019-10,Campo Grande - MS,2.36
+2019-10,Curitiba - PR,1.52
+2019-10,Fortaleza - CE,3.46
+2019-10,Goiânia - GO,2.3
+2019-10,Grande Vitória - ES,1.71
+2019-10,Porto Alegre - RS,2.25
+2019-10,Recife - PE,2.66
+2019-10,Rio Branco - AC,2.99
+2019-10,Rio de Janeiro - RJ,3.06
+2019-10,Salvador - BA,2.66
+2019-10,São Luís - MA,1.84
+2019-10,São Paulo - SP,2.62
+2019-11,Aracaju - SE,3.67
+2019-11,Belo Horizonte - MG,3.13
+2019-11,Belém - PA,4.16
+2019-11,Brasília - DF,2.42
+2019-11,Campo Grande - MS,3.35
+2019-11,Curitiba - PR,2.4
+2019-11,Fortaleza - CE,3.76
+2019-11,Goiânia - GO,2.89
+2019-11,Grande Vitória - ES,2.41
+2019-11,Porto Alegre - RS,3.16
+2019-11,Recife - PE,2.91
+2019-11,Rio Branco - AC,3.85
+2019-11,Rio de Janeiro - RJ,3.25
+2019-11,Salvador - BA,3.21
+2019-11,São Luís - MA,3.02
+2019-11,São Paulo - SP,3.65
+2019-12,Aracaju - SE,4.1
+2019-12,Belo Horizonte - MG,4.2
+2019-12,Belém - PA,5.51
+2019-12,Brasília - DF,3.75
+2019-12,Campo Grande - MS,4.65
+2019-12,Curitiba - PR,3.96
+2019-12,Fortaleza - CE,5.01
+2019-12,Goiânia - GO,4.36
+2019-12,Grande Vitória - ES,3.29
+2019-12,Porto Alegre - RS,4.08
+2019-12,Recife - PE,3.71
+2019-12,Rio Branco - AC,3.81
+2019-12,Rio de Janeiro - RJ,4.07
+2019-12,Salvador - BA,3.93
+2019-12,São Luís - MA,4.28
+2019-12,São Paulo - SP,4.58
+2020-01,Aracaju - SE,4.21
+2020-01,Belo Horizonte - MG,3.69
+2020-01,Belém - PA,5.6
+2020-01,Brasília - DF,3.57
+2020-01,Campo Grande - MS,4.57
+2020-01,Curitiba - PR,3.99
+2020-01,Fortaleza - CE,5.14
+2020-01,Goiânia - GO,4.64
+2020-01,Grande Vitória - ES,3.3
+2020-01,Porto Alegre - RS,4.17
+2020-01,Recife - PE,3.75
+2020-01,Rio Branco - AC,3.69
+2020-01,Rio de Janeiro - RJ,3.61
+2020-01,Salvador - BA,3.9
+2020-01,São Luís - MA,3.99
+2020-01,São Paulo - SP,4.54
+2020-02,Aracaju - SE,4.33
+2020-02,Belo Horizonte - MG,3.68
+2020-02,Belém - PA,4.85
+2020-02,Brasília - DF,4.12
+2020-02,Campo Grande - MS,4.47
+2020-02,Curitiba - PR,3.89
+2020-02,Fortaleza - CE,5.25
+2020-02,Goiânia - GO,3.93
+2020-02,Grande Vitória - ES,3.05
+2020-02,Porto Alegre - RS,4.18
+2020-02,Recife - PE,3.53
+2020-02,Rio Branco - AC,3.04
+2020-02,Rio de Janeiro - RJ,3.09
+2020-02,Salvador - BA,3.88
+2020-02,São Luís - MA,3.73
+2020-02,São Paulo - SP,4.32
+2020-03,Aracaju - SE,3.51
+2020-03,Belo Horizonte - MG,3.43
+2020-03,Belém - PA,4.17
+2020-03,Brasília - DF,2.93
+2020-03,Campo Grande - MS,4.32
+2020-03,Curitiba - PR,3.17
+2020-03,Fortaleza - CE,4.39
+2020-03,Goiânia - GO,3.04
+2020-03,Grande Vitória - ES,2.77
+2020-03,Porto Alegre - RS,2.64
+2020-03,Recife - PE,3.01
+2020-03,Rio Branco - AC,2.26
+2020-03,Rio de Janeiro - RJ,2.72
+2020-03,Salvador - BA,3.27
+2020-03,São Luís - MA,2.71
+2020-03,São Paulo - SP,3.6
+2020-04,Aracaju - SE,2.84
+2020-04,Belo Horizonte - MG,2.78
+2020-04,Belém - PA,3.39
+2020-04,Brasília - DF,1.56
+2020-04,Campo Grande - MS,3.34
+2020-04,Curitiba - PR,1.39
+2020-04,Fortaleza - CE,3.32
+2020-04,Goiânia - GO,1.86
+2020-04,Grande Vitória - ES,2.35
+2020-04,Porto Alegre - RS,1.74
+2020-04,Recife - PE,2.21
+2020-04,Rio Branco - AC,1.68
+2020-04,Rio de Janeiro - RJ,2.43
+2020-04,Salvador - BA,2.26
+2020-04,São Luís - MA,1.38
+2020-04,São Paulo - SP,2.72
+2020-05,Aracaju - SE,1.98
+2020-05,Belo Horizonte - MG,1.95
+2020-05,Belém - PA,2.94
+2020-05,Brasília - DF,1.32
+2020-05,Campo Grande - MS,2.32
+2020-05,Curitiba - PR,0.84
+2020-05,Fortaleza - CE,2.57
+2020-05,Goiânia - GO,1.12
+2020-05,Grande Vitória - ES,1.77
+2020-05,Porto Alegre - RS,1.18
+2020-05,Recife - PE,1.69
+2020-05,Rio Branco - AC,0.67
+2020-05,Rio de Janeiro - RJ,2.19
+2020-05,Salvador - BA,1.66
+2020-05,São Luís - MA,0.9
+2020-05,São Paulo - SP,2.3
+2020-06,Aracaju - SE,2.13
+2020-06,Belo Horizonte - MG,1.86
+2020-06,Belém - PA,2.59
+2020-06,Brasília - DF,1.66
+2020-06,Campo Grande - MS,2.37
+2020-06,Curitiba - PR,1.44
+2020-06,Fortaleza - CE,2.65
+2020-06,Goiânia - GO,1.32
+2020-06,Grande Vitória - ES,1.79
+2020-06,Porto Alegre - RS,1.58
+2020-06,Recife - PE,2.29
+2020-06,Rio Branco - AC,1.03
+2020-06,Rio de Janeiro - RJ,2.13
+2020-06,Salvador - BA,2.34
+2020-06,São Luís - MA,0.79
+2020-06,São Paulo - SP,2.63
+2020-07,Aracaju - SE,2.31
+2020-07,Belo Horizonte - MG,2.02
+2020-07,Belém - PA,3.3
+2020-07,Brasília - DF,1.78
+2020-07,Campo Grande - MS,3.13
+2020-07,Curitiba - PR,1.79
+2020-07,Fortaleza - CE,3.38
+2020-07,Goiânia - GO,1.8
+2020-07,Grande Vitória - ES,1.96
+2020-07,Porto Alegre - RS,1.41
+2020-07,Recife - PE,2.5
+2020-07,Rio Branco - AC,2.0
+2020-07,Rio de Janeiro - RJ,2.07
+2020-07,Salvador - BA,3.12
+2020-07,São Luís - MA,1.53
+2020-07,São Paulo - SP,2.59
+2020-08,Aracaju - SE,2.49
+2020-08,Belo Horizonte - MG,2.1
+2020-08,Belém - PA,3.46
+2020-08,Brasília - DF,2.29
+2020-08,Campo Grande - MS,4.42
+2020-08,Curitiba - PR,1.81
+2020-08,Fortaleza - CE,2.8
+2020-08,Goiânia - GO,2.36
+2020-08,Grande Vitória - ES,2.44
+2020-08,Porto Alegre - RS,1.79
+2020-08,Recife - PE,2.96
+2020-08,Rio Branco - AC,2.45
+2020-08,Rio de Janeiro - RJ,2.0
+2020-08,Salvador - BA,3.22
+2020-08,São Luís - MA,2.23
+2020-08,São Paulo - SP,2.57
+2020-09,Aracaju - SE,3.18
+2020-09,Belo Horizonte - MG,3.06
+2020-09,Belém - PA,4.36
+2020-09,Brasília - DF,2.84
+2020-09,Campo Grande - MS,5.78
+2020-09,Curitiba - PR,2.47
+2020-09,Fortaleza - CE,4.14
+2020-09,Goiânia - GO,2.99
+2020-09,Grande Vitória - ES,3.31
+2020-09,Porto Alegre - RS,2.52
+2020-09,Recife - PE,3.86
+2020-09,Rio Branco - AC,3.36
+2020-09,Rio de Janeiro - RJ,2.77
+2020-09,Salvador - BA,3.31
+2020-09,São Luís - MA,3.48
+2020-09,São Paulo - SP,3.09
+2020-10,Aracaju - SE,4.04
+2020-10,Belo Horizonte - MG,4.0
+2020-10,Belém - PA,5.36
+2020-10,Brasília - DF,3.97
+2020-10,Campo Grande - MS,6.41
+2020-10,Curitiba - PR,3.64
+2020-10,Fortaleza - CE,4.96
+2020-10,Goiânia - GO,3.79
+2020-10,Grande Vitória - ES,3.95
+2020-10,Porto Alegre - RS,3.17
+2020-10,Recife - PE,4.78
+2020-10,Rio Branco - AC,4.92
+2020-10,Rio de Janeiro - RJ,3.09
+2020-10,Salvador - BA,3.69
+2020-10,São Luís - MA,5.01
+2020-10,São Paulo - SP,3.86
+2020-11,Aracaju - SE,4.33
+2020-11,Belo Horizonte - MG,4.51
+2020-11,Belém - PA,4.89
+2020-11,Brasília - DF,3.94
+2020-11,Campo Grande - MS,6.64
+2020-11,Curitiba - PR,3.91
+2020-11,Fortaleza - CE,5.57
+2020-11,Goiânia - GO,4.52
+2020-11,Grande Vitória - ES,4.55
+2020-11,Porto Alegre - RS,3.51
+2020-11,Recife - PE,5.01
+2020-11,Rio Branco - AC,5.31
+2020-11,Rio de Janeiro - RJ,3.63
+2020-11,Salvador - BA,4.66
+2020-11,São Luís - MA,4.97
+2020-11,São Paulo - SP,4.21
+2020-12,Aracaju - SE,4.15
+2020-12,Belo Horizonte - MG,5.0
+2020-12,Belém - PA,4.61
+2020-12,Brasília - DF,3.43
+2020-12,Campo Grande - MS,6.84
+2020-12,Curitiba - PR,3.94
+2020-12,Fortaleza - CE,5.76
+2020-12,Goiânia - GO,4.34
+2020-12,Grande Vitória - ES,5.13
+2020-12,Porto Alegre - RS,4.23
+2020-12,Recife - PE,5.68
+2020-12,Rio Branco - AC,6.12
+2020-12,Rio de Janeiro - RJ,4.07
+2020-12,Salvador - BA,4.31
+2020-12,São Luís - MA,5.7
+2020-12,São Paulo - SP,4.37
+2021-01,Aracaju - SE,4.15
+2021-01,Belo Horizonte - MG,5.14
+2021-01,Belém - PA,4.18
+2021-01,Brasília - DF,3.6
+2021-01,Campo Grande - MS,7.27
+2021-01,Curitiba - PR,4.35
+2021-01,Fortaleza - CE,5.84
+2021-01,Goiânia - GO,4.06
+2021-01,Grande Vitória - ES,5.29
+2021-01,Porto Alegre - RS,4.31
+2021-01,Recife - PE,5.89
+2021-01,Rio Branco - AC,6.81
+2021-01,Rio de Janeiro - RJ,4.2
+2021-01,Salvador - BA,4.23
+2021-01,São Luís - MA,6.21
+2021-01,São Paulo - SP,4.28
+2021-02,Aracaju - SE,4.55
+2021-02,Belo Horizonte - MG,5.38
+2021-02,Belém - PA,5.42
+2021-02,Brasília - DF,4.46
+2021-02,Campo Grande - MS,7.8
+2021-02,Curitiba - PR,5.22
+2021-02,Fortaleza - CE,6.56
+2021-02,Goiânia - GO,4.66
+2021-02,Grande Vitória - ES,5.99
+2021-02,Porto Alegre - RS,5.04
+2021-02,Recife - PE,6.3
+2021-02,Rio Branco - AC,7.41
+2021-02,Rio de Janeiro - RJ,4.62
+2021-02,Salvador - BA,5.03
+2021-02,São Luís - MA,6.9
+2021-02,São Paulo - SP,4.9
+2021-03,Aracaju - SE,5.26
+2021-03,Belo Horizonte - MG,6.57
+2021-03,Belém - PA,6.44
+2021-03,Brasília - DF,6.2
+2021-03,Campo Grande - MS,8.23
+2021-03,Curitiba - PR,6.48
+2021-03,Fortaleza - CE,7.1
+2021-03,Goiânia - GO,6.98
+2021-03,Grande Vitória - ES,7.03
+2021-03,Porto Alegre - RS,6.38
+2021-03,Recife - PE,6.63
+2021-03,Rio Branco - AC,8.43
+2021-03,Rio de Janeiro - RJ,4.96
+2021-03,Salvador - BA,5.7
+2021-03,São Luís - MA,7.25
+2021-03,São Paulo - SP,5.6
+2021-04,Aracaju - SE,5.89
+2021-04,Belo Horizonte - MG,7.19
+2021-04,Belém - PA,7.32
+2021-04,Brasília - DF,6.87
+2021-04,Campo Grande - MS,9.2
+2021-04,Curitiba - PR,8.23
+2021-04,Fortaleza - CE,8.03
+2021-04,Goiânia - GO,7.76
+2021-04,Grande Vitória - ES,7.53
+2021-04,Porto Alegre - RS,6.64
+2021-04,Recife - PE,7.35
+2021-04,Rio Branco - AC,10.03
+2021-04,Rio de Janeiro - RJ,5.35
+2021-04,Salvador - BA,5.97
+2021-04,São Luís - MA,8.19
+2021-04,São Paulo - SP,6.14
+2021-05,Aracaju - SE,7.08
+2021-05,Belo Horizonte - MG,8.69
+2021-05,Belém - PA,8.26
+2021-05,Brasília - DF,7.46
+2021-05,Campo Grande - MS,10.89
+2021-05,Curitiba - PR,9.86
+2021-05,Fortaleza - CE,9.79
+2021-05,Goiânia - GO,8.89
+2021-05,Grande Vitória - ES,8.85
+2021-05,Porto Alegre - RS,8.22
+2021-05,Recife - PE,8.36
+2021-05,Rio Branco - AC,11.42
+2021-05,Rio de Janeiro - RJ,6.57
+2021-05,Salvador - BA,7.66
+2021-05,São Luís - MA,9.62
+2021-05,São Paulo - SP,7.26
+2021-06,Aracaju - SE,7.54
+2021-06,Belo Horizonte - MG,9.09
+2021-06,Belém - PA,8.72
+2021-06,Brasília - DF,7.15
+2021-06,Campo Grande - MS,11.37
+2021-06,Curitiba - PR,9.66
+2021-06,Fortaleza - CE,10.06
+2021-06,Goiânia - GO,9.37
+2021-06,Grande Vitória - ES,8.88
+2021-06,Porto Alegre - RS,9.09
+2021-06,Recife - PE,8.8
+2021-06,Rio Branco - AC,12.05
+2021-06,Rio de Janeiro - RJ,6.83
+2021-06,Salvador - BA,7.85
+2021-06,São Luís - MA,10.33
+2021-06,São Paulo - SP,7.52
+2021-07,Aracaju - SE,7.78
+2021-07,Belo Horizonte - MG,9.44
+2021-07,Belém - PA,8.91
+2021-07,Brasília - DF,7.75
+2021-07,Campo Grande - MS,11.43
+2021-07,Curitiba - PR,10.98
+2021-07,Fortaleza - CE,10.46
+2021-07,Goiânia - GO,10.1
+2021-07,Grande Vitória - ES,9.61
+2021-07,Porto Alegre - RS,10.02
+2021-07,Recife - PE,9.42
+2021-07,Rio Branco - AC,11.95
+2021-07,Rio de Janeiro - RJ,7.25
+2021-07,Salvador - BA,7.99
+2021-07,São Luís - MA,10.74
+2021-07,São Paulo - SP,8.32
+2021-08,Aracaju - SE,8.8
+2021-08,Belo Horizonte - MG,9.68
+2021-08,Belém - PA,9.77
+2021-08,Brasília - DF,8.63
+2021-08,Campo Grande - MS,11.27
+2021-08,Curitiba - PR,12.1
+2021-08,Fortaleza - CE,11.19
+2021-08,Goiânia - GO,10.52
+2021-08,Grande Vitória - ES,11.07
+2021-08,Porto Alegre - RS,10.44
+2021-08,Recife - PE,9.64
+2021-08,Rio Branco - AC,11.95
+2021-08,Rio de Janeiro - RJ,8.1
+2021-08,Salvador - BA,8.6
+2021-08,São Luís - MA,11.23
+2021-08,São Paulo - SP,9.1
+2021-09,Aracaju - SE,9.3
+2021-09,Belo Horizonte - MG,10.31
+2021-09,Belém - PA,9.87
+2021-09,Brasília - DF,9.08
+2021-09,Campo Grande - MS,11.26
+2021-09,Curitiba - PR,13.02
+2021-09,Fortaleza - CE,11.19
+2021-09,Goiânia - GO,10.28
+2021-09,Grande Vitória - ES,11.52
+2021-09,Porto Alegre - RS,11.37
+2021-09,Recife - PE,9.98
+2021-09,Rio Branco - AC,12.36
+2021-09,Rio de Janeiro - RJ,8.74
+2021-09,Salvador - BA,9.56
+2021-09,São Luís - MA,11.24
+2021-09,São Paulo - SP,9.72
+2021-10,Aracaju - SE,9.59
+2021-10,Belo Horizonte - MG,10.46
+2021-10,Belém - PA,9.28
+2021-10,Brasília - DF,9.33
+2021-10,Campo Grande - MS,11.41
+2021-10,Curitiba - PR,13.5
+2021-10,Fortaleza - CE,11.33
+2021-10,Goiânia - GO,11.03
+2021-10,Grande Vitória - ES,12.21
+2021-10,Porto Alegre - RS,11.93
+2021-10,Recife - PE,10.28
+2021-10,Rio Branco - AC,11.94
+2021-10,Rio de Janeiro - RJ,9.36
+2021-10,Salvador - BA,10.4
+2021-10,São Luís - MA,11.54
+2021-10,São Paulo - SP,10.21
+2021-11,Aracaju - SE,10.14
+2021-11,Belo Horizonte - MG,10.43
+2021-11,Belém - PA,8.73
+2021-11,Brasília - DF,10.08
+2021-11,Campo Grande - MS,12.07
+2021-11,Curitiba - PR,13.73
+2021-11,Fortaleza - CE,11.62
+2021-11,Goiânia - GO,11.0
+2021-11,Grande Vitória - ES,12.25
+2021-11,Porto Alegre - RS,12.11
+2021-11,Recife - PE,11.0
+2021-11,Rio Branco - AC,11.63
+2021-11,Rio de Janeiro - RJ,9.57
+2021-11,Salvador - BA,10.67
+2021-11,São Luís - MA,11.24
+2021-11,São Paulo - SP,10.02
+2021-12,Aracaju - SE,10.15
+2021-12,Belo Horizonte - MG,9.58
+2021-12,Belém - PA,8.13
+2021-12,Brasília - DF,9.36
+2021-12,Campo Grande - MS,10.93
+2021-12,Curitiba - PR,12.75
+2021-12,Fortaleza - CE,10.62
+2021-12,Goiânia - GO,10.3
+2021-12,Grande Vitória - ES,11.5
+2021-12,Porto Alegre - RS,10.99
+2021-12,Recife - PE,10.4
+2021-12,Rio Branco - AC,11.42
+2021-12,Rio de Janeiro - RJ,8.57
+2021-12,Salvador - BA,10.8
+2021-12,São Luís - MA,9.89
+2021-12,São Paulo - SP,9.59
+2022-01,Aracaju - SE,10.71
+2022-01,Belo Horizonte - MG,10.09
+2022-01,Belém - PA,8.86
+2022-01,Brasília - DF,9.85
+2022-01,Campo Grande - MS,11.03
+2022-01,Curitiba - PR,12.78
+2022-01,Fortaleza - CE,11.03
+2022-01,Goiânia - GO,11.31
+2022-01,Grande Vitória - ES,11.64
+2022-01,Porto Alegre - RS,10.13
+2022-01,Recife - PE,10.3
+2022-01,Rio Branco - AC,11.9
+2022-01,Rio de Janeiro - RJ,9.03
+2022-01,Salvador - BA,11.47
+2022-01,São Luís - MA,10.16
+2022-01,São Paulo - SP,10.02
+2022-02,Aracaju - SE,10.94
+2022-02,Belo Horizonte - MG,10.46
+2022-02,Belém - PA,8.39
+2022-02,Brasília - DF,9.57
+2022-02,Campo Grande - MS,11.18
+2022-02,Curitiba - PR,13.19
+2022-02,Fortaleza - CE,10.25
+2022-02,Goiânia - GO,11.47
+2022-02,Grande Vitória - ES,11.49
+2022-02,Porto Alegre - RS,9.66
+2022-02,Recife - PE,10.52
+2022-02,Rio Branco - AC,11.77
+2022-02,Rio de Janeiro - RJ,10.05
+2022-02,Salvador - BA,11.36
+2022-02,São Luís - MA,10.71
+2022-02,São Paulo - SP,10.26
+2022-03,Aracaju - SE,11.31
+2022-03,Belo Horizonte - MG,10.75
+2022-03,Belém - PA,9.11
+2022-03,Brasília - DF,9.54
+2022-03,Campo Grande - MS,12.03
+2022-03,Curitiba - PR,14.38
+2022-03,Fortaleza - CE,11.31
+2022-03,Goiânia - GO,12.18
+2022-03,Grande Vitória - ES,11.93
+2022-03,Porto Alegre - RS,10.37
+2022-03,Recife - PE,11.52
+2022-03,Rio Branco - AC,12.2
+2022-03,Rio de Janeiro - RJ,11.02
+2022-03,Salvador - BA,12.15
+2022-03,São Luís - MA,12.2
+2022-03,São Paulo - SP,11.03
+2022-04,Aracaju - SE,11.99
+2022-04,Belo Horizonte - MG,11.51
+2022-04,Belém - PA,9.66
+2022-04,Brasília - DF,10.81
+2022-04,Campo Grande - MS,12.86
+2022-04,Curitiba - PR,14.82
+2022-04,Fortaleza - CE,11.56
+2022-04,Goiânia - GO,12.86
+2022-04,Grande Vitória - ES,12.43
+2022-04,Porto Alegre - RS,11.41
+2022-04,Recife - PE,12.23
+2022-04,Rio Branco - AC,12.13
+2022-04,Rio de Janeiro - RJ,11.94
+2022-04,Salvador - BA,12.8
+2022-04,São Luís - MA,12.87
+2022-04,São Paulo - SP,12.05
+2022-05,Aracaju - SE,12.12
+2022-05,Belo Horizonte - MG,10.93
+2022-05,Belém - PA,9.53
+2022-05,Brasília - DF,10.86
+2022-05,Campo Grande - MS,12.08
+2022-05,Curitiba - PR,14.2
+2022-05,Fortaleza - CE,11.91
+2022-05,Goiânia - GO,12.39
+2022-05,Grande Vitória - ES,11.52
+2022-05,Porto Alegre - RS,10.78
+2022-05,Recife - PE,12.0
+2022-05,Rio Branco - AC,11.33
+2022-05,Rio de Janeiro - RJ,11.59
+2022-05,Salvador - BA,12.99
+2022-05,São Luís - MA,11.96
+2022-05,São Paulo - SP,11.58
+2022-06,Aracaju - SE,12.35
+2022-06,Belo Horizonte - MG,11.39
+2022-06,Belém - PA,9.55
+2022-06,Brasília - DF,11.56
+2022-06,Campo Grande - MS,12.06
+2022-06,Curitiba - PR,14.24
+2022-06,Fortaleza - CE,11.93
+2022-06,Goiânia - GO,12.36
+2022-06,Grande Vitória - ES,11.54
+2022-06,Porto Alegre - RS,10.68
+2022-06,Recife - PE,12.23
+2022-06,Rio Branco - AC,11.37
+2022-06,Rio de Janeiro - RJ,11.76
+2022-06,Salvador - BA,13.42
+2022-06,São Luís - MA,12.19
+2022-06,São Paulo - SP,11.67
+2022-07,Aracaju - SE,10.41
+2022-07,Belo Horizonte - MG,9.42
+2022-07,Belém - PA,7.18
+2022-07,Brasília - DF,9.49
+2022-07,Campo Grande - MS,10.12
+2022-07,Curitiba - PR,10.86
+2022-07,Fortaleza - CE,10.19
+2022-07,Goiânia - GO,8.97
+2022-07,Grande Vitória - ES,9.12
+2022-07,Porto Alegre - RS,8.69
+2022-07,Recife - PE,10.69
+2022-07,Rio Branco - AC,9.62
+2022-07,Rio de Janeiro - RJ,10.57
+2022-07,Salvador - BA,11.38
+2022-07,São Luís - MA,10.45
+2022-07,São Paulo - SP,10.5
+2022-08,Aracaju - SE,9.15
+2022-08,Belo Horizonte - MG,7.59
+2022-08,Belém - PA,6.57
+2022-08,Brasília - DF,7.74
+2022-08,Campo Grande - MS,8.73
+2022-08,Curitiba - PR,9.03
+2022-08,Fortaleza - CE,8.9
+2022-08,Goiânia - GO,7.49
+2022-08,Grande Vitória - ES,8.21
+2022-08,Porto Alegre - RS,6.95
+2022-08,Recife - PE,8.42
+2022-08,Rio Branco - AC,8.66
+2022-08,Rio de Janeiro - RJ,9.86
+2022-08,Salvador - BA,10.42
+2022-08,São Luís - MA,8.37
+2022-08,São Paulo - SP,9.36
+2022-09,Aracaju - SE,7.73
+2022-09,Belo Horizonte - MG,5.79
+2022-09,Belém - PA,5.46
+2022-09,Brasília - DF,6.61
+2022-09,Campo Grande - MS,7.15
+2022-09,Curitiba - PR,7.21
+2022-09,Fortaleza - CE,6.89
+2022-09,Goiânia - GO,6.3
+2022-09,Grande Vitória - ES,7.07
+2022-09,Porto Alegre - RS,4.86
+2022-09,Recife - PE,6.78
+2022-09,Rio Branco - AC,6.89
+2022-09,Rio de Janeiro - RJ,8.42
+2022-09,Salvador - BA,8.85
+2022-09,São Luís - MA,7.13
+2022-09,São Paulo - SP,7.92
+2022-10,Aracaju - SE,7.14
+2022-10,Belo Horizonte - MG,5.08
+2022-10,Belém - PA,5.33
+2022-10,Brasília - DF,6.21
+2022-10,Campo Grande - MS,6.53
+2022-10,Curitiba - PR,5.88
+2022-10,Fortaleza - CE,6.52
+2022-10,Goiânia - GO,5.25
+2022-10,Grande Vitória - ES,6.09
+2022-10,Porto Alegre - RS,4.46
+2022-10,Recife - PE,6.63
+2022-10,Rio Branco - AC,6.31
+2022-10,Rio de Janeiro - RJ,7.61
+2022-10,Salvador - BA,8.2
+2022-10,São Luís - MA,6.42
+2022-10,São Paulo - SP,7.19
+2022-11,Aracaju - SE,6.29
+2022-11,Belo Horizonte - MG,4.69
+2022-11,Belém - PA,5.46
+2022-11,Brasília - DF,6.2
+2022-11,Campo Grande - MS,5.27
+2022-11,Curitiba - PR,5.0
+2022-11,Fortaleza - CE,5.7
+2022-11,Goiânia - GO,4.8
+2022-11,Grande Vitória - ES,5.12
+2022-11,Porto Alegre - RS,3.91
+2022-11,Recife - PE,5.97
+2022-11,Rio Branco - AC,5.57
+2022-11,Rio de Janeiro - RJ,7.04
+2022-11,Salvador - BA,6.96
+2022-11,São Luís - MA,6.03
+2022-11,São Paulo - SP,6.7
+2022-12,Aracaju - SE,6.02
+2022-12,Belo Horizonte - MG,4.65
+2022-12,Belém - PA,5.57
+2022-12,Brasília - DF,6.25
+2022-12,Campo Grande - MS,5.18
+2022-12,Curitiba - PR,5.25
+2022-12,Fortaleza - CE,5.76
+2022-12,Goiânia - GO,4.77
+2022-12,Grande Vitória - ES,5.04
+2022-12,Porto Alegre - RS,3.63
+2022-12,Recife - PE,5.79
+2022-12,Rio Branco - AC,5.72
+2022-12,Rio de Janeiro - RJ,6.64
+2022-12,Salvador - BA,6.27
+2022-12,São Luís - MA,6.09
+2022-12,São Paulo - SP,6.62
+2023-01,Aracaju - SE,5.73
+2023-01,Belo Horizonte - MG,4.67
+2023-01,Belém - PA,5.32
+2023-01,Brasília - DF,6.08
+2023-01,Campo Grande - MS,5.16
+2023-01,Curitiba - PR,4.71
+2023-01,Fortaleza - CE,5.9
+2023-01,Goiânia - GO,4.25
+2023-01,Grande Vitória - ES,5.4
+2023-01,Porto Alegre - RS,4.42
+2023-01,Recife - PE,5.39
+2023-01,Rio Branco - AC,5.51
+2023-01,Rio de Janeiro - RJ,6.46
+2023-01,Salvador - BA,6.52
+2023-01,São Luís - MA,5.51
+2023-01,São Paulo - SP,6.67
+2023-02,Aracaju - SE,5.33
+2023-02,Belo Horizonte - MG,4.4
+2023-02,Belém - PA,5.2
+2023-02,Brasília - DF,5.6
+2023-02,Campo Grande - MS,4.62
+2023-02,Curitiba - PR,4.51
+2023-02,Fortaleza - CE,5.86
+2023-02,Goiânia - GO,4.18
+2023-02,Grande Vitória - ES,5.47
+2023-02,Porto Alegre - RS,4.75
+2023-02,Recife - PE,5.41
+2023-02,Rio Branco - AC,5.0
+2023-02,Rio de Janeiro - RJ,5.76
+2023-02,Salvador - BA,6.49
+2023-02,São Luís - MA,4.81
+2023-02,São Paulo - SP,6.53
+2023-03,Aracaju - SE,4.58
+2023-03,Belo Horizonte - MG,3.32
+2023-03,Belém - PA,4.55
+2023-03,Brasília - DF,5.29
+2023-03,Campo Grande - MS,3.54
+2023-03,Curitiba - PR,3.12
+2023-03,Fortaleza - CE,4.46
+2023-03,Goiânia - GO,3.08
+2023-03,Grande Vitória - ES,4.78
+2023-03,Porto Alegre - RS,4.38
+2023-03,Recife - PE,4.47
+2023-03,Rio Branco - AC,4.16
+2023-03,Rio de Janeiro - RJ,4.69
+2023-03,Salvador - BA,5.35
+2023-03,São Luís - MA,3.44
+2023-03,São Paulo - SP,5.61
+2023-04,Aracaju - SE,3.58
+2023-04,Belo Horizonte - MG,2.85
+2023-04,Belém - PA,3.88
+2023-04,Brasília - DF,4.61
+2023-04,Campo Grande - MS,3.21
+2023-04,Curitiba - PR,2.83
+2023-04,Fortaleza - CE,4.03
+2023-04,Goiânia - GO,3.04
+2023-04,Grande Vitória - ES,4.24
+2023-04,Porto Alegre - RS,3.72
+2023-04,Recife - PE,3.47
+2023-04,Rio Branco - AC,3.89
+2023-04,Rio de Janeiro - RJ,4.13
+2023-04,Salvador - BA,5.17
+2023-04,São Luís - MA,2.93
+2023-04,São Paulo - SP,5.2
+2023-05,Aracaju - SE,3.17
+2023-05,Belo Horizonte - MG,3.06
+2023-05,Belém - PA,3.52
+2023-05,Brasília - DF,4.49
+2023-05,Campo Grande - MS,3.24
+2023-05,Curitiba - PR,2.7
+2023-05,Fortaleza - CE,3.16
+2023-05,Goiânia - GO,2.81
+2023-05,Grande Vitória - ES,4.33
+2023-05,Porto Alegre - RS,3.32
+2023-05,Recife - PE,3.33
+2023-05,Rio Branco - AC,3.97
+2023-05,Rio de Janeiro - RJ,3.63
+2023-05,Salvador - BA,4.2
+2023-05,São Luís - MA,2.25
+2023-05,São Paulo - SP,5.09
+2023-06,Aracaju - SE,2.75
+2023-06,Belo Horizonte - MG,2.53
+2023-06,Belém - PA,3.15
+2023-06,Brasília - DF,3.24
+2023-06,Campo Grande - MS,2.44
+2023-06,Curitiba - PR,2.06
+2023-06,Fortaleza - CE,2.12
+2023-06,Goiânia - GO,1.3
+2023-06,Grande Vitória - ES,3.76
+2023-06,Porto Alegre - RS,2.58
+2023-06,Recife - PE,2.46
+2023-06,Rio Branco - AC,2.62
+2023-06,Rio de Janeiro - RJ,3.02
+2023-06,Salvador - BA,2.68
+2023-06,São Luís - MA,1.1
+2023-06,São Paulo - SP,4.44
+2023-07,Aracaju - SE,4.28
+2023-07,Belo Horizonte - MG,3.47
+2023-07,Belém - PA,4.77
+2023-07,Brasília - DF,4.61
+2023-07,Campo Grande - MS,3.3
+2023-07,Curitiba - PR,3.81
+2023-07,Fortaleza - CE,2.96
+2023-07,Goiânia - GO,3.66
+2023-07,Grande Vitória - ES,5.18
+2023-07,Porto Alegre - RS,3.73
+2023-07,Recife - PE,3.3
+2023-07,Rio Branco - AC,3.89
+2023-07,Rio de Janeiro - RJ,3.51
+2023-07,Salvador - BA,4.04
+2023-07,São Luís - MA,1.79
+2023-07,São Paulo - SP,4.49
+2023-08,Aracaju - SE,5.16
+2023-08,Belo Horizonte - MG,4.7
+2023-08,Belém - PA,5.24
+2023-08,Brasília - DF,5.55
+2023-08,Campo Grande - MS,3.98
+2023-08,Curitiba - PR,4.6
+2023-08,Fortaleza - CE,4.5
+2023-08,Goiânia - GO,4.12
+2023-08,Grande Vitória - ES,5.03
+2023-08,Porto Alegre - RS,4.93
+2023-08,Recife - PE,5.15
+2023-08,Rio Branco - AC,4.71
+2023-08,Rio de Janeiro - RJ,3.46
+2023-08,Salvador - BA,4.4
+2023-08,São Luís - MA,3.34
+2023-08,São Paulo - SP,4.73
+2023-09,Aracaju - SE,5.37
+2023-09,Belo Horizonte - MG,5.33
+2023-09,Belém - PA,5.72
+2023-09,Brasília - DF,6.14
+2023-09,Campo Grande - MS,4.69
+2023-09,Curitiba - PR,4.99
+2023-09,Fortaleza - CE,5.32
+2023-09,Goiânia - GO,4.33
+2023-09,Grande Vitória - ES,5.29
+2023-09,Porto Alegre - RS,5.6
+2023-09,Recife - PE,5.66
+2023-09,Rio Branco - AC,5.28
+2023-09,Rio de Janeiro - RJ,3.76
+2023-09,Salvador - BA,4.79
+2023-09,São Luís - MA,4.01
+2023-09,São Paulo - SP,5.47
+2023-10,Aracaju - SE,4.87
+2023-10,Belo Horizonte - MG,5.24
+2023-10,Belém - PA,5.12
+2023-10,Brasília - DF,5.87
+2023-10,Campo Grande - MS,4.5
+2023-10,Curitiba - PR,4.96
+2023-10,Fortaleza - CE,4.62
+2023-10,Goiânia - GO,4.61
+2023-10,Grande Vitória - ES,4.85
+2023-10,Porto Alegre - RS,4.85
+2023-10,Recife - PE,4.57
+2023-10,Rio Branco - AC,5.14
+2023-10,Rio de Janeiro - RJ,3.73
+2023-10,Salvador - BA,4.45
+2023-10,São Luís - MA,3.04
+2023-10,São Paulo - SP,5.02
+2023-11,Aracaju - SE,4.95
+2023-11,Belo Horizonte - MG,4.95
+2023-11,Belém - PA,5.16
+2023-11,Brasília - DF,5.21
+2023-11,Campo Grande - MS,4.7
+2023-11,Curitiba - PR,4.68
+2023-11,Fortaleza - CE,4.65
+2023-11,Goiânia - GO,3.94
+2023-11,Grande Vitória - ES,5.17
+2023-11,Porto Alegre - RS,4.76
+2023-11,Recife - PE,3.86
+2023-11,Rio Branco - AC,5.05
+2023-11,Rio de Janeiro - RJ,3.96
+2023-11,Salvador - BA,4.0
+2023-11,São Luís - MA,2.27
+2023-11,São Paulo - SP,5.04
+2023-12,Aracaju - SE,3.95
+2023-12,Belo Horizonte - MG,5.05
+2023-12,Belém - PA,4.83
+2023-12,Brasília - DF,5.51
+2023-12,Campo Grande - MS,4.76
+2023-12,Curitiba - PR,4.17
+2023-12,Fortaleza - CE,4.88
+2023-12,Goiânia - GO,3.83
+2023-12,Grande Vitória - ES,5.1
+2023-12,Porto Alegre - RS,4.63
+2023-12,Recife - PE,3.17
+2023-12,Rio Branco - AC,4.62
+2023-12,Rio de Janeiro - RJ,4.3
+2023-12,Salvador - BA,4.47
+2023-12,São Luís - MA,1.69
+2023-12,São Paulo - SP,4.95
+2024-01,Aracaju - SE,4.06
+2024-01,Belo Horizonte - MG,5.34
+2024-01,Belém - PA,5.18
+2024-01,Brasília - DF,4.78
+2024-01,Campo Grande - MS,4.63
+2024-01,Curitiba - PR,4.63
+2024-01,Fortaleza - CE,4.69
+2024-01,Goiânia - GO,4.48
+2024-01,Grande Vitória - ES,4.53
+2024-01,Porto Alegre - RS,4.52
+2024-01,Recife - PE,3.79
+2024-01,Rio Branco - AC,4.58
+2024-01,Rio de Janeiro - RJ,4.31
+2024-01,Salvador - BA,3.48
+2024-01,São Luís - MA,2.78
+2024-01,São Paulo - SP,4.51
+2024-02,Aracaju - SE,4.27
+2024-02,Belo Horizonte - MG,5.35
+2024-02,Belém - PA,5.0
+2024-02,Brasília - DF,5.06
+2024-02,Campo Grande - MS,4.91
+2024-02,Curitiba - PR,4.37
+2024-02,Fortaleza - CE,4.8
+2024-02,Goiânia - GO,4.13
+2024-02,Grande Vitória - ES,4.3
+2024-02,Porto Alegre - RS,4.29
+2024-02,Recife - PE,3.53
+2024-02,Rio Branco - AC,4.39
+2024-02,Rio de Janeiro - RJ,4.54
+2024-02,Salvador - BA,3.63
+2024-02,São Luís - MA,3.2
+2024-02,São Paulo - SP,4.52
+2024-03,Aracaju - SE,4.07
+2024-03,Belo Horizonte - MG,5.07
+2024-03,Belém - PA,4.69
+2024-03,Brasília - DF,4.13
+2024-03,Campo Grande - MS,4.32
+2024-03,Curitiba - PR,3.34
+2024-03,Fortaleza - CE,4.73
+2024-03,Goiânia - GO,3.45
+2024-03,Grande Vitória - ES,3.48
+2024-03,Porto Alegre - RS,2.86
+2024-03,Recife - PE,3.23
+2024-03,Rio Branco - AC,4.02
+2024-03,Rio de Janeiro - RJ,4.06
+2024-03,Salvador - BA,3.34
+2024-03,São Luís - MA,3.28
+2024-03,São Paulo - SP,4.06
+2024-04,Aracaju - SE,4.47
+2024-04,Belo Horizonte - MG,4.91
+2024-04,Belém - PA,4.45
+2024-04,Brasília - DF,4.12
+2024-04,Campo Grande - MS,3.77
+2024-04,Curitiba - PR,3.13
+2024-04,Fortaleza - CE,3.99
+2024-04,Goiânia - GO,2.91
+2024-04,Grande Vitória - ES,3.61
+2024-04,Porto Alegre - RS,3.02
+2024-04,Recife - PE,3.63
+2024-04,Rio Branco - AC,3.51
+2024-04,Rio de Janeiro - RJ,3.33
+2024-04,Salvador - BA,3.48
+2024-04,São Luís - MA,3.21
+2024-04,São Paulo - SP,3.73
+2024-05,Aracaju - SE,4.73
+2024-05,Belo Horizonte - MG,5.07
+2024-05,Belém - PA,4.58
+2024-05,Brasília - DF,4.27
+2024-05,Campo Grande - MS,3.89
+2024-05,Curitiba - PR,3.38
+2024-05,Fortaleza - CE,3.98
+2024-05,Goiânia - GO,2.69
+2024-05,Grande Vitória - ES,4.12
+2024-05,Porto Alegre - RS,3.83
+2024-05,Recife - PE,3.66
+2024-05,Rio Branco - AC,3.41
+2024-05,Rio de Janeiro - RJ,3.71
+2024-05,Salvador - BA,3.71
+2024-05,São Luís - MA,4.25
+2024-05,São Paulo - SP,3.86
+2024-06,Aracaju - SE,4.54
+2024-06,Belo Horizonte - MG,5.22
+2024-06,Belém - PA,4.81
+2024-06,Brasília - DF,5.05
+2024-06,Campo Grande - MS,4.16
+2024-06,Curitiba - PR,3.61
+2024-06,Fortaleza - CE,4.69
+2024-06,Goiânia - GO,4.21
+2024-06,Grande Vitória - ES,4.11
+2024-06,Porto Alegre - RS,3.71
+2024-06,Recife - PE,3.27
+2024-06,Rio Branco - AC,4.28
+2024-06,Rio de Janeiro - RJ,4.03
+2024-06,Salvador - BA,3.91
+2024-06,São Luís - MA,5.02
+2024-06,São Paulo - SP,4.17
+2024-07,Aracaju - SE,4.46
+2024-07,Belo Horizonte - MG,5.67
+2024-07,Belém - PA,4.94
+2024-07,Brasília - DF,5.07
+2024-07,Campo Grande - MS,4.59
+2024-07,Curitiba - PR,3.63
+2024-07,Fortaleza - CE,5.01
+2024-07,Goiânia - GO,4.5
+2024-07,Grande Vitória - ES,4.33
+2024-07,Porto Alegre - RS,3.53
+2024-07,Recife - PE,3.2
+2024-07,Rio Branco - AC,4.51
+2024-07,Rio de Janeiro - RJ,4.29
+2024-07,Salvador - BA,3.84
+2024-07,São Luís - MA,5.52
+2024-07,São Paulo - SP,4.74
+2024-08,Aracaju - SE,3.76
+2024-08,Belo Horizonte - MG,5.89
+2024-08,Belém - PA,3.87
+2024-08,Brasília - DF,4.54
+2024-08,Campo Grande - MS,4.34
+2024-08,Curitiba - PR,2.95
+2024-08,Fortaleza - CE,4.23
+2024-08,Goiânia - GO,3.84
+2024-08,Grande Vitória - ES,4.15
+2024-08,Porto Alegre - RS,3.47
+2024-08,Recife - PE,2.76
+2024-08,Rio Branco - AC,3.83
+2024-08,Rio de Janeiro - RJ,4.25
+2024-08,Salvador - BA,3.69
+2024-08,São Luís - MA,4.5
+2024-08,São Paulo - SP,4.61
+2024-09,Aracaju - SE,3.75
+2024-09,Belo Horizonte - MG,6.16
+2024-09,Belém - PA,3.6
+2024-09,Brasília - DF,4.51
+2024-09,Campo Grande - MS,4.47
+2024-09,Curitiba - PR,3.52
+2024-09,Fortaleza - CE,4.41
+2024-09,Goiânia - GO,5.07
+2024-09,Grande Vitória - ES,4.23
+2024-09,Porto Alegre - RS,3.69
+2024-09,Recife - PE,2.88
+2024-09,Rio Branco - AC,4.13
+2024-09,Rio de Janeiro - RJ,4.61
+2024-09,Salvador - BA,3.93
+2024-09,São Luís - MA,4.61
+2024-09,São Paulo - SP,4.59
+2024-10,Aracaju - SE,3.76
+2024-10,Belo Horizonte - MG,6.22
+2024-10,Belém - PA,4.47
+2024-10,Brasília - DF,4.57
+2024-10,Campo Grande - MS,4.9
+2024-10,Curitiba - PR,3.78
+2024-10,Fortaleza - CE,4.95
+2024-10,Goiânia - GO,5.07
+2024-10,Grande Vitória - ES,4.56
+2024-10,Porto Alegre - RS,3.81
+2024-10,Recife - PE,3.49
+2024-10,Rio Branco - AC,4.39
+2024-10,Rio de Janeiro - RJ,4.84
+2024-10,Salvador - BA,4.13
+2024-10,São Luís - MA,5.45
+2024-10,São Paulo - SP,5.05
+2024-11,Aracaju - SE,3.81
+2024-11,Belo Horizonte - MG,6.53
+2024-11,Belém - PA,4.81
+2024-11,Brasília - DF,4.46
+2024-11,Campo Grande - MS,5.07
+2024-11,Curitiba - PR,4.22
+2024-11,Fortaleza - CE,5.09
+2024-11,Goiânia - GO,5.18
+2024-11,Grande Vitória - ES,4.31
+2024-11,Porto Alegre - RS,3.49
+2024-11,Recife - PE,4.23
+2024-11,Rio Branco - AC,5.31
+2024-11,Rio de Janeiro - RJ,4.76
+2024-11,Salvador - BA,4.6
+2024-11,São Luís - MA,6.21
+2024-11,São Paulo - SP,5.03
+2024-12,Aracaju - SE,4.81
+2024-12,Belo Horizonte - MG,5.95
+2024-12,Belém - PA,4.7
+2024-12,Brasília - DF,3.92
+2024-12,Campo Grande - MS,5.07
+2024-12,Curitiba - PR,4.43
+2024-12,Fortaleza - CE,4.9
+2024-12,Goiânia - GO,5.56
+2024-12,Grande Vitória - ES,4.25
+2024-12,Porto Alegre - RS,3.56
+2024-12,Recife - PE,4.36
+2024-12,Rio Branco - AC,4.92
+2024-12,Rio de Janeiro - RJ,4.68
+2024-12,Salvador - BA,4.65
+2024-12,São Luís - MA,6.51
+2024-12,São Paulo - SP,5.01
+2025-01,Aracaju - SE,4.67
+2025-01,Belo Horizonte - MG,5.25
+2025-01,Belém - PA,4.15
+2025-01,Brasília - DF,4.88
+2025-01,Campo Grande - MS,4.61
+2025-01,Curitiba - PR,3.93
+2025-01,Fortaleza - CE,4.31
+2025-01,Goiânia - GO,4.61
+2025-01,Grande Vitória - ES,4.23
+2025-01,Porto Alegre - RS,3.4
+2025-01,Recife - PE,3.83
+2025-01,Rio Branco - AC,3.91
+2025-01,Rio de Janeiro - RJ,4.29
+2025-01,Salvador - BA,4.91
+2025-01,São Luís - MA,5.3
+2025-01,São Paulo - SP,4.9
+2025-02,Aracaju - SE,5.24
+2025-02,Belo Horizonte - MG,5.76
+2025-02,Belém - PA,5.01
+2025-02,Brasília - DF,5.54
+2025-02,Campo Grande - MS,5.45
+2025-02,Curitiba - PR,4.66
+2025-02,Fortaleza - CE,4.51
+2025-02,Goiânia - GO,5.29
+2025-02,Grande Vitória - ES,5.07
+2025-02,Porto Alegre - RS,4.19
+2025-02,Recife - PE,4.51
+2025-02,Rio Branco - AC,4.74
+2025-02,Rio de Janeiro - RJ,4.83
+2025-02,Salvador - BA,5.35
+2025-02,São Luís - MA,5.67
+2025-02,São Paulo - SP,5.16
+2025-03,Aracaju - SE,5.13
+2025-03,Belo Horizonte - MG,6.07
+2025-03,Belém - PA,4.81
+2025-03,Brasília - DF,5.6
+2025-03,Campo Grande - MS,5.78
+2025-03,Curitiba - PR,5.43
+2025-03,Fortaleza - CE,4.55
+2025-03,Goiânia - GO,5.24
+2025-03,Grande Vitória - ES,5.57
+2025-03,Porto Alegre - RS,5.12
+2025-03,Recife - PE,4.54
+2025-03,Rio Branco - AC,4.83
+2025-03,Rio de Janeiro - RJ,5.2
+2025-03,Salvador - BA,5.61
+2025-03,São Luís - MA,5.4
+2025-03,São Paulo - SP,5.76
+2025-04,Aracaju - SE,4.73
+2025-04,Belo Horizonte - MG,6.11
+2025-04,Belém - PA,4.93
+2025-04,Brasília - DF,5.07
+2025-04,Campo Grande - MS,6.03
+2025-04,Curitiba - PR,5.43
+2025-04,Fortaleza - CE,5.33
+2025-04,Goiânia - GO,5.13
+2025-04,Grande Vitória - ES,5.46
+2025-04,Porto Alegre - RS,5.44
+2025-04,Recife - PE,4.2
+2025-04,Rio Branco - AC,5.25
+2025-04,Rio de Janeiro - RJ,5.21
+2025-04,Salvador - BA,5.12
+2025-04,São Luís - MA,5.39
+2025-04,São Paulo - SP,5.94
+2025-05,Aracaju - SE,4.35
+2025-05,Belo Horizonte - MG,5.62
+2025-05,Belém - PA,5.48
+2025-05,Brasília - DF,5.57
+2025-05,Campo Grande - MS,5.72
+2025-05,Curitiba - PR,5.23
+2025-05,Fortaleza - CE,5.35
+2025-05,Goiânia - GO,5.71
+2025-05,Grande Vitória - ES,5.14
+2025-05,Porto Alegre - RS,4.66
+2025-05,Recife - PE,4.34
+2025-05,Rio Branco - AC,5.05
+2025-05,Rio de Janeiro - RJ,4.97
+2025-05,Salvador - BA,4.88
+2025-05,São Luís - MA,5.07
+2025-05,São Paulo - SP,5.68
+2025-06,Aracaju - SE,4.41
+2025-06,Belo Horizonte - MG,5.7
+2025-06,Belém - PA,5.51
+2025-06,Brasília - DF,5.34
+2025-06,Campo Grande - MS,5.51
+2025-06,Curitiba - PR,5.11
+2025-06,Fortaleza - CE,5.45
+2025-06,Goiânia - GO,5.35
+2025-06,Grande Vitória - ES,5.35
+2025-06,Porto Alegre - RS,4.86
+2025-06,Recife - PE,4.77
+2025-06,Rio Branco - AC,5.37
+2025-06,Rio de Janeiro - RJ,4.94
+2025-06,Salvador - BA,5.22
+2025-06,São Luís - MA,5.19
+2025-06,São Paulo - SP,5.68
+2025-07,Aracaju - SE,4.52
+2025-07,Belo Horizonte - MG,5.66
+2025-07,Belém - PA,5.06
+2025-07,Brasília - DF,4.97
+2025-07,Campo Grande - MS,5.01
+2025-07,Curitiba - PR,5.15
+2025-07,Fortaleza - CE,5.07
+2025-07,Goiânia - GO,4.76
+2025-07,Grande Vitória - ES,5.19
+2025-07,Porto Alegre - RS,4.91
+2025-07,Recife - PE,4.76
+2025-07,Rio Branco - AC,4.65
+2025-07,Rio de Janeiro - RJ,4.9
+2025-07,Salvador - BA,5.06
+2025-07,São Luís - MA,4.61
+2025-07,São Paulo - SP,5.61
+2025-08,Aracaju - SE,4.59
+2025-08,Belo Horizonte - MG,5.24
+2025-08,Belém - PA,5.33
+2025-08,Brasília - DF,4.91
+2025-08,Campo Grande - MS,4.68
+2025-08,Curitiba - PR,5.45
+2025-08,Fortaleza - CE,5.0
+2025-08,Goiânia - GO,4.87
+2025-08,Grande Vitória - ES,5.29
+2025-08,Porto Alegre - RS,4.3
+2025-08,Recife - PE,4.59
+2025-08,Rio Branco - AC,4.79
+2025-08,Rio de Janeiro - RJ,4.63
+2025-08,Salvador - BA,4.94
+2025-08,São Luís - MA,4.9
+2025-08,São Paulo - SP,5.61
+2025-09,Aracaju - SE,5.06
+2025-09,Belo Horizonte - MG,5.04
+2025-09,Belém - PA,5.42
+2025-09,Brasília - DF,5.07
+2025-09,Campo Grande - MS,4.65
+2025-09,Curitiba - PR,5.03
+2025-09,Fortaleza - CE,5.08
+2025-09,Goiânia - GO,4.53
+2025-09,Grande Vitória - ES,5.57
+2025-09,Porto Alegre - RS,4.41
+2025-09,Recife - PE,4.99
+2025-09,Rio Branco - AC,4.49
+2025-09,Rio de Janeiro - RJ,4.57
+2025-09,Salvador - BA,4.82
+2025-09,São Luís - MA,5.33
+2025-09,São Paulo - SP,5.84
+2025-10,Aracaju - SE,5.16
+2025-10,Belo Horizonte - MG,4.36
+2025-10,Belém - PA,4.88
+2025-10,Brasília - DF,4.42
+2025-10,Campo Grande - MS,3.84
+2025-10,Curitiba - PR,4.57
+2025-10,Fortaleza - CE,4.58
+2025-10,Goiânia - GO,4.7
+2025-10,Grande Vitória - ES,5.37
+2025-10,Porto Alegre - RS,4.59
+2025-10,Recife - PE,4.65
+2025-10,Rio Branco - AC,4.02
+2025-10,Rio de Janeiro - RJ,3.89
+2025-10,Salvador - BA,4.39
+2025-10,São Luís - MA,4.58
+2025-10,São Paulo - SP,5.17
+2025-11,Aracaju - SE,4.8
+2025-11,Belo Horizonte - MG,3.81
+2025-11,Belém - PA,4.51
+2025-11,Brasília - DF,4.4
+2025-11,Campo Grande - MS,3.43
+2025-11,Curitiba - PR,4.33
+2025-11,Fortaleza - CE,4.56
+2025-11,Goiânia - GO,4.73
+2025-11,Grande Vitória - ES,5.3
+2025-11,Porto Alegre - RS,4.65
+2025-11,Recife - PE,4.13
+2025-11,Rio Branco - AC,3.23
+2025-11,Rio de Janeiro - RJ,3.5
+2025-11,Salvador - BA,4.11
+2025-11,São Luís - MA,4.18
+2025-11,São Paulo - SP,5.05
+2025-12,Aracaju - SE,4.48
+2025-12,Belo Horizonte - MG,3.97
+2025-12,Belém - PA,3.75
+2025-12,Brasília - DF,4.7
+2025-12,Campo Grande - MS,3.16
+2025-12,Curitiba - PR,3.83
+2025-12,Fortaleza - CE,4.06
+2025-12,Goiânia - GO,4.14
+2025-12,Grande Vitória - ES,4.97
+2025-12,Porto Alegre - RS,4.79
+2025-12,Recife - PE,4.33
+2025-12,Rio Branco - AC,3.29
+2025-12,Rio de Janeiro - RJ,3.44
+2025-12,Salvador - BA,3.8
+2025-12,São Luís - MA,3.25
+2025-12,São Paulo - SP,4.79
+2026-01,Aracaju - SE,4.28
+2026-01,Belo Horizonte - MG,3.98
+2026-01,Belém - PA,3.69
+2026-01,Brasília - DF,4.39
+2026-01,Campo Grande - MS,3.61
+2026-01,Curitiba - PR,4.35
+2026-01,Fortaleza - CE,4.43
+2026-01,Goiânia - GO,4.4
+2026-01,Grande Vitória - ES,5.04
+2026-01,Porto Alegre - RS,5.06
+2026-01,Recife - PE,4.5
+2026-01,Rio Branco - AC,4.48
+2026-01,Rio de Janeiro - RJ,3.69
+2026-01,Salvador - BA,3.94
+2026-01,São Luís - MA,3.57
+2026-01,São Paulo - SP,4.92
+2026-02,Aracaju - SE,3.3
+2026-02,Belo Horizonte - MG,3.42
+2026-02,Belém - PA,2.77
+2026-02,Brasília - DF,3.57
+2026-02,Campo Grande - MS,2.15
+2026-02,Curitiba - PR,3.09
+2026-02,Fortaleza - CE,4.38
+2026-02,Goiânia - GO,3.92
+2026-02,Grande Vitória - ES,4.26
+2026-02,Porto Alegre - RS,4.07
+2026-02,Recife - PE,3.81
+2026-02,Rio Branco - AC,3.46
+2026-02,Rio de Janeiro - RJ,3.02
+2026-02,Salvador - BA,2.94
+2026-02,São Luís - MA,2.42
+2026-02,São Paulo - SP,4.7
+2026-03,Aracaju - SE,3.83
+2026-03,Belo Horizonte - MG,3.95
+2026-03,Belém - PA,3.75
+2026-03,Brasília - DF,4.17
+2026-03,Campo Grande - MS,2.66
+2026-03,Curitiba - PR,3.03
+2026-03,Fortaleza - CE,4.89
+2026-03,Goiânia - GO,4.01
+2026-03,Grande Vitória - ES,4.46
+2026-03,Porto Alegre - RS,4.27
+2026-03,Recife - PE,4.58
+2026-03,Rio Branco - AC,3.56
+2026-03,Rio de Janeiro - RJ,3.27
+2026-03,Salvador - BA,4.02
+2026-03,São Luís - MA,3.27
+2026-03,São Paulo - SP,4.78
+2026-04,Aracaju - SE,4.3
+2026-04,Belo Horizonte - MG,4.08
+2026-04,Belém - PA,4.42
+2026-04,Brasília - DF,4.3
+2026-04,Campo Grande - MS,3.09
+2026-04,Curitiba - PR,3.33
+2026-04,Fortaleza - CE,5.11
+2026-04,Goiânia - GO,5.03
+2026-04,Grande Vitória - ES,4.69
+2026-04,Porto Alegre - RS,3.98
+2026-04,Recife - PE,5.2
+2026-04,Rio Branco - AC,3.57
+2026-04,Rio de Janeiro - RJ,3.86
+2026-04,Salvador - BA,4.52
+2026-04,São Luís - MA,3.93
+2026-04,São Paulo - SP,4.81
+2026-05,Aracaju - SE,5.41
+2026-05,Belo Horizonte - MG,4.25
+2026-05,Belém - PA,4.38
+2026-05,Brasília - DF,4.1
+2026-05,Campo Grande - MS,4.31
+2026-05,Curitiba - PR,3.32
+2026-05,Fortaleza - CE,5.27
+2026-05,Goiânia - GO,5.32
+2026-05,Grande Vitória - ES,4.82
+2026-05,Porto Alegre - RS,4.45
+2026-05,Recife - PE,5.61
+2026-05,Rio Branco - AC,4.11
+2026-05,Rio de Janeiro - RJ,4.19
+2026-05,Salvador - BA,4.69
+2026-05,São Luís - MA,4.49
+2026-05,São Paulo - SP,5.32
+2026-06,Aracaju - SE,5.24
+2026-06,Belo Horizonte - MG,3.83
+2026-06,Belém - PA,4.29
+2026-06,Brasília - DF,4.52
+2026-06,Campo Grande - MS,4.41
+2026-06,Curitiba - PR,3.6
+2026-06,Fortaleza - CE,5.0
+2026-06,Goiânia - GO,5.43
+2026-06,Grande Vitória - ES,4.96
+2026-06,Porto Alegre - RS,4.78
+2026-06,Recife - PE,5.22
+2026-06,Rio Branco - AC,3.75
+2026-06,Rio de Janeiro - RJ,4.44
+2026-06,Salvador - BA,4.54
+2026-06,São Luís - MA,4.71
+2026-06,São Paulo - SP,4.99
+2026-07,Aracaju - SE,4.82
+2026-07,Belo Horizonte - MG,3.42
+2026-07,Belém - PA,3.86
+2026-07,Brasília - DF,4.55
+2026-07,Campo Grande - MS,4.61
+2026-07,Curitiba - PR,3.05
+2026-07,Fortaleza - CE,4.95
+2026-07,Goiânia - GO,5.58
+2026-07,Grande Vitória - ES,5.05
+2026-07,Porto Alegre - RS,4.39
+2026-07,Recife - PE,4.98
+2026-07,Rio Branco - AC,4.24
+2026-07,Rio de Janeiro - RJ,4.5
+2026-07,Salvador - BA,4.19
+2026-07,São Luís - MA,4.87
+2026-07,São Paulo - SP,4.81
+2026-08,Aracaju - SE,4.69
+2026-08,Belo Horizonte - MG,3.39
+2026-08,Belém - PA,3.65
+2026-08,Brasília - DF,4.41
+2026-08,Campo Grande - MS,4.7
+2026-08,Curitiba - PR,2.46
+2026-08,Fortaleza - CE,4.92
+2026-08,Goiânia - GO,5.77
+2026-08,Grande Vitória - ES,4.58
+2026-08,Porto Alegre - RS,4.53
+2026-08,Recife - PE,4.67
+2026-08,Rio Branco - AC,4.14
+2026-08,Rio de Janeiro - RJ,4.42
+2026-08,Salvador - BA,3.65
+2026-08,São Luís - MA,4.52
+2026-08,São Paulo - SP,4.47
+2026-09,Aracaju - SE,4.73
+2026-09,Belo Horizonte - MG,4.16
+2026-09,Belém - PA,4.02
+2026-09,Brasília - DF,4.91
+2026-09,Campo Grande - MS,4.79
+2026-09,Curitiba - PR,2.72
+2026-09,Fortaleza - CE,5.12
+2026-09,Goiânia - GO,6.1
+2026-09,Grande Vitória - ES,4.91
+2026-09,Porto Alegre - RS,5.0
+2026-09,Recife - PE,4.77
+2026-09,Rio Branco - AC,4.22
+2026-09,Rio de Janeiro - RJ,4.72
+2026-09,Salvador - BA,4.24
+2026-09,São Luís - MA,4.31
+2026-09,São Paulo - SP,4.74
