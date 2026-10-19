@@ -1,0 +1,40 @@
+---
+import "@/styles/global.css"
+import Header from "@/components/Header"
+import { THEMES } from "@/lib/pages"
+import { monthLabel } from "@/lib/format"
+import { catalog } from "@/lib/data"
+
+interface Props { title: string; description: string; current: string }
+const { title, description, current } = Astro.props
+const themes = THEMES.map((t) => ({ slug: t.slug, title: t.title }))
+const pageTitle = current === "home" ? "Dado em Foco" : `${title} · Dado em Foco`
+---
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <link rel="icon" href={`${import.meta.env.BASE_URL.replace(/\/$/, "")}/favicon.svg`} type="image/svg+xml" />
+    <script is:inline>
+      // follow the system theme
+      const mq = matchMedia("(prefers-color-scheme: dark)")
+      const sync = () => document.documentElement.classList.toggle("dark", mq.matches)
+      sync(); mq.addEventListener("change", sync)
+    </script>
+  </head>
+  <body class="min-h-dvh bg-background text-foreground antialiased">
+    <div class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-6 sm:px-6">
+      <header><Header client:load themes={themes} current={current} /></header>
+      <main class="flex flex-col gap-6"><slot /></main>
+      <footer class="flex flex-col gap-1 border-t pt-4 text-xs text-muted-foreground">
+        <p>Valores em "R$ de hoje" corrigidos pelo IPCA até {monthLabel(catalog.base)}. Linhas pontilhadas cinza marcam o início de cada mandato presidencial.</p>
+        <p>Projeto independente e sem fins lucrativos. Código e dados abertos em <a class="underline underline-offset-2" href="https://github.com/free-brazil/dadoemfoco">github.com/free-brazil/dadoemfoco</a>.</p>
+      </footer>
+    </div>
+  </body>
+</html>

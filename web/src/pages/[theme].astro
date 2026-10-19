@@ -1,0 +1,81 @@
+---
+import Base from "@/layouts/Base.astro"
+import TimeChart from "@/components/TimeChart"
+import RankingChart from "@/components/RankingChart"
+import { THEMES, type Theme } from "@/lib/pages"
+import { series, terms, cases, curated } from "@/lib/data"
+import { monthLabel } from "@/lib/format"
+
+export function getStaticPaths() {
+  return THEMES.map((theme) => ({ params: { theme: theme.slug }, props: { theme } }))
+}
+const { theme } = Astro.props as { theme: Theme }
+const charts = theme.charts.map((c) => ({ ...c, data: series(c.id) }))
+const casos = theme.corruption ? curated("casos") : []
+const leniencia = theme.corruption ? curated("leniencia_resumo") : []
+const len = (k: string) => leniencia.find((r) => r.indicador === k)
+const brlBi = (v: string) => `R$ ${(Number(v) / 1e9).toLocaleString("pt-BR", { maximumFractionDigits: 2 })} bi`
+---
+<Base title={theme.title} description={`${theme.title}: ${theme.intro}`} current={theme.slug}>
+  <div class="flex flex-col gap-1">
+    <h1 class="text-2xl font-semibold tracking-tight">{theme.title}</h1>
+    <p class="text-muted-foreground">{theme.intro}</p>
+  </div>
+
+  {theme.corruption && (
+    <section aria-labelledby="leniencia" class="flex flex-col gap-3">
+      <h2 id="leniencia" class="text-base font-semibold">Acordos de leniência da CGU</h2>
+      <div class="grid grid-cols-2 gap-3 lg:grid-cols-4">
+        {[
+          ["Acordos assinados", len("acordos_assinados")?.value],
+          ["Em negociação", len("acordos_em_negociacao")?.value],
+          ["Valor combinado", brlBi(len("valor_pactuado")!.value)],
+          ["Valor já pago", brlBi(len("valor_pago")!.value)],
+        ].map(([label, v]) => (
+          <div class="flex flex-col gap-1 rounded-lg border bg-card p-4">
+            <span class="text-xs text-muted-foreground">{label}</span>
+            <span class="text-2xl font-semibold tracking-tight">{v}</span>
+          </div>
+        ))}
+      </div>
+      <p class="text-xs text-muted-foreground">
+        Acordos em que empresas admitem irregularidades e devolvem dinheiro à União. Posição de {monthLabel(len("valor_pago")!.date)}.
+        Fonte: <a class="underline underline-offset-2" href={len("valor_pago")!.source_url}>CGU</a>.
+      </p>
+    </section>
+  )}
+
+  {charts.map((c) => c.kind === "ranking"
+    ? <RankingChart client:load data={c.data} fmt={c.fmt} title={c.title} description={c.description} />
+    : <TimeChart client:load data={c.data} fmt={c.fmt} mode={c.mode} title={c.title} description={c.description} terms={terms} cases={cases} />
+  )}
+
+  {theme.corruption && (
+    <section aria-labelledby="casos" class="flex flex-col gap-3">
+      <h2 id="casos" class="text-base font-semibold">Linha do tempo dos casos</h2>
+      <p class="text-sm text-muted-foreground">
+        Operações e instituições, sem nomes de pessoas. O valor só aparece quando há fonte: órgão oficial primeiro,
+        imprensa quando não há fonte oficial, faixa quando as fontes discordam.
+      </p>
+      <ol class="grid gap-3 sm:grid-cols-2">
+        {casos.map((c) => (
+          <li class="flex flex-col gap-2 rounded-lg border bg-card p-4 text-sm">
+            <div class="flex items-baseline justify-between gap-2">
+              <span class="font-medium">{c.name}</span>
+              <span class="text-xs text-muted-foreground">{monthLabel(c.date)}</span>
+            </div>
+            <p class="text-muted-foreground">{c.what}</p>
+            <p class="text-xs">
+              <span class="text-muted-foreground">Valor envolvido: </span>
+              {c.valor
+                ? <><span class="font-medium">{c.valor}</span> <span class="text-muted-foreground">({c.valor_tipo === "imprensa" ? "estimativa da imprensa" : c.valor_tipo === "faixa" ? "fontes divergem" : "fonte oficial"}): {c.valor_fonte}</span></>
+                : <span class="text-muted-foreground">nenhuma fonte publicou um valor</span>}
+            </p>
+            <p class="text-xs text-muted-foreground">Situação: {c.status}</p>
+            <a class="text-xs underline underline-offset-2" href={c.source_url} target="_blank" rel="noopener">Fonte</a>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )}
+</Base>
