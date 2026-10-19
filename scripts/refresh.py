@@ -25,15 +25,17 @@ UF = {11: "RO", 12: "AC", 13: "AM", 14: "RR", 15: "PA", 16: "AP", 17: "TO", 21: 
 
 # ---------- fetch ----------
 
-def get_json(url, tries=3):
+def get_json(url, tries=3, headers=None):
+    body = b""
     for i in range(tries):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "dadoemfoco-refresh"})
+            req = urllib.request.Request(url, headers={"User-Agent": "dadoemfoco-refresh", **(headers or {})})
             with urllib.request.urlopen(req, timeout=120) as r:
-                return json.load(r)
+                body = r.read()
+            return json.loads(body)
         except Exception as e:  # network flake: retry, then give up loudly
             if i == tries - 1:
-                raise RuntimeError(f"{url}: {e}") from e
+                raise RuntimeError(f"{url}: {e} | {body[:200]!r}") from e
             time.sleep(3 * (i + 1))
 
 
@@ -83,7 +85,7 @@ def bcb_sgs(code):
     for y0 in range(int(START), int(time.strftime("%Y")) + 1, 10):  # the API refuses windows over 10 years
         url = (f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{code}/dados?formato=json"
                f"&dataInicial=01/01/{y0}&dataFinal=31/12/{y0 + 9}")
-        for r in get_json(url):
+        for r in get_json(url, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"}):
             out[f"{r['data'][6:10]}-{r['data'][3:5]}"] = float(r["valor"])
     return out
 
