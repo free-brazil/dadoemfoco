@@ -24,6 +24,8 @@ branch `data/refresh-*` para abrir um PR.
 Site: https://free-brazil.github.io/dadoemfoco/ — Astro + React + shadcn/ui (gráficos Recharts), em `web/`.
 Lê os CSVs de `data/` na hora do build; publicado no GitHub Pages a cada mudança em `main`.
 
+Precisa de Node ≥ 22.22.
+
 ```sh
 cd web && npm install
 npm run dev      # http://localhost:4321/dadoemfoco/
