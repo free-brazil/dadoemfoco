@@ -10,69 +10,77 @@ export function getStaticPaths() {
   return THEMES.map((theme) => ({ params: { theme: theme.slug }, props: { theme } }))
 }
 const { theme } = Astro.props as { theme: Theme }
-const charts = theme.charts.map((c) => ({ ...c, data: series(c.id) }))
+const charts = theme.charts.map((c) => {
+  const data = series(c.id)
+  return { ...c, data, anchor: `${c.id}-${c.kind}`, label: c.title ?? data.meta.title }
+})
 const casos = theme.corruption ? curated("casos") : []
 const leniencia = theme.corruption ? curated("leniencia_resumo") : []
-const len = (k: string) => leniencia.find((r) => r.indicador === k)
+const len = (k: string) => leniencia.find((r) => r.indicador === k)!
 const brlBi = (v: string) => `R$ ${(Number(v) / 1e9).toLocaleString("pt-BR", { maximumFractionDigits: 2 })} bi`
+const tipo: Record<string, string> = { oficial: "fonte oficial", imprensa: "estimativa da imprensa", faixa: "fontes divergem" }
 ---
 <Base title={theme.title} description={`${theme.title}: ${theme.intro}`} current={theme.slug}>
-  <div class="flex flex-col gap-1">
-    <h1 class="text-2xl font-semibold tracking-tight">{theme.title}</h1>
-    <p class="text-muted-foreground">{theme.intro}</p>
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-2">
+      <h1 class="text-4xl font-bold sm:text-5xl">{theme.title}</h1>
+      <p class="max-w-2xl text-lg text-muted-foreground">{theme.intro}</p>
+    </div>
+    <nav aria-label="Nesta página" class="flex flex-wrap gap-2 text-sm">
+      {theme.corruption && <a href="#leniencia" class="rounded-full border px-3 py-1 text-muted-foreground hover:border-ring hover:text-foreground">Acordos de leniência</a>}
+      {charts.map((c) => <a href={`#${c.anchor}`} class="rounded-full border px-3 py-1 text-muted-foreground hover:border-ring hover:text-foreground">{c.label}</a>)}
+      {theme.corruption && <a href="#casos" class="rounded-full border px-3 py-1 text-muted-foreground hover:border-ring hover:text-foreground">Linha do tempo dos casos</a>}
+    </nav>
   </div>
 
   {theme.corruption && (
-    <section aria-labelledby="leniencia" class="flex flex-col gap-3">
-      <h2 id="leniencia" class="text-base font-semibold">Acordos de leniência da CGU</h2>
-      <div class="grid grid-cols-2 gap-3 lg:grid-cols-4">
+    <section id="leniencia" aria-labelledby="leniencia-t" class="flex scroll-mt-6 sm:scroll-mt-32 flex-col gap-3">
+      <h2 id="leniencia-t" class="text-xl font-semibold">Acordos de leniência da CGU</h2>
+      <p class="max-w-2xl text-sm text-muted-foreground">Acordos em que empresas admitem irregularidades e devolvem dinheiro à União. Posição de {monthLabel(len("valor_pago").date)}.</p>
+      <div class="grid grid-cols-2 gap-px overflow-hidden rounded-xl border bg-border lg:grid-cols-4">
         {[
-          ["Acordos assinados", len("acordos_assinados")?.value],
-          ["Em negociação", len("acordos_em_negociacao")?.value],
-          ["Valor combinado", brlBi(len("valor_pactuado")!.value)],
-          ["Valor já pago", brlBi(len("valor_pago")!.value)],
+          ["Acordos assinados", len("acordos_assinados").value],
+          ["Em negociação", len("acordos_em_negociacao").value],
+          ["Valor combinado", brlBi(len("valor_pactuado").value)],
+          ["Valor já pago", brlBi(len("valor_pago").value)],
         ].map(([label, v]) => (
-          <div class="flex flex-col gap-1 rounded-lg border bg-card p-4">
+          <div class="flex flex-col gap-1 bg-card p-4">
             <span class="text-xs text-muted-foreground">{label}</span>
-            <span class="text-2xl font-semibold tracking-tight">{v}</span>
+            <span class="font-display text-3xl font-semibold">{v}</span>
           </div>
         ))}
       </div>
-      <p class="text-xs text-muted-foreground">
-        Acordos em que empresas admitem irregularidades e devolvem dinheiro à União. Posição de {monthLabel(len("valor_pago")!.date)}.
-        Fonte: <a class="underline underline-offset-2" href={len("valor_pago")!.source_url}>CGU</a>.
-      </p>
+      <p class="text-xs text-muted-foreground">Fonte: <a class="underline decoration-border underline-offset-2 hover:text-foreground" href={len("valor_pago").source_url}>CGU</a>.</p>
     </section>
   )}
 
   {charts.map((c) => c.kind === "ranking"
-    ? <RankingChart client:load data={c.data} fmt={c.fmt} title={c.title} description={c.description} />
-    : <TimeChart client:load data={c.data} fmt={c.fmt} mode={c.mode} title={c.title} description={c.description} terms={terms} cases={cases} />
+    ? <RankingChart client:load data={c.data} fmt={c.fmt} anchor={c.anchor} title={c.title} description={c.description} />
+    : <TimeChart client:load data={c.data} fmt={c.fmt} mode={c.mode} peak={c.peak} anchor={c.anchor} title={c.title} description={c.description} terms={terms} cases={cases} />
   )}
 
   {theme.corruption && (
-    <section aria-labelledby="casos" class="flex flex-col gap-3">
-      <h2 id="casos" class="text-base font-semibold">Linha do tempo dos casos</h2>
-      <p class="text-sm text-muted-foreground">
-        Operações e instituições, sem nomes de pessoas. O valor só aparece quando há fonte: órgão oficial primeiro,
-        imprensa quando não há fonte oficial, faixa quando as fontes discordam.
-      </p>
-      <ol class="grid gap-3 sm:grid-cols-2">
+    <section id="casos" aria-labelledby="casos-t" class="flex scroll-mt-6 sm:scroll-mt-32 flex-col gap-4">
+      <div class="flex flex-col gap-1">
+        <h2 id="casos-t" class="text-xl font-semibold">Linha do tempo dos casos</h2>
+        <p class="max-w-2xl text-sm text-muted-foreground">
+          Operações e instituições, sem nomes de pessoas. O valor só aparece quando há fonte: órgão oficial primeiro,
+          imprensa quando não há fonte oficial, faixa quando as fontes discordam.
+        </p>
+      </div>
+      <ol class="relative flex flex-col gap-6 border-l-2 border-border pl-6">
         {casos.map((c) => (
-          <li class="flex flex-col gap-2 rounded-lg border bg-card p-4 text-sm">
-            <div class="flex items-baseline justify-between gap-2">
-              <span class="font-medium">{c.name}</span>
-              <span class="text-xs text-muted-foreground">{monthLabel(c.date)}</span>
-            </div>
-            <p class="text-muted-foreground">{c.what}</p>
-            <p class="text-xs">
-              <span class="text-muted-foreground">Valor envolvido: </span>
+          <li class="relative flex flex-col gap-1.5">
+            <span class="absolute -left-[31px] top-1.5 size-3 rounded-full border-2 border-background" style="background: var(--chart-4)"></span>
+            <span class="num text-xs text-muted-foreground">{monthLabel(c.date)}</span>
+            <h3 class="text-lg font-semibold leading-tight">{c.name}</h3>
+            <p class="max-w-3xl text-sm text-muted-foreground">{c.what}</p>
+            <div class="flex flex-wrap items-baseline gap-x-2 text-sm">
               {c.valor
-                ? <><span class="font-medium">{c.valor}</span> <span class="text-muted-foreground">({c.valor_tipo === "imprensa" ? "estimativa da imprensa" : c.valor_tipo === "faixa" ? "fontes divergem" : "fonte oficial"}): {c.valor_fonte}</span></>
-                : <span class="text-muted-foreground">nenhuma fonte publicou um valor</span>}
-            </p>
-            <p class="text-xs text-muted-foreground">Situação: {c.status}</p>
-            <a class="text-xs underline underline-offset-2" href={c.source_url} target="_blank" rel="noopener">Fonte</a>
+                ? <><span class="font-display text-xl font-semibold">{c.valor}</span><span class="text-xs text-muted-foreground">{tipo[c.valor_tipo]}: {c.valor_fonte}</span></>
+                : <span class="text-xs text-muted-foreground">Nenhuma fonte publicou um valor.</span>}
+            </div>
+            <p class="text-xs text-muted-foreground">Situação: {c.status} · <a class="underline decoration-border underline-offset-2 hover:text-foreground" href={c.source_url} target="_blank" rel="noopener">fonte</a></p>
           </li>
         ))}
       </ol>
