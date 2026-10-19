@@ -16,4 +16,17 @@ python3 scripts/refresh.py selic    # só uma
 python3 tests/test_data.py          # confere os CSVs
 ```
 
+No GitHub: **Actions → refresh → Run workflow** faz o mesmo nos servidores do GitHub e sobe uma
+branch `data/refresh-*` para abrir um PR.
+
+## Site
+
+Site: https://free-brazil.github.io/dadoemfoco/ — Astro + React + shadcn/ui (gráficos Recharts), em `web/`.
+Lê os CSVs de `data/` na hora do build; publicado no GitHub Pages a cada mudança em `main`.
+
+```sh
+cd web && npm install
+npm run dev      # http://localhost:4321/dadoemfoco/
+```
+
 Spec da v1: `docs/specs/2026-10-19-v1-design.md`.

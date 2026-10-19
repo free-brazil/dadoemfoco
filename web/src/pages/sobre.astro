@@ -1,0 +1,44 @@
+---
+import Base from "@/layouts/Base.astro"
+import { catalog } from "@/lib/data"
+import { dateLabel, monthLabel } from "@/lib/format"
+const BASE = import.meta.env.BASE_URL.replace(/\/$/, "")
+const list = Object.values(catalog.series).sort((a, b) => a.title.localeCompare(b.title, "pt-BR"))
+---
+<Base title="Sobre" description="Como o Dado em Foco escolhe, trata e atualiza os dados, e a lista de todas as fontes." current="sobre">
+  <article class="flex max-w-3xl flex-col gap-4 leading-relaxed">
+    <h1 class="text-2xl font-semibold tracking-tight">Sobre o Dado em Foco</h1>
+    <p>Um projeto independente que reúne dados públicos do Brasil desde 2002 em gráficos simples, para qualquer pessoa consultar e baixar.</p>
+    <h2 class="text-lg font-semibold">Regras</h2>
+    <ul class="list-disc space-y-1 pl-5">
+      <li>Só fontes oficiais ou curadas e conhecidas: IBGE, Banco Central, IPEA, Ministérios, CGU, DataSUS, Transparência Internacional, Our World in Data.</li>
+      <li>Todo número mostra a fonte, e todo gráfico pode ser baixado em CSV.</li>
+      <li>Séries que começam depois de 2002 ou mudam de metodologia aparecem a partir de onde começam, com a quebra marcada.</li>
+      <li>Valores em reais aparecem por padrão em "R$ de hoje", corrigidos pelo IPCA até {monthLabel(catalog.base)}; o botão "R$ da época" mostra o valor original.</li>
+      <li>Na corrupção, só operações e instituições, sem nomes de pessoas, e nenhuma estimativa de "dinheiro roubado" no total.</li>
+      <li>As linhas de mandato usam a mesma cor para todos os presidentes.</li>
+    </ul>
+    <h2 class="text-lg font-semibold">O que ficou de fora</h2>
+    <ul class="list-disc space-y-1 pl-5">
+      <li>Dívida bruta do governo: o Banco Central bloqueia o acesso automatizado à série, e a cópia disponível em outra base tem valores inconsistentes.</li>
+      <li>Empregos formais por estado antes de 2020: não há fonte curada com o CAGED antigo por estado.</li>
+      <li>Série histórica de punições da CGU: o cadastro só guarda sanções em vigor, por isso o site mostra um retrato da data do arquivo.</li>
+    </ul>
+    <h2 class="text-lg font-semibold">Todas as séries</h2>
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead class="text-left text-xs text-muted-foreground"><tr><th class="py-2 pr-4">Série</th><th class="py-2 pr-4">Período</th><th class="py-2 pr-4">Fonte</th><th class="py-2">CSV</th></tr></thead>
+        <tbody>
+          {list.map((s) => (
+            <tr class="border-t align-top">
+              <td class="py-2 pr-4">{s.title}<div class="text-xs text-muted-foreground">{s.unit}</div></td>
+              <td class="py-2 pr-4 whitespace-nowrap">{dateLabel(s.since)} – {dateLabel(s.until)}</td>
+              <td class="py-2 pr-4"><a class="underline underline-offset-2" href={s.url}>{s.source}</a></td>
+              <td class="py-2"><a class="underline underline-offset-2" href={`${BASE}/data/${s.file}`} download>{s.file}</a></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </article>
+</Base>
