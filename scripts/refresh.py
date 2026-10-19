@@ -61,6 +61,59 @@ def ipea(code):
             if v["VALVALOR"] is not None and v["VALDATA"][:7] < this_month}
 
 
+def ipea_regional(code):
+    """IPEADATA regional series -> list of (YYYY-MM, geo) values for Brasil and the 27 states."""
+    d = get_json(f"http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='{urllib.parse.quote(code)}')")
+    this_month = time.strftime("%Y-%m")
+    out = {}
+    for v in d["value"]:
+        m = v["VALDATA"][:7]
+        if v["VALVALOR"] is None or m >= this_month:
+            continue
+        if v["NIVNOME"] == "Estados":
+            out[(m, UF[int(v["TERCODIGO"])])] = v["VALVALOR"]
+        elif v["NIVNOME"] == "Brasil":
+            out[(m, "BR")] = v["VALVALOR"]
+    return out
+
+
+def bcb_sgs(code):
+    """Banco Central SGS series -> {YYYY-MM: value}. Blocked from some networks; run via GitHub Actions."""
+    rows = get_json(f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{code}/dados?formato=json&dataInicial=01/01/{START}")
+    return {f"{r['data'][6:10]}-{r['data'][3:5]}": float(r["valor"]) for r in rows}
+
+
+def tabnet(defpath, arquivo, incremento, tries=3):
+    """DataSUS TabNet: one year file, rows by state of residence -> {geo: value} incl. 'BR'."""
+    for i in range(tries):
+        out = _tabnet_once(defpath, arquivo, incremento)
+        if len(out) == 28:
+            return out
+        time.sleep(5 * (i + 1))  # TabNet sometimes answers with a truncated table under load
+    raise RuntimeError(f"tabnet {defpath} {arquivo}: got {len(out)} areas")
+
+
+def _tabnet_once(defpath, arquivo, incremento):
+    body = urllib.parse.urlencode({"Linha": "Unidade_da_Federação", "Coluna": "--Não-Ativa--", "Incremento": incremento,
+                                   "Arquivos": arquivo, "pesqmes1": "Digite o texto e ache fácil",
+                                   "formato": "prn", "mostre": "Mostra"}, encoding="latin-1").encode()
+    req = urllib.request.Request(f"http://tabnet.datasus.gov.br/cgi/tabcgi.exe?{defpath}", data=body,
+                                 headers={"User-Agent": "dadoemfoco-refresh"})
+    with urllib.request.urlopen(req, timeout=180) as r:
+        html = r.read().decode("latin-1")
+    out = {}
+    for line in html.splitlines():
+        parts = line.strip().rsplit(";", 1)  # names carry HTML entities like &ocirc;
+        if len(parts) != 2 or not parts[1].strip().isdigit():
+            continue
+        label = parts[0].strip('"')
+        if label == "Total":
+            out["BR"] = float(parts[1])
+        elif label[:2].isdigit() and int(label[:2]) in UF:
+            out[UF[int(label[:2])]] = float(parts[1])
+    return out
+
+
 # ---------- date helpers ----------
 
 def month(code):     # 200201 -> 2002-01
@@ -173,6 +226,41 @@ def f_renda_uf():
     return [(quarter(p), g, v) for p, g, v in sidra(6472, 5929)]
 
 
+def f_caged_saldo_br():
+    old = ipea("CAGED12_SALDO12")    # CAGED, until 2019-12
+    new = ipea("CAGED12_SALDON12")   # Novo CAGED (eSocial), from 2020-01
+    return [(m, "BR", v) for m, v in old.items() if m < "2020-01"] + [(m, "BR", v) for m, v in new.items()]
+
+
+def f_caged_saldo_uf():
+    adm, des = ipea_regional("ADMISNC"), ipea_regional("DESLIGNC")
+    return [(m, g, adm[(m, g)] - des[(m, g)]) for (m, g) in adm if (m, g) in des]
+
+
+def f_fpe_uf():
+    # IPEADATA has 0 for SP in 2011 and 2014, which can't be right: dropped as missing
+    return [(m[:4], g, round(v, 2)) for (m, g), v in ipea_regional("RTRFPEE").items() if g != "BR" and v > 0]
+
+
+def f_homicidios_uf():
+    return [(m[:4], g, v) for (m, g), v in ipea_regional("AVIOL12_THOMIC").items()]
+
+
+def f_mortalidade_infantil_uf():
+    out = []
+    for y in range(int(START), 2024):  # SIM/SINASC: later years are still preliminary
+        yy = f"{y % 100:02d}"
+        deaths = tabnet("sim/cnv/inf10uf.def", f"infuf{yy}.dbf", "Óbitos_p/Residênc")
+        births = tabnet("sinasc/cnv/nvuf.def", f"nvuf{yy}.dbf", "Nascim_p/resid.mãe")
+        out += [(str(y), g, round(deaths[g] / births[g] * 1000, 2)) for g in births]
+    return out
+
+
+def f_divida_bruta():
+    # SGS 13762: dívida bruta do governo geral, % do PIB (metodologia a partir de 2006)
+    return [(m, "BR", v) for m, v in bcb_sgs(13762).items()]
+
+
 SERIES = [
     dict(id="pib_trimestral", title="PIB, variação real", unit="% sobre o mesmo trimestre do ano anterior",
          freq="Trimestral", geo="Brasil", source="IBGE, Contas Nacionais Trimestrais (SIDRA 5932)",
@@ -208,6 +296,28 @@ SERIES = [
     dict(id="renda_uf", title="Renda média do trabalho", unit="R$ por mês", freq="Trimestral", money=True,
          geo="Brasil e estados", source="IBGE, PNAD Contínua (SIDRA 6472)", url="https://sidra.ibge.gov.br/tabela/6472",
          fetch=f_renda_uf, note="Série começa em 2012; rendimento habitual de todos os trabalhos"),
+    dict(id="caged_saldo_br", title="Saldo de empregos formais (Brasil)", unit="vagas (admissões − desligamentos)",
+         freq="Mensal", geo="Brasil", source="Ministério do Trabalho, CAGED e Novo CAGED, via IPEADATA",
+         url="http://www.ipeadata.gov.br/", fetch=f_caged_saldo_br, breaks=["2020-01"],
+         note="Quebra em jan/2020: o Novo CAGED usa o eSocial e não é diretamente comparável com o CAGED antigo"),
+    dict(id="caged_saldo_uf", title="Saldo de empregos formais por estado", unit="vagas (admissões − desligamentos)",
+         freq="Mensal", geo="Brasil e estados", source="Ministério do Trabalho, Novo CAGED, via IPEADATA (ADMISNC, DESLIGNC)",
+         url="http://www.ipeadata.gov.br/", fetch=f_caged_saldo_uf,
+         note="Por estado só existe em fonte curada a partir do Novo CAGED (2020)"),
+    dict(id="fpe_uf", title="Transferências do FPE", unit="R$", freq="Anual", geo="Estados", money=True,
+         source="Tesouro Nacional (STN), via IPEADATA (RTRFPEE)", url="http://www.ipeadata.gov.br/",
+         fetch=f_fpe_uf, note="Cota-parte do Fundo de Participação dos Estados e do DF. SP em 2011 e 2014 aparece como zero na fonte e foi tratado como dado ausente"),
+    dict(id="homicidios_uf", title="Taxa de homicídios", unit="por 100 mil habitantes", freq="Anual",
+         geo="Brasil e estados", source="Atlas da Violência (IPEA/FBSP), dados do SIM/DataSUS, via IPEADATA",
+         url="https://www.ipea.gov.br/atlasviolencia/", fetch=f_homicidios_uf),
+    dict(id="mortalidade_infantil_uf", title="Mortalidade infantil", unit="óbitos de menores de 1 ano por mil nascidos vivos",
+         freq="Anual", geo="Brasil e estados", source="DataSUS, SIM (óbitos infantis) e SINASC (nascidos vivos)",
+         url="http://tabnet.datasus.gov.br/", fetch=f_mortalidade_infantil_uf,
+         note="Calculada direto dos registros, por estado de residência. Onde o registro de óbitos é incompleto "
+              "(Norte e Nordeste, sobretudo nos anos 2000) a taxa fica abaixo da real; anos após 2023 ainda são preliminares"),
+    dict(id="divida_bruta", title="Dívida bruta do governo geral", unit="% do PIB", freq="Mensal", geo="Brasil",
+         source="Banco Central, SGS 13762", url="https://www3.bcb.gov.br/sgspub/", fetch=f_divida_bruta,
+         note="Metodologia atual começa em dez/2006"),
 ]
 
 
@@ -233,14 +343,22 @@ def main(only):
     DATA.mkdir(exist_ok=True)
     cat_path = DATA / "catalog.json"
     catalog = json.loads(cat_path.read_text()) if cat_path.exists() else {"series": {}}
+    failed = []
     for s in SERIES:
         if only and s["id"] not in only:
             continue
-        meta = write(s)
+        try:
+            meta = write(s)
+        except Exception as e:  # keep the last good CSV; report and carry on with the others
+            failed.append(s["id"])
+            print(f"{s['id']:<20} FAILED, kept previous file: {e}", file=sys.stderr)
+            continue
         catalog["series"][s["id"]] = meta
-        print(f"{s['id']:<20} {meta['rows']:>6} rows  {meta['since']} → {meta['until']}")
+        print(f"{s['id']:<24} {meta['rows']:>6} rows  {meta['since']} → {meta['until']}")
     catalog["base"] = base_month()
     cat_path.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n")
+    if failed:
+        sys.exit(f"failed: {', '.join(failed)}")
 
 
 if __name__ == "__main__":
