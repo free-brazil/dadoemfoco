@@ -1,8 +1,8 @@
 import { useMemo, useState } from "react"
-import { CartesianGrid, Line, LineChart, ReferenceLine, XAxis, YAxis, LabelList } from "recharts"
+import { CartesianGrid, Line, LineChart, ReferenceDot, ReferenceLine, XAxis, YAxis } from "recharts"
 import { ChartContainer, ChartTooltip } from "@/components/ui/chart"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
-import { ChartCard, LegendItem } from "@/components/ChartCard"
+import { ChartCard, LegendItem, type Headline } from "@/components/ChartCard"
 import { dateLabel, eventKey, fmt, geoName, monthLabel, tick } from "@/lib/format"
 import { usePrefs } from "@/lib/prefs"
 import type { Event, Fmt, SeriesData } from "@/lib/types"
@@ -18,10 +18,12 @@ export const COLOR = { br: "var(--chart-1)", uf: "var(--chart-2)", other: "var(-
  */
 export type Mode = "uf" | "focus" | "national" | "countries" | "areas"
 
-export default function TimeChart({ data, fmt: f, mode, title, description, terms, cases }: {
+export default function TimeChart({ data, fmt: f, mode, anchor, title, description, terms, cases, peak }: {
   data: SeriesData
   fmt: Fmt
   mode: Mode
+  peak?: boolean  // headline the highest point instead of the latest (event series like COVID)
+  anchor: string
   title?: string
   description: string
   terms: Event[]
@@ -31,6 +33,7 @@ export default function TimeChart({ data, fmt: f, mode, title, description, term
   const [real, setReal] = useState(true)
   const vals = data.real && real ? data.real : data.values
   const geos = Object.keys(vals)
+  const last = data.dates.length - 1
 
   const { focus, others } = useMemo(() => {
     const uf = prefs.uf
@@ -46,30 +49,73 @@ export default function TimeChart({ data, fmt: f, mode, title, description, term
     }
   }, [mode, prefs.uf, vals])
 
+  const colorOf = (g: string) => (mode === "countries" || mode === "areas" || g !== "BR" ? COLOR.uf : COLOR.br)
   const rows = useMemo(
     () => data.dates.map((d, i) => Object.fromEntries([["d", d], ...geos.map((g) => [g, vals[g][i]])])),
     [data, vals],
   )
   const ticks = useMemo(() => pickTicks(data.dates), [data.dates])
-  const sample = data.dates[0]
-  const colorOf = (g: string) => (g === "BR" ? COLOR.br : COLOR.uf)
-  const focusLabel = (g: string) => geoName(g)
+  const unit = data.real && real ? `R$ de ${monthLabel(data.base)}` : data.meta.money ? "R$ da época" : data.meta.unit
 
   const overlays = [
     ...(prefs.terms ? terms.map((e) => ({ ...e, kind: "term" as const })) : []),
     ...(prefs.cases ? cases.map((e) => ({ ...e, kind: "case" as const })) : []),
   ]
-    .map((e) => ({ ...e, x: eventKey(e.date, sample) }))
+    .map((e) => ({ ...e, x: eventKey(e.date, data.dates[0]) }))
     .filter((e) => data.dates.includes(e.x))
 
-  const unit = data.real && real ? `R$ de ${monthLabel(data.base)}` : data.meta.money ? "R$ da época" : data.meta.unit
-  const lastIdx = data.dates.length - 1
+  // Headline: the line people care about, its latest value, Brasil beside it, and where it started.
+  const headline: Headline | null = useMemo(() => {
+    const p = mode === "uf" ? focus[focus.length - 1] : focus[0]
+    if (!p || !vals[p]) return null
+    if (peak) {
+      const pk = (g: string) => vals[g].reduce<number>((b, v, i) => (v != null && v > (vals[g][b] ?? -Infinity) ? i : b), 0)
+      const i = pk(p)
+      const compare = mode === "uf" && p !== "BR" && vals.BR
+        ? [{ label: `Pico no Brasil · ${dateLabel(data.dates[pk("BR")])}`, value: fmt(vals.BR[pk("BR")], f) }] : []
+      return { label: `Pico em ${geoName(p)} · ${dateLabel(data.dates[i])}`, value: fmt(vals[p][i], f), color: colorOf(p), compare }
+    }
+    const li = lastValid(vals[p], last), fi = vals[p].findIndex((v) => v != null)
+    const compare: { label: string; value: string }[] = []
+    if (mode === "uf" && p !== "BR") compare.push({ label: "Brasil", value: fmt(vals.BR?.[li], f) })
+    if (mode !== "countries" && fi >= 0 && fi < li) compare.push({ label: `Em ${dateLabel(data.dates[fi])}`, value: fmt(vals[p][fi], f) })
+    return { label: `${geoName(p)} · ${dateLabel(data.dates[li])}`, value: fmt(vals[p][li], f), color: colorOf(p), compare }
+  }, [focus, vals, mode, f, peak])
+
+  // Line-end labels: values for the highlighted lines, names for countries; pushed apart so they never collide.
+  const endLabels = useMemo(() => {
+    const items = (mode === "countries" ? [...others, ...focus] : focus).flatMap((g) => {
+      const li = lastValid(vals[g], last)
+      if (li < 0) return []
+      return [{ g, li, v: vals[g][li] as number, text: mode === "countries" ? geoName(g) : fmt(vals[g][li], f),
+        color: mode === "countries" && g !== "BRA" ? "var(--muted-foreground)" : colorOf(g), strong: focus.includes(g) }]
+    })
+    const all = Object.values(vals).flat().filter((v): v is number => v != null)
+    const lo = Math.min(0, ...all), hi = Math.max(...all)
+    const gap = (hi - lo) * 0.065
+    const byEnd = new Map<number, typeof items>()
+    for (const it of items) byEnd.set(it.li, [...(byEnd.get(it.li) ?? []), it])
+    return [...byEnd.values()].flatMap((group) => {
+      // push labels away from the nearer edge so none ends up outside the plot
+      const mean = group.reduce((a, it) => a + it.v, 0) / group.length
+      const up = mean < (lo + hi) / 2
+      group.sort((a, b) => (up ? a.v - b.v : b.v - a.v))
+      let prev = up ? -Infinity : Infinity
+      return group.map((it) => {
+        const y = up ? Math.max(it.v, prev + gap) : Math.min(it.v, prev - gap)
+        prev = y
+        return { ...it, y }
+      })
+    })
+  }, [focus, others, vals, mode, f])
 
   return (
     <ChartCard
       meta={data.meta}
+      anchor={anchor}
       title={title}
       description={`${description} Em ${unit}.`}
+      headline={headline}
       action={data.real && (
         <ToggleGroup variant="outline" size="sm" value={[real ? "real" : "nominal"]}
           onValueChange={(v) => v[0] && setReal(v[0] === "real")} aria-label="Valores em">
@@ -79,8 +125,8 @@ export default function TimeChart({ data, fmt: f, mode, title, description, term
       )}
       legend={
         <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-foreground">
-          {mode === "areas" && focus.length === 0 && <span>Escolha um estado para destacar suas regiões metropolitanas.</span>}
-          {focus.map((g) => <LegendItem key={g} color={mode === "countries" || mode === "areas" ? COLOR.uf : colorOf(g)} label={focusLabel(g)} />)}
+          {mode === "areas" && focus.length === 0 && <span>Escolha um estado no topo para destacar suas regiões metropolitanas.</span>}
+          {focus.map((g) => <LegendItem key={g} color={colorOf(g)} label={geoName(g)} />)}
           {others.length > 0 && <LegendItem color={COLOR.other} label={mode === "countries" ? "Outros países" : mode === "areas" ? "Outras regiões" : "Outros estados"} />}
           {prefs.terms && <LegendItem color="var(--muted-foreground)" label="Início de mandato" dashed />}
           {prefs.cases && overlays.some((o) => o.kind === "case") && <LegendItem color={COLOR.mark} label="Caso de corrupção" dashed />}
@@ -88,59 +134,65 @@ export default function TimeChart({ data, fmt: f, mode, title, description, term
       }
     >
       <ChartContainer config={{}} className="aspect-auto h-72 w-full sm:h-80">
-        <LineChart data={rows} margin={{ left: 4, right: mode === "countries" ? 72 : 24, top: 22, bottom: 4 }}>
-          <CartesianGrid vertical={false} />
+        <LineChart data={rows} margin={{ left: 4, right: mode === "countries" ? 84 : 76, top: 22, bottom: 4 }}>
+          <CartesianGrid vertical={false} strokeDasharray="2 3" />
           <XAxis dataKey="d" ticks={ticks} tickFormatter={(d: string) => d.slice(0, 4)} tickLine={false} axisLine={false} minTickGap={16} />
           <YAxis tickLine={false} axisLine={false} width={f.startsWith("brl") ? 76 : f === "int" ? 64 : 48}
             domain={[minOf(vals) >= 0 ? 0 : "auto", "auto"]} tickFormatter={(v: number) => tick(v, f)} />
           <ChartTooltip
+            cursor={{ stroke: "var(--border)" }}
             content={({ active, label }) => {
               if (!active || label == null) return null
               const i = data.dates.indexOf(String(label))
               const shown = focus.length ? focus : others.slice(0, 1)
               return (
-                <div className="grid min-w-40 gap-1 rounded-lg border bg-popover px-2.5 py-1.5 text-xs text-popover-foreground shadow-md">
+                <div className="grid min-w-44 gap-1 rounded-lg border bg-popover px-3 py-2 text-xs text-popover-foreground shadow-lg">
                   <div className="font-medium">{dateLabel(String(label))}</div>
                   {shown.map((g) => (
                     <div key={g} className="flex items-center justify-between gap-4">
                       <span className="flex items-center gap-1.5">
-                        <span className="size-2 rounded-[2px]" style={{ background: mode === "countries" || mode === "areas" ? COLOR.uf : colorOf(g) }} />
-                        {focusLabel(g)}
+                        <span className="size-2 rounded-full" style={{ background: colorOf(g) }} />
+                        {geoName(g)}
                       </span>
-                      <span className="font-mono font-medium">{fmt(vals[g]?.[i], f)}</span>
+                      <span className="num font-medium">{fmt(vals[g]?.[i], f)}</span>
                     </div>
                   ))}
                   {overlays.filter((o) => o.x === label).map((o) => (
-                    <div key={o.label} className="max-w-64 text-muted-foreground">{o.kind === "term" ? "Posse: " : "Caso: "}{o.label}</div>
+                    <div key={o.label} className="max-w-64 border-t pt-1 text-muted-foreground">{o.kind === "term" ? "Posse: " : "Caso: "}{o.label}</div>
                   ))}
                 </div>
               )
             }}
           />
           {(data.meta.breaks ?? []).filter((b) => data.dates.includes(b)).map((b) => (
-            <ReferenceLine key={`b${b}`} x={b} stroke="var(--foreground)" strokeOpacity={0.4}
+            <ReferenceLine key={`b${b}`} x={b} stroke="var(--foreground)" strokeOpacity={0.35}
               label={{ value: "quebra de série", position: "insideTopLeft", fill: "var(--muted-foreground)", fontSize: 10 }} />
           ))}
           {overlays.map((o, k) => (
             <ReferenceLine key={`${o.kind}${o.date}`} x={o.x}
               stroke={o.kind === "term" ? "var(--muted-foreground)" : COLOR.mark}
-              strokeOpacity={o.kind === "term" ? 0.6 : 0.8} strokeDasharray={o.kind === "term" ? "2 4" : "4 3"}
+              strokeOpacity={o.kind === "term" ? 0.45 : 0.8} strokeDasharray={o.kind === "term" ? "2 4" : "4 3"}
               label={o.kind === "term"
                 ? { value: o.label, position: "top", fill: "var(--muted-foreground)", fontSize: 10 }
                 // cases cluster in time: stagger their labels on three heights so neighbours don't overlap
                 : { value: o.label, position: "insideBottomLeft", offset: 6 + (k % 3) * 14, fill: COLOR.mark, fontSize: 10 }} />
           ))}
           {others.map((g) => (
-            <Line key={g} dataKey={g} stroke={COLOR.other} strokeOpacity={0.3} strokeWidth={1} dot={false}
-              isAnimationActive={false} activeDot={false} connectNulls>
-              {mode === "countries" && <LabelList dataKey={g} content={endLabel(lastValidIndex(vals[g], lastIdx), geoName(g), "var(--muted-foreground)")} />}
-            </Line>
+            <Line key={g} dataKey={g} stroke={COLOR.other} strokeOpacity={0.22} strokeWidth={1} dot={false}
+              isAnimationActive={false} activeDot={false} connectNulls />
           ))}
           {focus.map((g) => (
-            <Line key={g} dataKey={g} stroke={mode === "countries" || mode === "areas" ? COLOR.uf : colorOf(g)}
-              strokeWidth={2.5} dot={false} isAnimationActive={false} connectNulls>
-              {mode === "countries" && <LabelList dataKey={g} content={endLabel(lastValidIndex(vals[g], lastIdx), geoName(g), COLOR.uf)} />}
-            </Line>
+            <Line key={g} dataKey={g} stroke={colorOf(g)} strokeWidth={2.5} dot={false} isAnimationActive={false} connectNulls
+              activeDot={{ r: 4, strokeWidth: 2, stroke: "var(--card)" }} />
+          ))}
+          {focus.map((g) => {
+            const li = lastValid(vals[g], last)
+            return li < 0 ? null : <ReferenceDot key={`dot${g}`} x={data.dates[li]} y={vals[g][li] as number} r={3.5}
+              fill={colorOf(g)} stroke="var(--card)" strokeWidth={2} ifOverflow="visible" />
+          })}
+          {endLabels.map((l) => (
+            <ReferenceDot key={`lab${l.g}`} x={data.dates[l.li]} y={l.y} r={0} ifOverflow="visible"
+              label={{ value: l.text, position: "right", offset: 8, fill: l.color, fontSize: 11, fontWeight: l.strong ? 600 : 400 }} />
           ))}
         </LineChart>
       </ChartContainer>
@@ -154,15 +206,9 @@ function minOf(vals: Record<string, (number | null)[]>) {
   return m
 }
 
-function lastValidIndex(arr: (number | null)[] | undefined, from: number) {
+function lastValid(arr: (number | null)[] | undefined, from: number) {
   for (let i = from; i >= 0; i--) if (arr?.[i] != null) return i
   return -1
-}
-
-function endLabel(at: number, text: string, color: string) {
-  // eslint-disable-next-line react/display-name
-  return (p: { index?: number; x?: number | string; y?: number | string }) =>
-    p.index === at ? <text x={Number(p.x) + 6} y={Number(p.y) + 3} fontSize={10} fill={color}>{text}</text> : null
 }
 
 /** ~8 ticks on year boundaries, whatever the frequency. */

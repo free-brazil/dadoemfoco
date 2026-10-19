@@ -1,12 +1,13 @@
 ---
 import "@/styles/global.css"
-import Header from "@/components/Header"
+import Header, { Mark } from "@/components/Header"
 import { THEMES } from "@/lib/pages"
 import { monthLabel } from "@/lib/format"
 import { catalog } from "@/lib/data"
 
 interface Props { title: string; description: string; current: string }
 const { title, description, current } = Astro.props
+const BASE = import.meta.env.BASE_URL.replace(/\/$/, "")
 const themes = THEMES.map((t) => ({ slug: t.slug, title: t.title }))
 const pageTitle = current === "home" ? "Dado em Foco" : `${title} · Dado em Foco`
 ---
@@ -19,7 +20,7 @@ const pageTitle = current === "home" ? "Dado em Foco" : `${title} · Dado em Foc
     <meta name="description" content={description} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
-    <link rel="icon" href={`${import.meta.env.BASE_URL.replace(/\/$/, "")}/favicon.svg`} type="image/svg+xml" />
+    <link rel="icon" href={`${BASE}/favicon.svg`} type="image/svg+xml" />
     <script is:inline>
       // follow the system theme
       const mq = matchMedia("(prefers-color-scheme: dark)")
@@ -28,13 +29,32 @@ const pageTitle = current === "home" ? "Dado em Foco" : `${title} · Dado em Foc
     </script>
   </head>
   <body class="min-h-dvh bg-background text-foreground antialiased">
-    <div class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-6 sm:px-6">
-      <header><Header client:load themes={themes} current={current} /></header>
-      <main class="flex flex-col gap-6"><slot /></main>
-      <footer class="flex flex-col gap-1 border-t pt-4 text-xs text-muted-foreground">
-        <p>Valores em "R$ de hoje" corrigidos pelo IPCA até {monthLabel(catalog.base)}. Linhas pontilhadas cinza marcam o início de cada mandato presidencial.</p>
-        <p>Projeto independente e sem fins lucrativos. Código e dados abertos em <a class="underline underline-offset-2" href="https://github.com/free-brazil/dadoemfoco">github.com/free-brazil/dadoemfoco</a>.</p>
-      </footer>
-    </div>
+    <header class="z-30 border-b sm:sticky sm:top-0 bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/75">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6"><Header client:load themes={themes} current={current} /></div>
+    </header>
+    <main class="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-8 sm:px-6"><slot /></main>
+    <footer class="border-t bg-muted/40">
+      <div class="mx-auto grid max-w-6xl gap-8 px-4 py-10 text-sm sm:grid-cols-3 sm:px-6">
+        <div class="flex flex-col gap-2">
+          <a href={`${BASE}/`} class="flex items-center gap-2"><Mark className="size-6" /><span class="font-display text-lg font-bold">Dado em Foco</span></a>
+          <p class="text-muted-foreground">Dados públicos do Brasil desde 2002, com a fonte de cada número. Projeto independente e sem fins lucrativos.</p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h2 class="text-sm font-semibold">Temas</h2>
+          <ul class="grid grid-cols-2 gap-1 text-muted-foreground">
+            {THEMES.map((t) => <li><a class="hover:text-foreground" href={`${BASE}/${t.slug}/`}>{t.title}</a></li>)}
+          </ul>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h2 class="text-sm font-semibold">Dados</h2>
+          <p class="text-muted-foreground">Valores em "R$ de hoje" corrigidos pelo IPCA até {monthLabel(catalog.base)}. Linhas pontilhadas marcam o início de cada mandato presidencial.</p>
+          <p class="text-muted-foreground">
+            <a class="underline decoration-border underline-offset-2 hover:text-foreground" href={`${BASE}/sobre/`}>Regras e fontes</a>
+            <span aria-hidden="true"> · </span>
+            <a class="underline decoration-border underline-offset-2 hover:text-foreground" href="https://github.com/free-brazil/dadoemfoco">Código e dados abertos</a>
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -2,7 +2,7 @@ import type { Fmt } from "./types"
 import type { Mode } from "@/components/TimeChart"
 
 export type ChartSpec =
-  | { id: string; kind: "time"; fmt: Fmt; mode: Mode; title?: string; description: string }
+  | { id: string; kind: "time"; fmt: Fmt; mode: Mode; title?: string; description: string; peak?: boolean }
   | { id: string; kind: "ranking"; fmt: Fmt; title?: string; description: string }
 
 export type Theme = { slug: string; title: string; intro: string; charts: ChartSpec[]; corruption?: boolean }
@@ -68,8 +68,8 @@ export const THEMES: Theme[] = [
     slug: "covid", title: "COVID-19",
     intro: "A pandemia de 2020 a 2023, nos estados e comparada com outros países.",
     charts: [
-      { id: "covid_obitos_uf", kind: "time", fmt: "num1", mode: "uf", description: "Mortes por COVID-19 notificadas no mês, por 100 mil habitantes." },
-      { id: "covid_excesso_uf", kind: "time", fmt: "pp", mode: "uf", description: "Quantas mortes, por todas as causas, houve acima do normal para o mês." },
+      { id: "covid_obitos_uf", kind: "time", fmt: "num1", mode: "uf", peak: true, description: "Mortes por COVID-19 notificadas no mês, por 100 mil habitantes." },
+      { id: "covid_excesso_uf", kind: "time", fmt: "pp", mode: "uf", peak: true, description: "Quantas mortes, por todas as causas, houve acima do normal para o mês." },
       { id: "covid_vacinacao_uf", kind: "time", fmt: "pct", mode: "uf", description: "Parcela da população com duas doses ou dose única." },
       { id: "covid_mortes_mundo", kind: "time", fmt: "int", mode: "countries", description: "Mortes por COVID-19 confirmadas, acumuladas, por milhão de habitantes." },
       { id: "covid_excesso_mundo", kind: "time", fmt: "int", mode: "countries", description: "Mortes acima do esperado desde 2020, acumuladas, por milhão de habitantes." },
