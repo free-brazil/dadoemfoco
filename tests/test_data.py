@@ -81,7 +81,30 @@ def check_known_values():
     assert value("salario_minimo", base, col="value_real") == value("salario_minimo", base)
 
 
+def check_curated():
+    import re
+    for f in sorted((DATA / "curated").glob("*.csv")):
+        for r in csv.DictReader(f.open()):
+            assert r["source_url"].startswith("http"), f"{f.name}: row without source_url: {r}"
+    for r in csv.DictReader((DATA / "curated" / "casos.csv").open()):
+        assert r["valor_tipo"] in ("oficial", "imprensa", "faixa", ""), r["name"]
+        assert bool(r["valor"]) == bool(r["valor_fonte"]) == bool(r["valor_tipo"]), f"{r['name']}: valor needs fonte and tipo"
+    # personal data must never reach the published files
+    cpf_cnpj = re.compile(r"\b\d{3}\.\d{3}\.\d{3}-\d{2}\b|\b\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}\b")
+    for f in DATA.rglob("*.csv"):
+        assert not cpf_cnpj.search(f.read_text()), f"{f.name}: looks like it contains a CPF/CNPJ"
+
+
+def check_covid():
+    assert value("covid_mortes_mundo", "2023-12", "BRA") == 3338.5
+    assert value("covid_excesso_uf", "2021-01", "AM") > 300          # Manaus oxygen crisis
+    assert 35 < value("covid_obitos_uf", "2021-04") < 42              # 82,266 deaths / ~213M
+    assert value("cpi_0a100", "2025") == 35 and value("cpi_0a10", "2002") == 4.0
+
+
 if __name__ == "__main__":
     check_structure()
     check_known_values()
+    check_curated()
+    check_covid()
     print(f"ok: {len(CATALOG['series'])} series")

@@ -8,7 +8,11 @@ Standard library only. Each CSV is tidy: date,geo,value[,value_real].
 `value_real` is the value in R$ of the latest IPCA month (see catalog.json "base").
 """
 import csv
+import datetime
+import io
 import json
+import re
+import zipfile
 import sys
 import time
 import urllib.parse
@@ -79,46 +83,73 @@ def ipea_regional(code):
     return out
 
 
-def bcb_sgs(code):
-    """Banco Central SGS series -> {YYYY-MM: value}. Blocked from some networks; run via GitHub Actions."""
-    out = {}
-    for y0 in range(int(START), int(time.strftime("%Y")) + 1, 10):  # the API refuses windows over 10 years
-        url = (f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{code}/dados?formato=json"
-               f"&dataInicial=01/01/{y0}&dataFinal=31/12/{y0 + 9}")
-        for r in get_json(url, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"}):
-            out[f"{r['data'][6:10]}-{r['data'][3:5]}"] = float(r["valor"])
-    return out
 
+def tabnet(defpath, arquivo, incremento, coluna="--Não-Ativa--", tries=3):
+    """DataSUS TabNet, rows by state of residence -> (column names, {geo: [values]}) incl. geo 'BR' (the Total row).
 
-def tabnet(defpath, arquivo, incremento, tries=3):
-    """DataSUS TabNet: one year file, rows by state of residence -> {geo: value} incl. 'BR'."""
+    Without `coluna` there is a single value column. The 'Total' column is dropped."""
     for i in range(tries):
-        out = _tabnet_once(defpath, arquivo, incremento)
+        cols, out = _tabnet_once(defpath, arquivo, incremento, coluna)
         if len(out) == 28:
-            return out
+            return cols, out
         time.sleep(5 * (i + 1))  # TabNet sometimes answers with a truncated table under load
     raise RuntimeError(f"tabnet {defpath} {arquivo}: got {len(out)} areas")
 
 
-def _tabnet_once(defpath, arquivo, incremento):
-    body = urllib.parse.urlencode({"Linha": "Unidade_da_Federação", "Coluna": "--Não-Ativa--", "Incremento": incremento,
+def _tabnet_once(defpath, arquivo, incremento, coluna):
+    body = urllib.parse.urlencode({"Linha": "Unidade_da_Federação", "Coluna": coluna, "Incremento": incremento,
                                    "Arquivos": arquivo, "pesqmes1": "Digite o texto e ache fácil",
                                    "formato": "prn", "mostre": "Mostra"}, encoding="latin-1").encode()
     req = urllib.request.Request(f"http://tabnet.datasus.gov.br/cgi/tabcgi.exe?{defpath}", data=body,
                                  headers={"User-Agent": "dadoemfoco-refresh"})
     with urllib.request.urlopen(req, timeout=180) as r:
         html = r.read().decode("latin-1")
+    pre = re.search(r"(?is)<pre>(.*?)</pre>", html)
+    lines = [ln.strip() for ln in (pre.group(1) if pre else "").splitlines() if ln.strip()]
+    if not lines:
+        return [], {}
+    # names carry HTML entities like &ocirc; whose ';' would break a naive split, so split on '";'
+    def cells(ln):
+        parts = re.findall(r'"((?:[^"]|"")*)"|([^;]+)', ln)
+        return [a or b for a, b in parts]
+    header = cells(lines[0])[1:]
+    keep = [i for i, h in enumerate(header) if h != "Total"] or [0]
     out = {}
-    for line in html.splitlines():
-        parts = line.strip().rsplit(";", 1)  # names carry HTML entities like &ocirc;
-        if len(parts) != 2 or not parts[1].strip().isdigit():
+    for ln in lines[1:]:
+        c = cells(ln)
+        label, vals = c[0], c[1:]
+        if not vals or not all(v.strip() in "-" or v.strip().isdigit() for v in vals):
             continue
-        label = parts[0].strip('"')
+        nums = [0.0 if v.strip() == "-" else float(v) for v in vals]
         if label == "Total":
-            out["BR"] = float(parts[1])
+            out["BR"] = [nums[i] for i in keep]
         elif label[:2].isdigit() and int(label[:2]) in UF:
-            out[UF[int(label[:2])]] = float(parts[1])
-    return out
+            out[UF[int(label[:2])]] = [nums[i] for i in keep]
+    return [header[i] for i in keep], out
+
+
+def get_bytes(url):
+    req = urllib.request.Request(url, headers={"User-Agent": "dadoemfoco-refresh"})
+    with urllib.request.urlopen(req, timeout=300) as r:
+        return r.read()
+
+
+def transparencia_snapshot(dataset):
+    """Latest bulk file of a Portal da Transparência dataset -> (YYYY-MM-DD, list of row dicts). No API key needed."""
+    page = get_bytes(f"https://portaldatransparencia.gov.br/download-de-dados/{dataset}").decode("utf-8", "replace")
+    a, m, d = re.findall(r'"ano"\s*:\s*"(\d{4})",\s*"mes"\s*:\s*"(\d{2})",\s*"dia"\s*:\s*"(\d{2})"', page)[-1]
+    z = zipfile.ZipFile(io.BytesIO(get_bytes(f"https://portaldatransparencia.gov.br/download-de-dados/{dataset}/{a}{m}{d}")))
+    rows = []
+    for name in z.namelist():
+        text = z.read(name).decode("latin-1")
+        rows += list(csv.DictReader(io.StringIO(text), delimiter=";"))
+    return f"{a}-{m}-{d}", rows
+
+
+def curated(sid):
+    """Hand-curated file in data/curated/ (every row carries its source_url)."""
+    with (DATA / "curated" / f"{sid}.csv").open() as f:
+        return [(r["date"], r["geo"], float(r["value"])) for r in csv.DictReader(f)]
 
 
 # ---------- date helpers ----------
@@ -257,15 +288,123 @@ def f_mortalidade_infantil_uf():
     out = []
     for y in range(int(START), 2024):  # SIM/SINASC: later years are still preliminary
         yy = f"{y % 100:02d}"
-        deaths = tabnet("sim/cnv/inf10uf.def", f"infuf{yy}.dbf", "Óbitos_p/Residênc")
-        births = tabnet("sinasc/cnv/nvuf.def", f"nvuf{yy}.dbf", "Nascim_p/resid.mãe")
-        out += [(str(y), g, round(deaths[g] / births[g] * 1000, 2)) for g in births]
+        _, deaths = tabnet("sim/cnv/inf10uf.def", f"infuf{yy}.dbf", "Óbitos_p/Residênc")
+        _, births = tabnet("sinasc/cnv/nvuf.def", f"nvuf{yy}.dbf", "Nascim_p/resid.mãe")
+        out += [(str(y), g, round(deaths[g][0] / births[g][0] * 1000, 2)) for g in births]
     return out
 
 
-def f_divida_bruta():
-    # SGS 13762: dívida bruta do governo geral, % do PIB (metodologia a partir de 2006)
-    return [(m, "BR", v) for m, v in bcb_sgs(13762).items()]
+
+def f_sancoes_vigentes_uf():
+    # Only aggregate counts are kept: the files also carry names and CPF/CNPJ, which never leave this function.
+    counts, snap = {}, None
+    for ds in ("ceis", "cnep"):
+        snap, rows = transparencia_snapshot(ds)
+        for r in rows:
+            uf = (r.get("UF ÓRGÃO SANCIONADOR") or "").strip()
+            counts["BR"] = counts.get("BR", 0) + 1
+            if uf in UF.values():
+                counts[uf] = counts.get(uf, 0) + 1
+    return [(snap[:7], g, n) for g, n in counts.items()]
+
+
+# ---------- COVID ----------
+
+COUNTRIES = ["BRA", "USA", "IND", "RUS", "IDN", "MEX", "ARG", "CUB", "COL", "CHL", "VEN"]
+COVID_END = "2023-12"
+# Ministério da Saúde, Painel Coronavírus: last release (05/09/2025); the panel is no longer updated.
+MS_COVID_ZIP = ("https://mobileapps-prd.saude.gov.br/esus-vepi/files/unAFkcaNDeXajurGB7LChj8SgQYS2ptm/"
+                "60598ca6c2629df8753074196f6bc72b_HIST_PAINEL_COVIDBR_05set2025.zip")
+
+
+def owid(slug):
+    url = (f"https://ourworldindata.org/grapher/{slug}.csv?v=1&csvType=filtered&useColumnShortNames=true"
+           f"&country={'~'.join(COUNTRIES)}&tab=chart")
+    return list(csv.DictReader(io.StringIO(get_bytes(url).decode("utf-8"))))
+
+
+def month_end(rows, date_key, value_key, to_month=lambda d: d[:7]):
+    """Last observation of each month per country -> rows (YYYY-MM, ISO3, value), up to COVID_END."""
+    last = {}
+    for r in sorted(rows, key=lambda r: r[date_key]):
+        if r[value_key] not in ("", None):
+            last[(to_month(r[date_key]), r["code"])] = float(r[value_key])
+    return [(m, g, round(v, 1)) for (m, g), v in last.items() if m <= COVID_END and g in COUNTRIES]
+
+
+def week_month(w):  # OWID monthly data is keyed to the ISO week of the month's end; its Monday is in that month
+    y, n = w.split("-W")
+    return datetime.date.fromisocalendar(int(y), int(n), 1).strftime("%Y-%m")
+
+
+def population():
+    with (DATA / "populacao_uf.csv").open() as f:
+        return {(r["date"], r["geo"]): float(r["value"]) for r in csv.DictReader(f)}
+
+
+def f_covid_obitos_uf():
+    pop = population()
+    z = zipfile.ZipFile(io.BytesIO(get_bytes(MS_COVID_ZIP)))
+    deaths = {}
+    for name in z.namelist():
+        if not any(f"_{y}_" in name for y in (2020, 2021, 2022, 2023)):
+            continue
+        with z.open(name) as fh:
+            for r in csv.DictReader(io.TextIOWrapper(fh, encoding="utf-8", errors="replace"), delimiter=";"):
+                if r["regiao"] == "Brasil":
+                    g = "BR"
+                elif r["municipio"] == "" and r["codmun"] == "" and r["estado"] in UF.values():
+                    g = r["estado"]
+                else:
+                    continue
+                k = (r["data"][:7], g)
+                deaths[k] = deaths.get(k, 0) + int(float(r["obitosNovos"] or 0))
+    out = []
+    for (m, g), n in deaths.items():
+        y = int(m[:4])
+        while (str(y), g) not in pop:  # 2023 has no population estimate: use the latest year before it
+            y -= 1
+        out.append((m, g, round(n / pop[(str(y), g)] * 1e5, 2)))
+    return [r for r in out if r[0] <= COVID_END]
+
+
+def f_covid_excesso_uf():
+    """% of deaths above the 2015–2019 average for the same month, from SIM (all causes, by state of residence)."""
+    monthly = {}
+    for y in range(2015, 2024):
+        cols, d = tabnet("sim/cnv/obt10uf.def", f"obtuf{y % 100:02d}.dbf", "Óbitos_p/Residênc", "Mês_do_Óbito")
+        if len(cols) != 12:
+            raise RuntimeError(f"SIM {y}: expected 12 months, got {cols}")
+        for g, vals in d.items():
+            for i, v in enumerate(vals):
+                monthly[(y, i + 1, g)] = v
+    out = []
+    for (y, mo, g), v in monthly.items():
+        if y >= 2020:
+            base = sum(monthly[(b, mo, g)] for b in range(2015, 2020)) / 5
+            out.append((f"{y}-{mo:02d}", g, round((v / base - 1) * 100, 1)))
+    return out
+
+
+def f_covid_vacinacao_uf():
+    url = "https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-states.csv"
+    last = {}
+    for r in csv.DictReader(io.StringIO(get_bytes(url).decode("utf-8"))):
+        g = "BR" if r["state"] == "TOTAL" else r["state"]
+        if g not in UF.values() and g != "BR" or not r["vaccinated_second_per_100_inhabitants"]:
+            continue
+        full = float(r["vaccinated_second_per_100_inhabitants"]) + float(r["vaccinated_single_per_100_inhabitants"] or 0)
+        last[(r["date"][:7], g)] = (r["date"], round(full, 1))  # rows are in date order: keeps the month's last day
+    return [(m, g, v) for (m, g), (_, v) in last.items() if v > 0]
+
+
+def f_covid_mortes_mundo():
+    return month_end(owid("total-covid-cases-deaths-per-million"), "day", "total_deaths_per_million")
+
+
+def f_covid_excesso_mundo():
+    return month_end(owid("cumulative-excess-deaths-per-million-covid"), "week",
+                     "cum_excess_per_million_proj_all_ages", week_month)
 
 
 SERIES = [
@@ -303,6 +442,39 @@ SERIES = [
     dict(id="renda_uf", title="Renda média do trabalho", unit="R$ por mês", freq="Trimestral", money=True,
          geo="Brasil e estados", source="IBGE, PNAD Contínua (SIDRA 6472)", url="https://sidra.ibge.gov.br/tabela/6472",
          fetch=f_renda_uf, note="Série começa em 2012; rendimento habitual de todos os trabalhos"),
+    dict(id="cpi_0a10", title="Índice de Percepção da Corrupção (escala 0–10)", unit="pontos (0 = muito corrupto, 10 = muito íntegro)",
+         freq="Anual", geo="Brasil", source="Transparência Internacional", url="https://www.transparency.org/en/cpi",
+         fetch=lambda: curated("cpi_0a10"), breaks=["2012"],
+         note="Até 2011 a escala era 0–10 e a TI diz que não é comparável com a escala 0–100 adotada em 2012"),
+    dict(id="cpi_0a100", title="Índice de Percepção da Corrupção (escala 0–100)", unit="pontos (0 = muito corrupto, 100 = muito íntegro)",
+         freq="Anual", geo="Brasil", source="Transparência Internacional", url="https://www.transparency.org/en/cpi",
+         fetch=lambda: curated("cpi_0a100"), note="Metodologia atual, desde 2012"),
+    dict(id="sancoes_vigentes_uf", title="Sanções vigentes (CEIS e CNEP)", unit="registros",
+         freq="Retrato", geo="Brasil e estados", source="CGU, Portal da Transparência (CEIS e CNEP)",
+         url="https://portaldatransparencia.gov.br/download-de-dados/ceis", fetch=f_sancoes_vigentes_uf,
+         note="Retrato das sanções em vigor na data do arquivo, não uma série histórica: sanções vencidas saem do cadastro. "
+              "Estado = UF do órgão que aplicou a sanção; Brasil inclui órgãos federais e registros sem UF"),
+    dict(id="covid_obitos_uf", title="Mortes por COVID-19", unit="por 100 mil habitantes, no mês", freq="Mensal",
+         geo="Brasil e estados", source="Ministério da Saúde, Painel Coronavírus (arquivo de 05/09/2025)",
+         url="https://covid.saude.gov.br/", fetch=f_covid_obitos_uf,
+         note="Óbitos pela data de notificação, não do óbito. 2023 usa a população do Censo 2022"),
+    dict(id="covid_excesso_uf", title="Excesso de mortes", unit="% acima da média de 2015–2019 no mesmo mês", freq="Mensal",
+         geo="Brasil e estados", source="DataSUS, SIM (óbitos por todas as causas, por residência)",
+         url="http://tabnet.datasus.gov.br/", fetch=f_covid_excesso_uf,
+         note="Comparação simples com a média de 2015–2019; não desconta o crescimento e o envelhecimento da população, "
+              "então superestima um pouco o excesso"),
+    dict(id="covid_vacinacao_uf", title="Vacinação completa contra COVID-19", unit="% da população com esquema primário completo",
+         freq="Mensal", geo="Brasil e estados", source="Ministério da Saúde, compilado por W. Cota (covid19br, CC BY 4.0)",
+         url="https://github.com/wcota/covid19br", fetch=f_covid_vacinacao_uf,
+         note="Duas doses ou dose única. A série termina em mar/2023, quando o Ministério passou a atualizar semanalmente"),
+    dict(id="covid_mortes_mundo", title="Mortes por COVID-19 confirmadas, acumuladas", unit="por milhão de habitantes",
+         freq="Mensal", geo="11 países", source="OMS, via Our World in Data",
+         url="https://ourworldindata.org/covid-deaths", fetch=f_covid_mortes_mundo,
+         note="Cuba e Venezuela: dado oficial, possivelmente subnotificado"),
+    dict(id="covid_excesso_mundo", title="Excesso de mortes acumulado", unit="por milhão de habitantes",
+         freq="Mensal", geo="8 países", source="Human Mortality Database e World Mortality Dataset, via Our World in Data",
+         url="https://ourworldindata.org/excess-mortality-covid", fetch=f_covid_excesso_mundo,
+         note="Mortes observadas acima do esperado. Índia, Indonésia e Venezuela não publicam dados para este cálculo"),
     dict(id="caged_saldo_br", title="Saldo de empregos formais (Brasil)", unit="vagas (admissões − desligamentos)",
          freq="Mensal", geo="Brasil", source="Ministério do Trabalho, CAGED e Novo CAGED, via IPEADATA",
          url="http://www.ipeadata.gov.br/", fetch=f_caged_saldo_br, breaks=["2020-01"],
@@ -322,9 +494,6 @@ SERIES = [
          url="http://tabnet.datasus.gov.br/", fetch=f_mortalidade_infantil_uf,
          note="Calculada direto dos registros, por estado de residência. Onde o registro de óbitos é incompleto "
               "(Norte e Nordeste, sobretudo nos anos 2000) a taxa fica abaixo da real; anos após 2023 ainda são preliminares"),
-    dict(id="divida_bruta", title="Dívida bruta do governo geral", unit="% do PIB", freq="Mensal", geo="Brasil",
-         source="Banco Central, SGS 13762", url="https://www3.bcb.gov.br/sgspub/", fetch=f_divida_bruta,
-         note="Metodologia atual começa em dez/2006"),
 ]
 
 

@@ -1,0 +1,5 @@
+date,indicador,value,unit,source_url
+2026-09,acordos_assinados,37,acordos,https://www.gov.br/cgu/pt-br/assuntos/integridade-privada/acordo-leniencia
+2026-09,acordos_em_negociacao,16,acordos,https://www.gov.br/cgu/pt-br/assuntos/integridade-privada/acordo-leniencia
+2026-09,valor_pactuado,20120000000,R$,https://www.gov.br/cgu/pt-br/assuntos/integridade-privada/acordo-leniencia
+2026-09,valor_pago,11350000000,R$,https://www.gov.br/cgu/pt-br/assuntos/integridade-privada/acordo-leniencia
