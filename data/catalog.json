@@ -153,6 +153,79 @@
       "since": "2012-Q1",
       "until": "2026-Q2",
       "file": "renda_uf.csv"
+    },
+    "caged_saldo_br": {
+      "id": "caged_saldo_br",
+      "title": "Saldo de empregos formais (Brasil)",
+      "unit": "vagas (admissões − desligamentos)",
+      "freq": "Mensal",
+      "geo": "Brasil",
+      "source": "Ministério do Trabalho, CAGED e Novo CAGED, via IPEADATA",
+      "url": "http://www.ipeadata.gov.br/",
+      "breaks": [
+        "2020-01"
+      ],
+      "note": "Quebra em jan/2020: o Novo CAGED usa o eSocial e não é diretamente comparável com o CAGED antigo",
+      "rows": 296,
+      "since": "2002-01",
+      "until": "2026-08",
+      "file": "caged_saldo_br.csv"
+    },
+    "caged_saldo_uf": {
+      "id": "caged_saldo_uf",
+      "title": "Saldo de empregos formais por estado",
+      "unit": "vagas (admissões − desligamentos)",
+      "freq": "Mensal",
+      "geo": "Brasil e estados",
+      "source": "Ministério do Trabalho, Novo CAGED, via IPEADATA (ADMISNC, DESLIGNC)",
+      "url": "http://www.ipeadata.gov.br/",
+      "note": "Por estado só existe em fonte curada a partir do Novo CAGED (2020)",
+      "rows": 2240,
+      "since": "2020-01",
+      "until": "2026-08",
+      "file": "caged_saldo_uf.csv"
+    },
+    "fpe_uf": {
+      "id": "fpe_uf",
+      "title": "Transferências do FPE",
+      "unit": "R$",
+      "freq": "Anual",
+      "geo": "Estados",
+      "money": true,
+      "source": "Tesouro Nacional (STN), via IPEADATA (RTRFPEE)",
+      "url": "http://www.ipeadata.gov.br/",
+      "note": "Cota-parte do Fundo de Participação dos Estados e do DF. SP em 2011 e 2014 aparece como zero na fonte e foi tratado como dado ausente",
+      "rows": 646,
+      "since": "2002",
+      "until": "2025",
+      "file": "fpe_uf.csv"
+    },
+    "homicidios_uf": {
+      "id": "homicidios_uf",
+      "title": "Taxa de homicídios",
+      "unit": "por 100 mil habitantes",
+      "freq": "Anual",
+      "geo": "Brasil e estados",
+      "source": "Atlas da Violência (IPEA/FBSP), dados do SIM/DataSUS, via IPEADATA",
+      "url": "https://www.ipea.gov.br/atlasviolencia/",
+      "rows": 644,
+      "since": "2002",
+      "until": "2024",
+      "file": "homicidios_uf.csv"
+    },
+    "mortalidade_infantil_uf": {
+      "id": "mortalidade_infantil_uf",
+      "title": "Mortalidade infantil",
+      "unit": "óbitos de menores de 1 ano por mil nascidos vivos",
+      "freq": "Anual",
+      "geo": "Brasil e estados",
+      "source": "DataSUS, SIM (óbitos infantis) e SINASC (nascidos vivos)",
+      "url": "http://tabnet.datasus.gov.br/",
+      "note": "Calculada direto dos registros, por estado de residência. Onde o registro de óbitos é incompleto (Norte e Nordeste, sobretudo nos anos 2000) a taxa fica abaixo da real; anos após 2023 ainda são preliminares",
+      "rows": 616,
+      "since": "2002",
+      "until": "2023",
+      "file": "mortalidade_infantil_uf.csv"
     }
   },
   "base": "2026-09"

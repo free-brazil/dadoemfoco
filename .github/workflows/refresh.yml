@@ -1,0 +1,34 @@
+name: refresh
+# Re-pulls every series from its source and pushes the result to a data/refresh-* branch.
+# Run from the Actions tab ("Run workflow"); optional: list of series ids to refresh only those.
+on:
+  workflow_dispatch:
+    inputs:
+      series:
+        description: "Series ids separated by spaces (empty = all)"
+        required: false
+        default: ""
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - name: Refresh
+        # a failed source keeps its previous CSV; the run still pushes what succeeded
+        run: python3 scripts/refresh.py ${{ inputs.series }} || echo "::warning::some series failed, see log"
+      - name: Check
+        run: python3 tests/test_data.py
+      - name: Push branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet && { echo "no changes"; exit 0; }
+          branch="data/refresh-$(date -u +%Y%m%d-%H%M)"
+          git checkout -b "$branch"
+          git commit -m "data: refresh $(date -u +%Y-%m-%d)"
+          git push origin "$branch"
+          echo "Pushed $branch — open a PR from it." >> "$GITHUB_STEP_SUMMARY"

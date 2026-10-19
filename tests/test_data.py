@@ -34,7 +34,7 @@ def next_period(d):
 
 
 # Years with no official figure, by series (documented in catalog notes).
-KNOWN_GAPS = {"populacao_uf": {"2023"}}
+KNOWN_GAPS = {"populacao_uf": {"2023"}, "fpe_uf": {"2011", "2014"}}
 
 
 def check_structure():
@@ -69,6 +69,10 @@ def check_known_values():
     assert 2.3 < value("cambio", "2002-01") < 2.45
     assert value("pib_trimestral", "2020-Q2") < -9      # pandemic quarter
     assert 18 < value("selic", "2002-01") < 21
+    assert value("caged_saldo_br", "2008-12") < -600000                 # 2008 crisis
+    assert value("homicidios_uf", "2017") == 32.1                        # Atlas da Violência peak
+    assert 11 < value("mortalidade_infantil_uf", "2023") < 14
+    assert value("fpe_uf", "2002", "SC", col="value_real") > value("fpe_uf", "2002", "SC")
     # derived: per capita = PIB (R$ mil) / population
     pc = value("pib_per_capita_uf", "2010", "SC")
     assert abs(pc - value("pib_uf", "2010", "SC") * 1000 / value("populacao_uf", "2010", "SC")) < 0.01
